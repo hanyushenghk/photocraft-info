@@ -1,63 +1,50 @@
 # PhotoCraft Resource Hub
 
-Independent bilingual PhotoCraft resource website. English is the default language; Chinese is available from the language switch.
+Independent bilingual PhotoCraft resource website. English is the default; Chinese is available on every page. This is a resource hub, not the editor itself, and is not affiliated with ArtCraft or Adobe.
 
-## Included features
+## Features
 
-- Official download links and installation guides for Windows, macOS and Linux
-- Searchable keyboard shortcuts with Windows/Linux and macOS key mappings
-- PhotoCraft vs. Photoshop comparison
-- Official GitHub, documentation, issue tracker and community links
-- FAQ and planned plugin/template sections
-- Responsive layout with hero artwork sized to the adjacent introduction
+- Eight detailed guides in English and Chinese: first workflow, download center, Windows, macOS, Linux, PSD compatibility, troubleshooting, and release highlights
+- Searchable guide hub and keyboard shortcuts
+- PhotoCraft vs. Photoshop comparison, official resources, FAQ and planned plugin/template sections
+- Official feature screenshots and responsive layout
+- Corresponding-language article links, source references, canonical URLs and sitemap
 
-## Source layout
+## Edit and build
 
-```text
-dist/
-  index.html             # Default English homepage
-  en/index.html          # Alternative English URL
-  zh/index.html          # Chinese homepage
-  icon.svg               # Site favicon
-  photocraft-hero.webp   # Official editor screenshot
-```
-
-This is a buildless static website. HTML, CSS and JavaScript are included directly in the HTML files; `dist/` contains the editable source and deployable files. There are no package dependencies or build steps.
-
-## Run locally
-
-Requires Python 3:
+Requires only Python 3; no package installation is needed.
 
 ```sh
+python3 scripts/build_content.py
 python3 -m http.server 8000 --directory dist
 ```
 
-Open http://localhost:8000/ for English or http://localhost:8000/zh/ for Chinese. Use a local HTTP server instead of opening the HTML directly so language links resolve correctly.
+Open http://localhost:8000/ or http://localhost:8000/zh/.
+
+- `content/pages.json`: bilingual guide content and source references
+- `content/templates/home-en.html` and `home-zh.html`: base homepages
+- `scripts/build_content.py`: generates guides, guide hubs, enriched homepages and sitemap
+- `dist/assets/`: shared styles, scripts and official screenshots
+- `dist/`: complete generated static website, ready to host
+
+Edit content/templates and rebuild; direct edits to generated HTML will be overwritten. Shared asset styles and scripts are edited directly in `dist/assets/`. The original homepage CSS is embedded in the templates; article pages use `dist/assets/site.css`.
 
 ## Deploy
 
-Publish `dist/` as the root of a static website using a host such as Cloudflare Pages, Netlify or a static web server. No build command is required. The host should serve directory `index.html` files for `/en/` and `/zh/`.
+Publish `dist/` at the root of a static host supporting directory index files. Committed output requires no build step. To regenerate during deployment, run `python3 scripts/build_content.py`.
 
-Language links use root-relative paths. To deploy under a subpath (for example GitHub Pages at `/photocraft-info/`), adjust language URLs and redirect paths first, or use a custom domain at the site root. Canonical, hreflang and Open Graph URLs currently point to the existing deployment; update them if you move to a new domain.
+Routes use root-relative paths. GitHub Pages project subpaths require URL adjustments or a custom domain. If moving domains, update `ORIGIN` in the builder and canonical/hreflang/Open Graph URLs in both home templates, then rebuild.
 
 Current deployment: https://photocraft-resource.chichero256.chatgpt.site
 
-## Editing
+## Sources and credits
 
-Keep content and layout changes in sync across `dist/index.html`, `dist/en/index.html`, and `dist/zh/index.html`. The default language is English. The language preference key is `photocraft-language`; explicit language URLs determine the page shown.
+Official editor: https://github.com/storytold/photocraft
 
-## Credits and scope
+The hero screenshot comes from https://getartcraft.com/images/apps/photocraft/hero.webp. Feature screenshots come from `docs/images/photocraft-adjustments.jpg`, `photocraft-masks.jpg` and `photocraft-export-light.jpg` in the official editor repository. They are attributed on the website. Product trademarks and third-party assets remain with their respective owners; this repository does not assign a new license to them.
 
-This is an independent resource hub, not the PhotoCraft editor itself. It is not affiliated with ArtCraft or Adobe. Software capabilities and download links should be verified against official releases.
-
-The editor screenshot was retrieved from https://getartcraft.com/images/apps/photocraft/hero.webp and is attributed to ArtCraft on the website. It depicts *The Great Wave off Kanagawa* by Katsushika Hokusai. Product trademarks and third-party assets remain with their respective owners. This repository does not assign a new license to those assets.
-
-Official editor source: https://github.com/storytold/photocraft
-
-## Snapshot
-
-Exported from the deployed website on 2026-10-10, source commit `b0ad02cb4d24d302971d80bc0cc53afdae294c98`. Hosting-specific account metadata and credentials are excluded.
+Content snapshot: October 10, 2026. Release highlights are dated snapshots, not a live version feed. Guides distinguish official documentation from editorial recommendations and are not a cross-platform software compatibility test.
 
 ## 中文说明
 
-这是 PhotoCraft 独立中英文资源站源码，默认英文，支持切换中文。完整页面、样式、交互脚本和图片均位于 `dist/`，无需安装依赖或编译。运行上面的 Python 命令即可在本地预览。若更换域名或使用 GitHub Pages 项目子路径，请按部署说明修改站点地址和语言路径。
+PhotoCraft 独立中英文资源站，默认英文，包含 8 篇双语详细指南、可搜索教程中心、快捷键和功能对比。修改 `content/` 中的内容后运行 `python3 scripts/build_content.py`，再将 `dist/` 部署到静态网站根目录。新域名或 GitHub Pages 子路径需要相应修改 URL。

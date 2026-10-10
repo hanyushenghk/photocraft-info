@@ -1,0 +1,732 @@
+[
+  {
+    "slug": "guide",
+    "title": {
+      "en": "Your first project in PhotoCraft",
+      "zh": "用 PhotoCraft 完成第一个作品"
+    },
+    "intro": {
+      "en": "Open a photo, build a simple title card, adjust its color and export a copy. A practical desktop learning path.",
+      "zh": "从打开照片、添加标题、调整颜色，到保存可编辑项目并导出成品的桌面版学习路径。"
+    },
+    "category": {
+      "en": "GETTING STARTED",
+      "zh": "入门教程"
+    },
+    "sections": [
+      {
+        "id": "before",
+        "title": {
+          "en": "Prepare a small practice project",
+          "zh": "准备一个简单的练习项目"
+        },
+        "body": {
+          "en": "<p>Use a photo you own and work on a duplicate. For this exercise, choose a modest JPEG or PNG rather than a large client PSD. Your goal is a title card with a photograph, an editable heading and a color adjustment.</p><p>Install the desktop app using the guide for your platform. Menu names below use English; translations and placement can differ by release. This walkthrough is based on upstream documentation and screenshots, not a claim that every step has been tested on every operating system.</p>",
+          "zh": "<p>选择一张你拥有使用权的照片，并先复制一份。练习时用普通大小的 JPEG 或 PNG，不必从复杂的客户 PSD 开始。目标是完成一张包含照片、可编辑标题和颜色调整的标题卡。</p><p>先按系统安装桌面版。下文使用英文菜单名，翻译和位置可能随版本变化。本教程依据官方文档与截图整理，不代表每一步已在所有系统上实测。</p>"
+        }
+      },
+      {
+        "id": "workspace",
+        "title": {
+          "en": "1. Open a photo and find your workspace",
+          "zh": "1. 打开照片，认识工作区"
+        },
+        "body": {
+          "en": "<p>Choose <strong>File → Open</strong> and select your practice image. The canvas is the working area; the toolbar selects tools; the Layers panel holds the parts of your composition. Locate History so you can inspect and undo changes.</p><ol><li>Check the image dimensions before editing.</li><li>Find the image layer in Layers and select it.</li><li>Duplicate the layer with <kbd>Ctrl</kbd> + <kbd>J</kbd> on Windows/Linux or <kbd>⌘</kbd> + <kbd>J</kbd> on macOS.</li><li>Give the copy a meaningful name, such as “Photo edit”. Keep the original layer available for comparison.</li></ol>",
+          "zh": "<p>选择 <strong>File → Open</strong> 打开练习图片。画布是编辑区域，工具栏用于选择工具，Layers 面板管理作品的不同组成部分。找到 History 面板，便于查看或撤销修改。</p><ol><li>先确认图片尺寸。</li><li>在 Layers 中选中图片图层。</li><li>Windows/Linux 用 <kbd>Ctrl</kbd> + <kbd>J</kbd>，macOS 用 <kbd>⌘</kbd> + <kbd>J</kbd> 复制图层。</li><li>将副本命名为“照片编辑”，保留原图层用于对照。</li></ol>"
+        }
+      },
+      {
+        "id": "adjust",
+        "title": {
+          "en": "2. Adjust color without overwriting the photo",
+          "zh": "2. 用调整图层修改颜色"
+        },
+        "body": {
+          "en": "<p>Choose <strong>Layer → New Adjustment Layer → Curves</strong>. Start with a small curve adjustment; compare the result by switching the adjustment layer’s visibility off and on. If the result is too strong, reduce the layer opacity rather than repeatedly applying a destructive correction.</p><p>An adjustment layer separates the instruction from the photo. Keep it as a separate layer while you experiment. The official example below shows adjustment layers and histogram controls; it is an upstream example, not the result of this exercise.</p><figure><img src=\"/assets/photocraft-adjustments.jpg\" alt=\"Official PhotoCraft screenshot with Levels, Vibrance and a histogram\" loading=\"lazy\"><figcaption>Official PhotoCraft example · Monet’s Impression, Sunrise · public-domain artwork.</figcaption></figure>",
+          "zh": "<p>选择 <strong>Layer → New Adjustment Layer → Curves</strong>。先小幅调整曲线，再切换调整图层的可见状态，比较前后效果。如果效果过强，可降低图层不透明度，避免反复直接改写照片像素。</p><p>调整图层将修改指令与照片分开，练习时保持它独立存在。下图是官方提供的调整图层和直方图示例，并非本练习的成品。</p><figure><img src=\"/assets/photocraft-adjustments.jpg\" alt=\"PhotoCraft 官方截图：色阶、自然饱和度与直方图\" loading=\"lazy\"><figcaption>PhotoCraft 官方示例 · 莫奈《日出·印象》· 公有领域作品。</figcaption></figure>"
+        }
+      },
+      {
+        "id": "title",
+        "title": {
+          "en": "3. Add a heading on its own layer",
+          "zh": "3. 在独立图层上添加标题"
+        },
+        "body": {
+          "en": "<p>Select the Type tool, click the canvas and enter a short heading. Choose an installed font and a readable size. Keep the heading inside the canvas edges. In Layers, verify that it remains a text layer rather than merging it into the photograph.</p><p>Try moving the heading over a quieter part of the photo. If your chosen font is unavailable on another machine, its appearance can change. For a shared project, record the font family and check the document on the receiving system.</p>",
+          "zh": "<p>选择文字工具，在画布上点击并输入短标题。使用本机已安装字体和清晰的字号，给画布边缘留出空间。在 Layers 中确认标题仍是文字图层，没有合并进照片。</p><p>可以将标题移动到画面较简单的区域。如果另一台电脑缺少该字体，显示效果可能改变。协作时记录字体名称，并在接收方设备上复核。</p>"
+        }
+      },
+      {
+        "id": "save",
+        "title": {
+          "en": "4. Save the project, then export an image",
+          "zh": "4. 保存项目，再导出图片"
+        },
+        "body": {
+          "en": "<ol><li>Use Save As to save a new editable project. Choose a format offered by your installed build; keep a separate PSD copy if Photoshop interchange is your goal.</li><li>Use Export As for the finished image. PNG is useful when you need transparency; JPEG is useful for a photographic image without transparency.</li><li>Review dimensions and quality in the export dialog. Save to a new filename.</li><li>Open the exported image outside the editor, then reopen the editable project. Check text, layers and color.</li></ol><p>A JPEG export is not your editable master. Keep both the project and the exported image.</p>",
+          "zh": "<ol><li>通过 Save As 另存为新的可编辑项目，选择当前版本提供的格式。需要与 Photoshop 交换时，另外保留 PSD 副本。</li><li>通过 Export As 导出成品。需要透明背景时可选 PNG；不需要透明背景的照片可选 JPEG。</li><li>在导出对话框检查尺寸与质量，使用新文件名保存。</li><li>在编辑器外打开导出图，再重新打开可编辑项目，检查文字、图层与颜色。</li></ol><p>JPEG 成品不能代替可编辑原稿。请同时保留项目文件和导出图片。</p>"
+        }
+      },
+      {
+        "id": "checklist",
+        "title": {
+          "en": "Before you call it finished",
+          "zh": "完成前检查"
+        },
+        "body": {
+          "en": "<ul class=\"checklist\"><li>The original photo is preserved.</li><li>The title remains editable in the project.</li><li>The export has the intended dimensions and background.</li><li>The saved project reopens correctly.</li><li>Any important PSD has been checked against a reference rendering.</li></ul>",
+          "zh": "<ul class=\"checklist\"><li>原照片仍然保留。</li><li>项目中的标题仍可编辑。</li><li>导出尺寸和背景符合预期。</li><li>保存的项目能够重新打开。</li><li>重要 PSD 已与参考效果进行核对。</li></ul>"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "label": "Project overview",
+        "url": "https://github.com/storytold/photocraft"
+      },
+      {
+        "label": "Roadmap and compatibility assessment",
+        "url": "https://github.com/storytold/photocraft/blob/main/docs/roadmap.md"
+      }
+    ],
+    "related": [
+      "download",
+      "compatibility/psd",
+      "troubleshooting"
+    ]
+  },
+  {
+    "slug": "download",
+    "title": {
+      "en": "Download PhotoCraft from the official source",
+      "zh": "从官方渠道下载 PhotoCraft"
+    },
+    "intro": {
+      "en": "Choose a platform, identify the right package, and follow a step-by-step installation guide.",
+      "zh": "选择操作系统和设备架构，找到正确安装包，再按步骤安装。"
+    },
+    "category": {
+      "en": "DOWNLOAD CENTER",
+      "zh": "下载中心"
+    },
+    "sections": [
+      {
+        "id": "choose",
+        "title": {
+          "en": "Choose your installation guide",
+          "zh": "选择安装教程"
+        },
+        "body": {
+          "en": "<div class=\"article-cards\"><a href=\"/download/windows/\"><b>Windows →</b><span>MSI or portable ZIP · x64, ARM64, x86</span></a><a href=\"/download/mac/\"><b>macOS →</b><span>Universal DMG · Apple silicon and Intel</span></a><a href=\"/download/linux/\"><b>Linux →</b><span>AppImage, DEB, RPM and Flatpak</span></a></div>",
+          "zh": "<div class=\"article-cards\"><a href=\"/zh/download/windows/\"><b>Windows →</b><span>MSI 或便携 ZIP · x64、ARM64、x86</span></a><a href=\"/zh/download/mac/\"><b>macOS →</b><span>Universal DMG · Apple silicon 与 Intel</span></a><a href=\"/zh/download/linux/\"><b>Linux →</b><span>AppImage、DEB、RPM 与 Flatpak</span></a></div>"
+        }
+      },
+      {
+        "id": "official",
+        "title": {
+          "en": "Two official entry points",
+          "zh": "两个官方入口"
+        },
+        "body": {
+          "en": "<p>The ArtCraft product page is a convenient starting point. GitHub Releases provides individual packages, release notes and checksums. This hub links to those sources; it does not distribute repackaged installers.</p><p><a class=\"btn primary\" href=\"https://getartcraft.com/apps/photocraft\" target=\"_blank\" rel=\"noopener noreferrer\">Official product page ↗</a> <a class=\"btn\" href=\"https://github.com/storytold/photocraft/releases/latest\" target=\"_blank\" rel=\"noopener noreferrer\">Latest GitHub release ↗</a></p>",
+          "zh": "<p>ArtCraft 产品页便于快速找到下载入口，GitHub Releases 则提供不同安装包、更新说明和校验值。本站链接到这些来源，不提供重新打包的安装程序。</p><p><a class=\"btn primary\" href=\"https://getartcraft.com/apps/photocraft\" target=\"_blank\" rel=\"noopener noreferrer\">官方产品页 ↗</a> <a class=\"btn\" href=\"https://github.com/storytold/photocraft/releases/latest\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub 最新发布 ↗</a></p>"
+        }
+      },
+      {
+        "id": "assets",
+        "title": {
+          "en": "Find the right release asset",
+          "zh": "识别正确的发布文件"
+        },
+        "body": {
+          "en": "<ol><li>Open the official repository and select Releases.</li><li>Read the release notes, then expand Assets if the file list is collapsed.</li><li>Match both your operating system and CPU architecture. A filename containing “cli” is for command-line use, not the normal desktop app.</li><li>Download the selected file and, if provided, SHA256SUMS.txt from that same release.</li></ol><p>The automatically generated “Source code” archives contain source, not a ready-to-install desktop application.</p>",
+          "zh": "<ol><li>进入官方仓库的 Releases。</li><li>阅读更新说明，若文件列表折叠，展开 Assets。</li><li>同时匹配操作系统和 CPU 架构。文件名包含 cli 的通常是命令行工具，不是普通桌面应用。</li><li>下载目标文件，以及同一版本提供的 SHA256SUMS.txt（如有）。</li></ol><p>GitHub 自动生成的 Source code 压缩包是源代码，不是可以直接安装的桌面程序。</p>"
+        }
+      },
+      {
+        "id": "verify",
+        "title": {
+          "en": "Check the file before installing",
+          "zh": "安装前核对文件"
+        },
+        "body": {
+          "en": "<p>Compare the downloaded file’s SHA-256 hash with the entry for the exact filename in SHA256SUMS.txt. Matching hashes help confirm file integrity; they do not by themselves prove that software is free of defects. If a release claims a digital signature, inspect the file’s signature or system assessment rather than assuming every build is signed.</p><p>Check the release notes for platform requirements. Version labels on third-party pages can lag behind upstream.</p>",
+          "zh": "<p>计算下载文件的 SHA-256，并与 SHA256SUMS.txt 中完全对应的文件名核对。校验一致有助于确认文件完整性，但不等于软件不存在缺陷。若发布说明声明提供数字签名，应检查具体文件的签名或系统验证结果，而不是默认每个构建都已签名。</p><p>系统要求以所选版本的发布说明为准，第三方页面的版本号可能滞后。</p>"
+        }
+      },
+      {
+        "id": "version",
+        "title": {
+          "en": "Release snapshot: v0.6.0",
+          "zh": "版本快照：v0.6.0"
+        },
+        "body": {
+          "en": "<p>As checked on October 10, 2026, the latest official release was v0.6.0. This is a dated snapshot, not a live version feed. Always check the official latest-release page before downloading.</p><p><a href=\"/releases/\">Read our release highlights →</a></p>",
+          "zh": "<p>2026 年 10 月 10 日核对时，官方最新发布为 v0.6.0。这是带日期的快照，不是实时版本接口，下载前请以官方最新发布页为准。</p><p><a href=\"/zh/releases/\">查看版本更新摘要 →</a></p>"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "label": "Official installation notes",
+        "url": "https://github.com/storytold/photocraft/blob/main/book/src/getting-started/installation.md"
+      },
+      {
+        "label": "Release packaging and platform notes",
+        "url": "https://github.com/storytold/photocraft/blob/main/docs/releasing.md"
+      },
+      {
+        "label": "PhotoCraft v0.6.0 release notes",
+        "url": "https://github.com/storytold/photocraft/releases/tag/v0.6.0"
+      }
+    ],
+    "related": [
+      "guide",
+      "troubleshooting"
+    ]
+  },
+  {
+    "slug": "download/windows",
+    "title": {
+      "en": "Install PhotoCraft on Windows",
+      "zh": "在 Windows 上安装 PhotoCraft"
+    },
+    "intro": {
+      "en": "Choose between an MSI installer and a portable ZIP, verify the download and open your first document.",
+      "zh": "选择 MSI 安装包或便携 ZIP，核对文件并打开第一个文档。"
+    },
+    "category": {
+      "en": "PLATFORM GUIDE",
+      "zh": "平台安装指南"
+    },
+    "sections": [
+      {
+        "id": "architecture",
+        "title": {
+          "en": "1. Identify your Windows architecture",
+          "zh": "1. 确认 Windows 架构"
+        },
+        "body": {
+          "en": "<p>Open Windows Settings → System → About and check System type. Most Intel or AMD PCs need x64. ARM-based PCs need ARM64. Use x86 only when your installed Windows and the release instructions call for a 32-bit build.</p><p>Do not choose a file only because its filename contains “Windows”. Match the architecture as well. Read the release-specific operating-system requirements.</p>",
+          "zh": "<p>打开 Windows 设置 → 系统 → 系统信息，查看系统类型。多数 Intel 或 AMD 电脑使用 x64；ARM 电脑选择 ARM64；只有系统和发布说明要求 32 位构建时才选 x86。</p><p>不要只看到文件名中的 Windows 就下载，还要核对架构与该版本的系统要求。</p>"
+        }
+      },
+      {
+        "id": "package",
+        "title": {
+          "en": "2. Choose MSI or portable ZIP",
+          "zh": "2. 选择 MSI 或便携 ZIP"
+        },
+        "body": {
+          "en": "<div class=\"table-wrap\"><table><thead><tr><th>Package</th><th>When to choose it</th></tr></thead><tbody><tr><td>MSI installer</td><td>You want a normal installation managed by Windows.</td></tr><tr><td>Portable ZIP</td><td>You prefer to extract the app into a folder and launch it there.</td></tr></tbody></table></div><p>Open the official release Assets and select the matching filename. Download the checksum list from the same release if available. A portable package still needs to be completely extracted before use.</p>",
+          "zh": "<div class=\"table-wrap\"><table><thead><tr><th>安装包</th><th>适合情况</th></tr></thead><tbody><tr><td>MSI</td><td>希望采用 Windows 管理的常规安装方式。</td></tr><tr><td>便携 ZIP</td><td>希望解压到指定文件夹后直接运行。</td></tr></tbody></table></div><p>在官方发布页 Assets 中选择匹配文件，下载同一版本的校验清单（如有）。便携版也需要完整解压后运行。</p>"
+        }
+      },
+      {
+        "id": "checksum",
+        "title": {
+          "en": "3. Verify the download",
+          "zh": "3. 核对下载文件"
+        },
+        "body": {
+          "en": "<p>In PowerShell, replace the example path with the actual file you downloaded:</p><pre><code>Get-FileHash -Algorithm SHA256 \"C:\\Users\\YourName\\Downloads\\photocraft-file.msi\"</code></pre><p>Compare the resulting hash with the exact filename in the official checksum list. If the values differ, do not install that copy; download it again from the official release.</p>",
+          "zh": "<p>在 PowerShell 中将示例路径替换为你实际下载的文件路径：</p><pre><code>Get-FileHash -Algorithm SHA256 \"C:\\Users\\YourName\\Downloads\\photocraft-file.msi\"</code></pre><p>将结果与官方校验清单中相同文件名的值比较。不一致时先不要安装该副本，重新从官方发布页下载。</p>"
+        }
+      },
+      {
+        "id": "install",
+        "title": {
+          "en": "4. Install and launch",
+          "zh": "4. 安装并启动"
+        },
+        "body": {
+          "en": "<ol><li>For MSI, open the installer and follow the wizard. Review any publisher prompt.</li><li>For ZIP, extract all files to a folder, then launch the app from the extracted directory.</li><li>Open a small JPEG or PNG using File → Open.</li><li>Save an edited copy into a folder you can write to, then reopen it.</li></ol><p>If Windows blocks the file, record the exact message and verify the source, architecture and signature information. Do not disable system protection as a routine installation step.</p>",
+          "zh": "<ol><li>MSI：打开安装程序并按照向导操作，留意发布者提示。</li><li>ZIP：完整解压到文件夹，从解压目录启动应用。</li><li>通过 File → Open 打开一张小的 JPEG 或 PNG。</li><li>将编辑结果保存到可写入的目录，再重新打开。</li></ol><p>若 Windows 阻止运行，记录完整提示，检查来源、架构和签名信息。不应把关闭系统防护作为常规安装步骤。</p>"
+        }
+      },
+      {
+        "id": "update",
+        "title": {
+          "en": "Updating or diagnosing a failed launch",
+          "zh": "升级或排查启动失败"
+        },
+        "body": {
+          "en": "<p>Keep a copy of important projects before upgrading. For a portable build, extract the new release into a separate folder so old and new program files are not mixed. If the app still fails, collect Windows version, GPU model, package name and the exact error for a bug report.</p><p><a href=\"/troubleshooting/\">Continue to troubleshooting →</a></p>",
+          "zh": "<p>升级前备份重要项目。便携版建议将新版本解压到独立文件夹，避免新旧程序文件混合。若仍无法启动，收集 Windows 版本、GPU 型号、安装包文件名和完整错误信息。</p><p><a href=\"/zh/troubleshooting/\">继续查看故障排查 →</a></p>"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "label": "Official installation notes",
+        "url": "https://github.com/storytold/photocraft/blob/main/book/src/getting-started/installation.md"
+      },
+      {
+        "label": "Release packaging and platform notes",
+        "url": "https://github.com/storytold/photocraft/blob/main/docs/releasing.md"
+      },
+      {
+        "label": "Official issue tracker",
+        "url": "https://github.com/storytold/photocraft/issues"
+      }
+    ],
+    "related": [
+      "download",
+      "guide",
+      "troubleshooting"
+    ]
+  },
+  {
+    "slug": "download/mac",
+    "title": {
+      "en": "Install PhotoCraft on macOS",
+      "zh": "在 macOS 上安装 PhotoCraft"
+    },
+    "intro": {
+      "en": "Use the Universal DMG for the desktop app, then verify that a small project opens and saves correctly.",
+      "zh": "使用 Universal DMG 安装桌面应用，并检查简单项目能否正常打开和保存。"
+    },
+    "category": {
+      "en": "PLATFORM GUIDE",
+      "zh": "平台安装指南"
+    },
+    "sections": [
+      {
+        "id": "choose",
+        "title": {
+          "en": "1. Choose the desktop DMG",
+          "zh": "1. 选择桌面版 DMG"
+        },
+        "body": {
+          "en": "<p>Find the macOS Universal DMG in the official release Assets. Universal packages include Apple silicon and Intel support. Check the release notes for the minimum macOS version rather than relying on the requirements of an older release.</p><p>The separate photocraft-cli ZIP is intended for command-line automation. Choose the DMG when you want the graphical editor.</p>",
+          "zh": "<p>在官方发布页 Assets 中找到 macOS Universal DMG。Universal 包面向 Apple silicon 和 Intel。最低 macOS 要求以所选版本说明为准，不要沿用旧版本要求。</p><p>单独的 photocraft-cli ZIP 面向命令行自动化。需要图形编辑器时选择 DMG。</p>"
+        }
+      },
+      {
+        "id": "verify",
+        "title": {
+          "en": "2. Compare the checksum",
+          "zh": "2. 比对校验值"
+        },
+        "body": {
+          "en": "<p>Download SHA256SUMS.txt from the same release when provided. In Terminal, replace the example filename:</p><pre><code>shasum -a 256 ~/Downloads/photocraft-file.dmg</code></pre><p>Match the output to the entry for that exact DMG. A matching checksum checks integrity, while signing and notarization are separate checks.</p>",
+          "zh": "<p>下载同一版本提供的 SHA256SUMS.txt。在终端中替换示例文件名：</p><pre><code>shasum -a 256 ~/Downloads/photocraft-file.dmg</code></pre><p>与清单中完全对应的 DMG 条目比较。校验值检查文件完整性，签名与公证是另外的验证。</p>"
+        }
+      },
+      {
+        "id": "install",
+        "title": {
+          "en": "3. Move the app into Applications",
+          "zh": "3. 将应用放入 Applications"
+        },
+        "body": {
+          "en": "<ol><li>Open the downloaded DMG.</li><li>Drag PhotoCraft into Applications.</li><li>Launch the copy in Applications, rather than continuing to run from the disk image.</li><li>Once installation is complete, eject the mounted disk image.</li></ol><p>If macOS reports a problem, note the exact message and confirm that the download came from the official release. Check the release’s signing notes. This guide does not require removing quarantine attributes or disabling Gatekeeper.</p>",
+          "zh": "<ol><li>打开下载的 DMG。</li><li>将 PhotoCraft 拖入 Applications（应用程序）。</li><li>从 Applications 启动，避免持续从磁盘映像内运行。</li><li>安装完成后推出磁盘映像。</li></ol><p>若 macOS 报错，记录完整提示，并确认文件来自官方发布。查看该版本签名说明。本指南不要求删除隔离属性或关闭 Gatekeeper。</p>"
+        }
+      },
+      {
+        "id": "first-file",
+        "title": {
+          "en": "4. Try a small file before a large PSD",
+          "zh": "4. 先测试小文件，再打开复杂 PSD"
+        },
+        "body": {
+          "en": "<p>Open a small image with File → Open. Add a simple edit, save a copy into a writable folder and reopen it. Use ⌘ in place of Ctrl for the common shortcuts shown in our reference.</p><p>For an existing design, check that its fonts are installed, then compare the rendering against an export from the original editor. Keep the original project untouched until the round trip has been checked.</p>",
+          "zh": "<p>通过 File → Open 打开小图片，做一个简单修改，保存到可写入目录后重新打开。常用快捷键在 Mac 上一般使用 ⌘，可查看本站快捷键速查。</p><p>对于已有设计，先检查字体是否安装，再与原编辑器导出的参考图对比。完成打开、保存、重新打开的检查前，保留原始项目。</p>"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "label": "Official installation notes",
+        "url": "https://github.com/storytold/photocraft/blob/main/book/src/getting-started/installation.md"
+      },
+      {
+        "label": "Release packaging and platform notes",
+        "url": "https://github.com/storytold/photocraft/blob/main/docs/releasing.md"
+      },
+      {
+        "label": "Project overview",
+        "url": "https://github.com/storytold/photocraft"
+      }
+    ],
+    "related": [
+      "download",
+      "compatibility/psd",
+      "troubleshooting"
+    ]
+  },
+  {
+    "slug": "download/linux",
+    "title": {
+      "en": "Install PhotoCraft on Linux",
+      "zh": "在 Linux 上安装 PhotoCraft"
+    },
+    "intro": {
+      "en": "Choose a package for your distribution and architecture, with practical notes for AppImage, Flatpak and Wayland.",
+      "zh": "按发行版和架构选择安装包，了解 AppImage、Flatpak 与 Wayland 的使用要点。"
+    },
+    "category": {
+      "en": "PLATFORM GUIDE",
+      "zh": "平台安装指南"
+    },
+    "sections": [
+      {
+        "id": "choose",
+        "title": {
+          "en": "1. Match architecture and package format",
+          "zh": "1. 匹配架构与安装包格式"
+        },
+        "body": {
+          "en": "<p>Run <code>uname -m</code> to identify the architecture. x86_64 and aarch64 require different release assets. Then choose the package that fits how you manage software:</p><div class=\"table-wrap\"><table><thead><tr><th>Format</th><th>Typical use</th></tr></thead><tbody><tr><td>AppImage</td><td>Launch a standalone app file after allowing execution.</td></tr><tr><td>DEB</td><td>Debian / Ubuntu package management.</td></tr><tr><td>RPM</td><td>Fedora / compatible RPM-based distributions.</td></tr><tr><td>Flatpak bundle</td><td>Install through Flatpak with its runtime and sandbox.</td></tr></tbody></table></div><p>Read the selected release’s compatibility notes. A package format alone does not guarantee it works with every distribution or GPU.</p>",
+          "zh": "<p>运行 <code>uname -m</code> 查看架构。x86_64 与 aarch64 需要不同发布文件，然后按习惯选择软件包：</p><div class=\"table-wrap\"><table><thead><tr><th>格式</th><th>常见用途</th></tr></thead><tbody><tr><td>AppImage</td><td>允许执行后运行单独的应用文件。</td></tr><tr><td>DEB</td><td>适用于 Debian / Ubuntu 的包管理。</td></tr><tr><td>RPM</td><td>适用于 Fedora 及兼容的 RPM 发行版。</td></tr><tr><td>Flatpak</td><td>通过 Flatpak 及对应运行时、沙盒安装。</td></tr></tbody></table></div><p>请阅读所选版本的兼容说明。包格式本身不能保证适用于所有发行版和 GPU。</p>"
+        }
+      },
+      {
+        "id": "checksum",
+        "title": {
+          "en": "2. Verify the package",
+          "zh": "2. 验证安装包"
+        },
+        "body": {
+          "en": "<p>Compare the downloaded file with the matching entry in the release checksum list. Replace this example with the actual filename:</p><pre><code>sha256sum ~/Downloads/photocraft-file.AppImage</code></pre><p>Download the package and checksum list from the same official release. If they do not match, replace the download before continuing.</p>",
+          "zh": "<p>将下载文件的校验结果与对应版本清单中的条目比较，替换下面的示例文件名：</p><pre><code>sha256sum ~/Downloads/photocraft-file.AppImage</code></pre><p>安装包与校验清单应来自同一官方发布。若不一致，重新下载后再继续。</p>"
+        }
+      },
+      {
+        "id": "appimage",
+        "title": {
+          "en": "3. Run an AppImage",
+          "zh": "3. 运行 AppImage"
+        },
+        "body": {
+          "en": "<p>In your file manager, open the file’s properties and allow execution as a program. Alternatively, use the actual file path in a terminal:</p><pre><code>chmod +x ~/Downloads/photocraft-file.AppImage\n~/Downloads/photocraft-file.AppImage</code></pre><p>Run as your normal user. If it fails, launch it from a terminal so you can capture the error. Do not assume every failure is a missing dependency; architecture and graphics initialization also matter.</p>",
+          "zh": "<p>在文件管理器的文件属性中，允许作为程序执行。也可在终端中使用实际文件路径：</p><pre><code>chmod +x ~/Downloads/photocraft-file.AppImage\n~/Downloads/photocraft-file.AppImage</code></pre><p>以普通用户运行。失败时从终端启动以收集错误信息。不要把所有失败都归因于缺少依赖，架构与图形初始化也需要检查。</p>"
+        }
+      },
+      {
+        "id": "flatpak",
+        "title": {
+          "en": "4. Install a Flatpak bundle",
+          "zh": "4. 安装 Flatpak 包"
+        },
+        "body": {
+          "en": "<p>If Flatpak is already configured, install the official downloaded bundle. Replace the example filename with the exact asset you selected:</p><pre><code>flatpak install --user ~/Downloads/photocraft-file.flatpak\nflatpak run ai.storyteller.photocraft</code></pre><p>Follow any runtime prompts from Flatpak. For DEB or RPM packages, use your distribution’s package manager so dependencies are handled normally.</p>",
+          "zh": "<p>如果已配置 Flatpak，可以安装官方提供的包，将示例文件名替换为实际下载文件：</p><pre><code>flatpak install --user ~/Downloads/photocraft-file.flatpak\nflatpak run ai.storyteller.photocraft</code></pre><p>按 Flatpak 的提示处理运行时。对于 DEB 或 RPM，使用发行版的包管理器正常处理依赖。</p>"
+        }
+      },
+      {
+        "id": "wayland",
+        "title": {
+          "en": "5. If drag and drop does not work on Wayland",
+          "zh": "5. Wayland 下无法拖放文件时"
+        },
+        "body": {
+          "en": "<p>The upstream README documents a Wayland drag-and-drop limitation. Start with <strong>File → Open</strong> instead of dragging the file. Record whether the session is Wayland or X11 when reporting a problem.</p><p>A file-opening issue is different from a launch or GPU failure. Test a small PNG through the menu before changing your display session or graphics settings.</p>",
+          "zh": "<p>官方 README 记录了 Wayland 文件拖放限制。优先使用 <strong>File → Open</strong>，而不是拖入文件。反馈问题时记录会话是 Wayland 还是 X11。</p><p>打开文件的问题与启动失败、GPU 失败并不相同。先通过菜单打开小 PNG，再决定是否需要调整显示会话或图形设置。</p>"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "label": "Project overview",
+        "url": "https://github.com/storytold/photocraft"
+      },
+      {
+        "label": "Official installation notes",
+        "url": "https://github.com/storytold/photocraft/blob/main/book/src/getting-started/installation.md"
+      },
+      {
+        "label": "Release packaging and platform notes",
+        "url": "https://github.com/storytold/photocraft/blob/main/docs/releasing.md"
+      }
+    ],
+    "related": [
+      "download",
+      "guide",
+      "troubleshooting"
+    ]
+  },
+  {
+    "slug": "compatibility/psd",
+    "title": {
+      "en": "PhotoCraft PSD compatibility: what to check",
+      "zh": "PhotoCraft PSD 兼容性：应该检查什么"
+    },
+    "intro": {
+      "en": "Opening a PSD is only the first check. Verify its appearance, editable structure and saved output before trusting a round trip.",
+      "zh": "能打开 PSD 只是第一步。还需要检查显示效果、可编辑结构，以及重新保存后的结果。"
+    },
+    "category": {
+      "en": "FILE COMPATIBILITY",
+      "zh": "文件兼容性"
+    },
+    "sections": [
+      {
+        "id": "meaning",
+        "title": {
+          "en": "Three different meanings of “compatible”",
+          "zh": "“兼容”需要分三个层面看"
+        },
+        "body": {
+          "en": "<div class=\"table-wrap\"><table><thead><tr><th>Check</th><th>Question</th></tr></thead><tbody><tr><td>Opens</td><td>Can the file be parsed and displayed?</td></tr><tr><td>Looks right</td><td>Do text, effects, masks and colors match the reference?</td></tr><tr><td>Round-trips</td><td>After saving and reopening, are the appearance and required editable parts preserved?</td></tr></tbody></table></div><p>Passing one check does not prove the others. A flattened preview can look correct while the editable structure differs.</p>",
+          "zh": "<div class=\"table-wrap\"><table><thead><tr><th>检查层面</th><th>需要回答的问题</th></tr></thead><tbody><tr><td>可以打开</td><td>文件能否被解析和显示？</td></tr><tr><td>显示正确</td><td>文字、效果、蒙版和颜色是否与参考一致？</td></tr><tr><td>往返保存</td><td>保存再打开后，外观和需要的可编辑元素是否保留？</td></tr></tbody></table></div><p>通过某一项不代表其他项也通过。合并预览可能看起来正确，但可编辑结构仍可能不同。</p>"
+        }
+      },
+      {
+        "id": "capability",
+        "title": {
+          "en": "What the upstream project documents",
+          "zh": "官方记录了哪些能力"
+        },
+        "body": {
+          "en": "<p>Upstream documents PSD version 1 and PSB version 2 parsing and writing, with preservation of unknown blocks intended to improve round trips. Actual editing and rendering also depend on how the rest of the application maps those structures into its document model.</p><p>PhotoCraft remains early alpha. A test-corpus result describes the files and checks in that test; it is not a guarantee for your client project or for every Photoshop effect.</p>",
+          "zh": "<p>官方文档记录了 PSD 版本 1 和 PSB 版本 2 的解析与写入，并通过保留未知数据块来改善往返保存。实际编辑和渲染还取决于应用如何将这些结构映射到内部文档模型。</p><p>PhotoCraft 仍是早期 Alpha。测试集结果只说明该组文件在对应测试中的表现，不是对客户项目或所有 Photoshop 效果的保证。</p>"
+        }
+      },
+      {
+        "id": "inspect",
+        "title": {
+          "en": "Inspect these areas first",
+          "zh": "优先检查这些内容"
+        },
+        "body": {
+          "en": "<ul><li><strong>Fonts and text:</strong> line breaks, substitutions, spacing and editable type.</li><li><strong>Masks and blending:</strong> edges, clipping relationships, opacity and blend modes.</li><li><strong>Layer effects:</strong> shadows, strokes and effect bounds.</li><li><strong>Smart objects:</strong> appearance, transforms and the editability you need.</li><li><strong>Color:</strong> profile handling, document mode and exports viewed in the same environment.</li><li><strong>External dependencies:</strong> linked content, fonts and plugin-dependent effects.</li></ul><p>This is a review checklist, not a declaration that each item is unsupported.</p>",
+          "zh": "<ul><li><strong>字体与文字：</strong>换行、替代字体、间距与可编辑性。</li><li><strong>蒙版与混合：</strong>边缘、剪贴关系、不透明度和混合模式。</li><li><strong>图层效果：</strong>阴影、描边与效果范围。</li><li><strong>智能对象：</strong>外观、变换和所需的可编辑性。</li><li><strong>颜色：</strong>配置文件、文档模式，以及同一环境下的导出效果。</li><li><strong>外部依赖：</strong>链接内容、字体与依赖插件的效果。</li></ul><p>这是检查清单，并不表示列出的所有内容都不受支持。</p>"
+        }
+      },
+      {
+        "id": "workflow",
+        "title": {
+          "en": "A repeatable compatibility test",
+          "zh": "可重复执行的兼容性检查流程"
+        },
+        "body": {
+          "en": "<ol><li>Keep an untouched copy of the source PSD and record its originating app.</li><li>Export a reference PNG from that app at the intended dimensions.</li><li>Open the copy in PhotoCraft and record the PhotoCraft version and operating system.</li><li>Inspect the high-risk areas at 100% zoom and compare an export with the reference.</li><li>Save to a new PSD filename, close it, and reopen it in both applications when possible.</li><li>Record the differences and decide whether they affect the actual delivery requirements.</li></ol><p>A file that passes your thumbnail workflow may still be unsuitable for print production or later editing by another designer. Evaluate against the task you actually need.</p>",
+          "zh": "<ol><li>保留未修改的原 PSD，记录它的来源应用。</li><li>从原应用按目标尺寸导出参考 PNG。</li><li>在 PhotoCraft 打开副本，记录 PhotoCraft 版本和操作系统。</li><li>以 100% 缩放检查关键区域，对比导出图与参考图。</li><li>另存为新 PSD，关闭后尽可能在两个应用中分别重新打开。</li><li>记录差异，并判断是否影响实际交付要求。</li></ol><p>能满足缩略图制作的文件，不一定能满足印刷或其他设计师继续编辑的需求，应按真实任务验收。</p>"
+        }
+      },
+      {
+        "id": "report",
+        "title": {
+          "en": "Report a reproducible difference",
+          "zh": "反馈可复现的差异"
+        },
+        "body": {
+          "en": "<p>Include app versions, document dimensions, color mode, the affected layer and a before/after screenshot. Reduce the problem to a small sample if possible. Share a redacted or synthetic document rather than private client material.</p><p><a href=\"/troubleshooting/#report\">Use the bug-report checklist →</a></p>",
+          "zh": "<p>提供应用版本、文档尺寸、颜色模式、受影响图层和前后截图。尽可能缩小为一个简单样例。分享经过脱敏或自行构造的文档，避免上传客户私有素材。</p><p><a href=\"/zh/troubleshooting/#report\">查看问题反馈清单 →</a></p>"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "label": "PSD and PSB format documentation",
+        "url": "https://github.com/storytold/photocraft/blob/main/book/src/formats/psd-psb.md"
+      },
+      {
+        "label": "Roadmap and compatibility assessment",
+        "url": "https://github.com/storytold/photocraft/blob/main/docs/roadmap.md"
+      }
+    ],
+    "related": [
+      "guide",
+      "troubleshooting",
+      "releases"
+    ]
+  },
+  {
+    "slug": "troubleshooting",
+    "title": {
+      "en": "Troubleshoot PhotoCraft step by step",
+      "zh": "逐步排查 PhotoCraft 常见问题"
+    },
+    "intro": {
+      "en": "Start with the symptom, narrow the cause, and collect the details needed for a useful report.",
+      "zh": "从现象出发缩小问题范围，并收集能帮助开发者复现的信息。"
+    },
+    "category": {
+      "en": "HELP & DIAGNOSTICS",
+      "zh": "帮助与诊断"
+    },
+    "sections": [
+      {
+        "id": "triage",
+        "title": {
+          "en": "Start with a small, reversible check",
+          "zh": "先做简单、可恢复的检查"
+        },
+        "body": {
+          "en": "<p>Save work if possible, preserve the original document, and record the app version and the exact action that failed. Try a small local PNG in a new session. If that works but one PSD fails, investigate the file separately; if no image opens, focus first on installation or the rendering environment.</p><p>The suggestions below are diagnostic steps, not guaranteed fixes. Version-specific issues change quickly. Search the official issue tracker for your error before applying an old workaround.</p>",
+          "zh": "<p>尽可能先保存工作，保留原始文档，记录版本和出错动作。在新会话中尝试打开本地小 PNG。若 PNG 正常而某个 PSD 失败，优先排查文件；若任何图片都无法打开，先检查安装或渲染环境。</p><p>以下是诊断步骤，不是保证有效的修复。具体版本的问题变化很快，采用旧解决方案前，先在官方 Issues 搜索同样错误。</p>"
+        }
+      },
+      {
+        "id": "startup",
+        "title": {
+          "en": "The app will not start or immediately exits",
+          "zh": "无法启动或启动后立即退出"
+        },
+        "body": {
+          "en": "<ol><li>Confirm that the package matches the operating system and architecture.</li><li>Check that a portable archive was fully extracted.</li><li>Compare the checksum and read the release notes.</li><li>Record the exact system warning. If comfortable with the terminal, launch the app there and capture its output.</li><li>If the message refers to graphics initialization, record the GPU model and driver version; use supported driver updates from the OS or hardware vendor.</li></ol><p>A blank window, a blocked installer and an unsupported binary are different problems. Keep the original error text in your report.</p>",
+          "zh": "<ol><li>核对安装包是否匹配操作系统与架构。</li><li>检查便携压缩包是否完整解压。</li><li>比对校验值并阅读发布说明。</li><li>记录完整系统提示。熟悉终端时，可从终端启动并收集输出。</li><li>若信息涉及图形初始化，记录 GPU 与驱动版本，使用系统或硬件厂商支持的驱动更新。</li></ol><p>空白窗口、安装被阻止和二进制不兼容是不同问题，反馈时保留原始错误文字。</p>"
+        }
+      },
+      {
+        "id": "display",
+        "title": {
+          "en": "Blank canvas or an unexpectedly different image",
+          "zh": "画布空白或显示效果不一致"
+        },
+        "body": {
+          "en": "<p>Check whether the intended document tab and layer are selected. Check layer visibility, opacity and zoom. Try a small image with a single layer. If only a complex project differs, use the PSD compatibility checklist rather than changing many settings at once.</p><p>For a rendering report, include a screenshot, GPU/driver information, document size and whether the problem also occurs in a new document.</p>",
+          "zh": "<p>确认当前文档标签和图层是否正确，检查图层可见性、不透明度与缩放。用只有一个图层的小图片进行对照。只有复杂项目显示不一致时，按 PSD 兼容性清单检查，避免同时改动大量设置。</p><p>反馈渲染问题时，附截图、GPU/驱动信息、文档尺寸，以及新文档是否同样出现问题。</p>"
+        }
+      },
+      {
+        "id": "wayland",
+        "title": {
+          "en": "Files will not open by dragging on Linux",
+          "zh": "Linux 下拖入文件没有反应"
+        },
+        "body": {
+          "en": "<p>Upstream documents a limitation with Wayland drag and drop. Use File → Open to distinguish this from a file decoder problem. Include Wayland or X11 in the environment section of a report.</p>",
+          "zh": "<p>官方记录了 Wayland 下的文件拖放限制。先使用 File → Open，区分是拖放问题还是解码问题。反馈环境中注明 Wayland 或 X11。</p>"
+        }
+      },
+      {
+        "id": "fonts",
+        "title": {
+          "en": "Text looks different or glyphs are missing",
+          "zh": "文字显示不同或缺字"
+        },
+        "body": {
+          "en": "<p>Check the document’s font names against fonts available on your computer. Try a known installed font in a new text layer. Compare text input with rendering: being unable to type a character is a different issue from a missing glyph in an existing layer.</p><p>Include font family, app language, operating system and a short sample string. Do not assume switching the site language changes the editor’s interface or installed fonts.</p>",
+          "zh": "<p>核对文档字体与本机可用字体，在新的文字图层里测试一个确定已安装的字体。区分输入问题与渲染问题：无法输入字符和已有文字缺字不是同一现象。</p><p>反馈时注明字体名、应用界面语言、系统和简短示例文字。本站语言切换不会改变编辑器语言或本机字体。</p>"
+        }
+      },
+      {
+        "id": "saving",
+        "title": {
+          "en": "Saving or exporting fails",
+          "zh": "保存或导出失败"
+        },
+        "body": {
+          "en": "<ol><li>Use a new filename in a writable local folder.</li><li>Check available disk space and the chosen output format.</li><li>Try a small new document to see whether the failure is file-specific.</li><li>Keep the editable project separate from the final exported image.</li><li>After an apparent success, reopen the file and inspect it before replacing any original.</li></ol><p>Some outputs flatten layers or cannot preserve transparency. A successful export does not mean the format can store all editable content.</p>",
+          "zh": "<ol><li>在可写入的本地目录使用新文件名。</li><li>检查磁盘剩余空间和输出格式。</li><li>测试一个小的新文档，判断是否只对某文件失败。</li><li>将可编辑项目与最终导出图分开保存。</li><li>显示成功后仍应重新打开检查，再决定是否替换原文件。</li></ol><p>部分格式会合并图层或无法保留透明背景。导出成功不等于该格式能保存所有可编辑内容。</p>"
+        }
+      },
+      {
+        "id": "report",
+        "title": {
+          "en": "A bug report the maintainers can use",
+          "zh": "提交可用的问题报告"
+        },
+        "body": {
+          "en": "<pre><code>PhotoCraft version:\nOperating system / architecture:\nPackage filename:\nGPU / driver (if relevant):\nDocument size / layer count / color mode:\nSteps to reproduce:\nExpected result:\nActual result / exact error:\nDoes a new small document also fail?\nScreenshot or redacted sample:</code></pre><p>Search existing issues first, then add the minimal reproduction to the appropriate issue or create a new one. Remove private information from logs and documents.</p><p><a class=\"btn dark\" href=\"https://github.com/storytold/photocraft/issues\" target=\"_blank\" rel=\"noopener noreferrer\">Open official issues ↗</a></p>",
+          "zh": "<pre><code>PhotoCraft 版本：\n操作系统 / 架构：\n安装包文件名：\nGPU / 驱动（如相关）：\n文档尺寸 / 图层数 / 颜色模式：\n复现步骤：\n预期结果：\n实际结果 / 完整报错：\n新建小文档是否也失败：\n截图或脱敏样例：</code></pre><p>先搜索已有问题，再向相关 Issue 补充最小复现步骤，或新建 Issue。提交前移除日志和文件中的私密信息。</p><p><a class=\"btn dark\" href=\"https://github.com/storytold/photocraft/issues\" target=\"_blank\" rel=\"noopener noreferrer\">打开官方 Issues ↗</a></p>"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "label": "Project overview",
+        "url": "https://github.com/storytold/photocraft"
+      },
+      {
+        "label": "Roadmap and compatibility assessment",
+        "url": "https://github.com/storytold/photocraft/blob/main/docs/roadmap.md"
+      },
+      {
+        "label": "PhotoCraft v0.6.0 release notes",
+        "url": "https://github.com/storytold/photocraft/releases/tag/v0.6.0"
+      },
+      {
+        "label": "Official issue tracker",
+        "url": "https://github.com/storytold/photocraft/issues"
+      }
+    ],
+    "related": [
+      "download",
+      "compatibility/psd",
+      "guide"
+    ]
+  },
+  {
+    "slug": "releases",
+    "title": {
+      "en": "PhotoCraft release notes, in plain language",
+      "zh": "看得懂的 PhotoCraft 版本更新"
+    },
+    "intro": {
+      "en": "A dated snapshot of upstream changes, with links to the complete official release history.",
+      "zh": "整理官方更新对日常使用的影响，并提供完整发布记录入口。"
+    },
+    "category": {
+      "en": "RELEASE NOTES",
+      "zh": "版本更新"
+    },
+    "sections": [
+      {
+        "id": "snapshot",
+        "title": {
+          "en": "v0.6.0 · October 10, 2026",
+          "zh": "v0.6.0 · 2026 年 10 月 10 日"
+        },
+        "body": {
+          "en": "<p>v0.6.0 was the latest official release when checked on October 10, 2026. This page is an editorial snapshot and is not automatically refreshed. Check GitHub before choosing a download.</p><p><a class=\"btn primary\" href=\"https://github.com/storytold/photocraft/releases/latest\" target=\"_blank\" rel=\"noopener noreferrer\">Check the latest release ↗</a></p>",
+          "zh": "<p>2026 年 10 月 10 日核对时，官方最新发布为 v0.6.0。本页为人工整理的版本快照，不会自动刷新。选择安装包前请先查看 GitHub。</p><p><a class=\"btn primary\" href=\"https://github.com/storytold/photocraft/releases/latest\" target=\"_blank\" rel=\"noopener noreferrer\">检查最新发布 ↗</a></p>"
+        }
+      },
+      {
+        "id": "highlights",
+        "title": {
+          "en": "Changes worth noticing",
+          "zh": "值得关注的变化"
+        },
+        "body": {
+          "en": "<ul><li><strong>PSD handling:</strong> fixes include mask interpretation, layer data written during export, and specific text-fill compatibility cases.</li><li><strong>Editing controls:</strong> fixes touch transforms, selections, layer behavior and export preferences.</li><li><strong>File support:</strong> release notes include SVG opening as shape layers and placement as a vector smart object.</li><li><strong>Reliability:</strong> several fixes address edge-case crashes, invalid numeric inputs and memory allocation behavior.</li></ul><p>These are selected upstream highlights, not a benchmark or an assurance that every related issue is resolved.</p>",
+          "zh": "<ul><li><strong>PSD 处理：</strong>包含蒙版解释、导出图层数据以及特定文字填充兼容问题的修复。</li><li><strong>编辑操作：</strong>涉及变换、选区、图层行为和导出偏好设置。</li><li><strong>文件支持：</strong>更新记录包含以形状图层打开 SVG、以矢量智能对象置入 SVG。</li><li><strong>可靠性：</strong>修复部分边界情况崩溃、异常数值输入和内存分配行为。</li></ul><p>这里只选取官方更新中的重点，不是性能实测，也不保证相关问题已全部解决。</p>"
+        }
+      },
+      {
+        "id": "upgrade",
+        "title": {
+          "en": "A careful upgrade routine",
+          "zh": "升级后的检查顺序"
+        },
+        "body": {
+          "en": "<ol><li>Back up important projects and keep a reference export.</li><li>Read the official notes for your current and target versions.</li><li>Use a package matching your system and verify it.</li><li>Test a small document, then a copy of your usual PSD.</li><li>Check the tasks that matter to you: opening, editing, saving, reopening and exporting.</li></ol><p>Do not infer professional readiness from version numbers alone. PhotoCraft’s official roadmap still describes meaningful gaps.</p>",
+          "zh": "<ol><li>备份重要项目并保留参考导出图。</li><li>阅读当前版本与目标版本之间的官方变化。</li><li>选择适合系统的安装包并验证。</li><li>先测试小文档，再测试常用 PSD 的副本。</li><li>检查打开、编辑、保存、重新打开和导出等关键动作。</li></ol><p>不要仅凭版本号推断专业可用性，官方路线图仍记录了重要差距。</p>"
+        }
+      },
+      {
+        "id": "history",
+        "title": {
+          "en": "Explore earlier versions",
+          "zh": "查看历史版本"
+        },
+        "body": {
+          "en": "<p>Use the official release history to read older notes and retrieve a specific package. Older software may contain already-fixed issues, so choose an old release for a documented reason, not merely because a third-party guide links to it.</p><p><a href=\"https://github.com/storytold/photocraft/releases\" target=\"_blank\" rel=\"noopener noreferrer\">All official releases ↗</a></p>",
+          "zh": "<p>通过官方发布记录阅读旧版本说明或获取特定安装包。旧版本可能存在已修复问题，不应仅因为第三方教程链接了旧版就选择它。</p><p><a href=\"https://github.com/storytold/photocraft/releases\" target=\"_blank\" rel=\"noopener noreferrer\">所有官方版本 ↗</a></p>"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "label": "PhotoCraft v0.6.0 release notes",
+        "url": "https://github.com/storytold/photocraft/releases/tag/v0.6.0"
+      },
+      {
+        "label": "Roadmap and compatibility assessment",
+        "url": "https://github.com/storytold/photocraft/blob/main/docs/roadmap.md"
+      }
+    ],
+    "related": [
+      "download",
+      "compatibility/psd",
+      "troubleshooting"
+    ]
+  }
+]
