@@ -1,0 +1,57 @@
+{
+  "": {
+    "title": [
+      "PhotoCraft Resource Hub: Downloads, Plugins & Templates",
+      "PhotoCraft 资源站：下载、插件、模板与教程"
+    ],
+    "description": [
+      "Independent PhotoCraft resource hub with official download links, setup guides, plugins, free PSD templates, Photoshop comparisons and community resources.",
+      "PhotoCraft 独立资源站：官方软件下载指引、安装教程、插件与 ComfyUI 集成、免费 PSD 模板与实测结果、Photoshop 功能对比及社区链接。"
+    ],
+    "modified": "2026-10-12"
+  },
+  "plugins": {
+    "title": [
+      "PhotoCraft Plugins & Integrations: ComfyUI, MCP & WASM",
+      "PhotoCraft 插件与集成：ComfyUI、MCP 与 WASM"
+    ],
+    "description": [
+      "Explore PhotoCraft WASM filters, ComfyUI workflows, MCP setup and CLI automation, with official documentation, community downloads and troubleshooting tips.",
+      "探索 PhotoCraft WASM 滤镜、ComfyUI 工作流、MCP 配置、CLI 自动化与控制 API，查找官方文档、社区工作流下载、设置步骤和故障排查。"
+    ],
+    "modified": "2026-10-12"
+  },
+  "templates": {
+    "title": [
+      "Free PhotoCraft Templates: 14 PSD Packs & Test Results",
+      "免费 PhotoCraft 模板：14 套 PSD 下载与实测结果"
+    ],
+    "description": [
+      "Download 14 free PSD template packs plus textures and LUTs. Review PhotoCraft 0.7.0 CLI test results, font requirements and licensing notes before editing.",
+      "下载 14 套免费 PSD 模板，以及纹理和 LUT 调色预设。查看 PhotoCraft 0.7.0 CLI 的打开、导出与往返保存测试结果、字体要求及授权说明。"
+    ],
+    "modified": "2026-10-12"
+  },
+  "compare": {
+    "title": [
+      "PhotoCraft vs Photoshop: Features, PSD & Plugin Support",
+      "PhotoCraft 与 Photoshop 对比：功能、PSD 与插件支持"
+    ],
+    "description": [
+      "Compare PhotoCraft and Photoshop features, PSD workflows, plugins and platform support. Understand early-alpha limitations before choosing your editing tools.",
+      "对比 PhotoCraft 与 Photoshop 的编辑功能、PSD 工作流、插件生态与平台支持，了解 PhotoCraft 早期 Alpha 的适用范围和限制，选择适合的图像编辑工具。"
+    ],
+    "modified": "2026-10-12"
+  },
+  "community": {
+    "title": [
+      "PhotoCraft Community: Official GitHub, Docs & Resources",
+      "PhotoCraft 社区：官方 GitHub、文档与资源链接"
+    ],
+    "description": [
+      "Find the official PhotoCraft GitHub repository, releases, documentation and issue tracker, plus community integrations and guidance for reporting problems.",
+      "查找 PhotoCraft 官方 GitHub 仓库、版本发布、文档与问题反馈入口，以及社区集成和资源导航；了解如何提交清晰的问题报告。"
+    ],
+    "modified": "2026-10-12"
+  }
+}

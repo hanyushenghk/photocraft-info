@@ -533,7 +533,9 @@
     "related": [
       "guide",
       "troubleshooting",
-      "releases"
+      "releases",
+      "compare",
+      "templates"
     ]
   },
   {
@@ -874,7 +876,8 @@
     "related": [
       "guides/comfyui",
       "compatibility/photoshop-plugins",
-      "templates"
+      "templates",
+      "community"
     ]
   },
   {
@@ -1058,7 +1061,8 @@
     "related": [
       "compatibility/psd",
       "guides/luts",
-      "guide"
+      "guide",
+      "compare"
     ]
   },
   {
@@ -1231,7 +1235,8 @@
     "related": [
       "plugins",
       "compatibility/psd",
-      "templates"
+      "templates",
+      "compare"
     ]
   },
   {
@@ -1275,7 +1280,9 @@
     "related": [
       "compatibility/psd",
       "compatibility/photoshop-plugins",
-      "templates"
+      "templates",
+      "download",
+      "community"
     ]
   },
   {
@@ -1315,7 +1322,8 @@
     "related": [
       "plugins",
       "templates",
-      "guides/comfyui"
+      "guides/comfyui",
+      "troubleshooting"
     ]
   }
 ]

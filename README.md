@@ -95,3 +95,7 @@ Reproduce using an official CLI release and an empty output path:
 ```bash
 python scripts/test_photocraft_templates.py --cli /absolute/path/photocraft-cli --out /tmp/photocraft-template-tests-new
 ```
+
+## SEO metadata maintenance
+
+`content/seo.json` contains bilingual search titles, descriptions and known substantive modification dates for the resource landing pages. Update `modified` only when that page meaningfully changes; do not reset it on every build. The builder shares breadcrumb paths between visible HTML and JSON-LD, and includes known dates in `sitemap.xml`. Existing pages without a recorded date omit `lastmod`. Run `python scripts/build_content.py` followed by `python scripts/check_site.py` after content changes.
