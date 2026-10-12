@@ -18,6 +18,14 @@
    else link.removeAttribute('aria-current');
   });
  }
+ // Full page links stay independent of the current home section/hash.
+ links.forEach(link => link.addEventListener('click', event => {
+  if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || link.target === '_blank') return;
+  const target = new URL(link.href, location.href);
+  if (target.origin !== location.origin || target.pathname === location.pathname) return;
+  event.preventDefault();
+  location.assign(target.href);
+ }));
  update();
  window.addEventListener('hashchange', update);
  window.addEventListener('popstate', update);
