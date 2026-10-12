@@ -39,8 +39,6 @@ def optimize(root,origin):
    s=re.sub(r'const shortcuts=.*?;\nlet keyOS',lambda _: 'const shortcuts='+json.dumps(shortcuts,ensure_ascii=False)+';\nlet keyOS',s,count=1,flags=re.S)
    # Ordinary language links avoid query-string duplicates; legacy ?lang URLs still work.
    s=s.replace('/?lang=en','/').replace('/zh/?lang=zh','/zh/')
-   label='教程中心' if idx else 'Guides'
-   s=re.sub(r'(<nav class="mobile-nav"[^>]*>)',lambda m:m[0]+f'<a href="'+('/zh/guides/' if idx else '/guides/')+f'">{label}</a>',s,count=1)
   elif slug=='guides':
    s=re.sub(r'<h1>.*?</h1>','<h1>'+('PhotoCraft 教程中心' if idx else 'PhotoCraft tutorials & guides')+'</h1>',s,count=1)
   # Replace only SEO tags, preserving charset, viewport, styles and application scripts.
