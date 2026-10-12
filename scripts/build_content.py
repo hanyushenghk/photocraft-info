@@ -3,7 +3,7 @@ from pathlib import Path
 from html import escape
 import json,re,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1];DIST=ROOT/'dist'
-ORIGIN='https://photocraft-resource.chichero256.chatgpt.site'
+ORIGIN='https://photo-craft.io'
 PAGES=json.loads((ROOT/'content/pages.json').read_text());BY_SLUG={p['slug']:p for p in PAGES}
 T={
 'en':{'home':'Home','guides':'Guides','download':'Download','compare':'Compare','community':'Community','verified':'Sources checked: Oct 10, 2026','independent':'Independent guide · Early alpha','toc':'ON THIS PAGE','sources':'Sources & scope','scope':'Written from official documentation and editorial guidance. Not an exhaustive compatibility test. Menu names and behavior can change between releases.','related':'Continue learning','read':'Read the guide →','search':'Search guides, e.g. PSD or Windows','count':'guides','empty':'No matching guides. Try “install”, “PSD” or “Windows”.','foot':'Independent resource hub. Not affiliated with ArtCraft or Adobe.','hubtitle':'A little guidance. A lot more creating.','hubintro':'Install with confidence, learn your first workflow, and find the next step when something does not behave as expected.','early':'PhotoCraft is early alpha. Use copies of important documents and verify saved results.','review':'Official material, practical steps and clear limitations.'},
