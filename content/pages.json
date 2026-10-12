@@ -736,8 +736,8 @@
       "zh": "PhotoCraft 插件与集成"
     },
     "intro": {
-      "en": "Explore the official WebAssembly filter API, an example plug-in and a community ComfyUI bridge—with clear compatibility labels.",
-      "zh": "了解官方 WebAssembly 滤镜接口、示例插件与社区 ComfyUI 集成，分清格式支持与实测兼容。"
+      "en": "Explore six ways to extend PhotoCraft: WASM filters, ComfyUI, MCP, CLI automation and the control API. Find five community workflow files, setup notes and troubleshooting tips.",
+      "zh": "了解六种 PhotoCraft 扩展方式：WASM 滤镜、ComfyUI、MCP、CLI 自动化与控制接口，并获取五个社区工作流、配置方法和排错建议。"
     },
     "category": {
       "en": "PLUGINS & INTEGRATIONS",
@@ -752,8 +752,19 @@
           "zh": "先分清资源类型"
         },
         "body": {
-          "en": "<p><strong>Documentation checked · October 12, 2026.</strong> These entries have not been installed or benchmarked by this site. The upstream main branch may describe features newer than your installed release.</p><p>PhotoCraft filter plug-ins use sandboxed WebAssembly modules. A community bridge is a separate integration, not necessarily a filter you can install inside PhotoCraft.</p>",
-          "zh": "<p><strong>文档核对：2026 年 10 月 12 日。</strong> 本站尚未安装或测试这些资源。上游 main 分支的文档可能包含早于正式发行的功能，请核对本机版本。</p><p>PhotoCraft 滤镜插件采用沙盒中的 WebAssembly 模块。社区桥接工具属于另一类集成，不一定能在 PhotoCraft 内作为滤镜安装。</p>"
+          "en": "<p><strong>Sources checked October 12, 2026.</strong> Official API notes below are pinned to v0.7.0. Community workflows follow their author’s current repository. A workflow JSON is a graph configuration, not a model download.</p><p>Our CLI template import/export tests used the official Linux 0.7.0 engine. The WASM example, MCP client connections and ComfyUI workflows below have <strong>not been run by this site</strong>. “Source checked” does not mean “compatibility tested”.</p>",
+          "zh": "<p><strong>来源核对：2026 年 10 月 12 日。</strong>下方官方 API 说明以 v0.7.0 为依据，社区工作流以作者当前仓库为准。工作流 JSON 是节点配置，不是模型下载包。</p><p>本站曾使用官方 Linux 0.7.0 CLI 测试模板导入与导出；下方 WASM 示例、MCP 客户端连接和 ComfyUI 工作流<strong>尚未由本站实际运行</strong>。“来源已核对”不等于“兼容性测试通过”。</p>"
+        }
+      },
+      {
+        "id": "choose",
+        "title": {
+          "en": "Choose your next step",
+          "zh": "选择适合的扩展方式"
+        },
+        "body": {
+          "en": "<ul><li><strong>Apply a filter:</strong> start with a compiled WASM module and the installation notes below.</li><li><strong>Generate or edit with AI:</strong> use the ComfyUI bridge and an example graph.</li><li><strong>Convert a folder of assets:</strong> use CLI conversion or an action batch.</li><li><strong>Let an assistant inspect a document:</strong> connect an MCP client.</li><li><strong>Build your own integration:</strong> use the local control protocol.</li></ul>",
+          "zh": "<ul><li><strong>添加滤镜：</strong>选择已编译的 WASM 模块，参考下方安装说明。</li><li><strong>AI 生成或编辑：</strong>使用 ComfyUI 桥接与示例工作流。</li><li><strong>批量处理素材：</strong>选择 CLI 转换或动作批处理。</li><li><strong>让助手检查文档：</strong>连接兼容的 MCP 客户端。</li><li><strong>开发自己的集成：</strong>使用本地控制协议。</li></ul>"
         }
       },
       {
@@ -763,8 +774,19 @@
           "zh": "资源目录"
         },
         "body": {
-          "en": "<h3>Official · WebAssembly filter API</h3><p>The documented ABI v1 supports filter modules in <code>.wasm</code> format. Installed filters appear under <strong>Filter → Plug-ins</strong>. Read <a href=\"https://github.com/storytold/photocraft/blob/main/docs/plugins.md\" target=\"_blank\" rel=\"noopener noreferrer\">the official installation and API reference ↗</a>.</p><h3>Official example · Invert</h3><p>A small Rust source example for developers learning the plug-in contract. It requires a build step; this is not a hosted, one-click plug-in download. <a href=\"https://github.com/storytold/photocraft/tree/main/examples/plugins/invert-rs\" target=\"_blank\" rel=\"noopener noreferrer\">View example source ↗</a></p><h3>Community · ComfyUI–PhotoCraft Bridge</h3><p>ComfyUI nodes read an image and selection, then return the result as a new layer through the control channel. It needs ComfyUI and a configured PhotoCraft desktop process. <a href=\"/guides/comfyui/\">Read the bridge guide →</a></p>",
-          "zh": "<h3>官方文档 · WebAssembly 滤镜 API</h3><p>文档中的 ABI v1 支持 <code>.wasm</code> 格式滤镜，安装后出现在 <strong>Filter → Plug-ins</strong>。查看<a href=\"https://github.com/storytold/photocraft/blob/main/docs/plugins.md\" target=\"_blank\" rel=\"noopener noreferrer\">官方安装与 API 说明 ↗</a>。</p><h3>官方示例 · Invert 反相滤镜</h3><p>用于学习插件接口的 Rust 源码示例，需要编译。这里提供源码入口，并非本站托管的一键安装包。<a href=\"https://github.com/storytold/photocraft/tree/main/examples/plugins/invert-rs\" target=\"_blank\" rel=\"noopener noreferrer\">查看示例源码 ↗</a></p><h3>社区项目 · ComfyUI–PhotoCraft Bridge</h3><p>ComfyUI 节点通过控制通道读取图像和选区，将结果送回新图层。需要配置 ComfyUI 与 PhotoCraft 桌面进程。<a href=\"/zh/guides/comfyui/\">阅读桥接教程 →</a></p>"
+          "en": "<div class=\"plugin-directory\"><div class=\"plugin-card\"><span class=\"overline\">Official · API</span><h3>WASM filter host</h3><p>Apply compatible .wasm filters from Filter → Plug-ins.</p><p class=\"plugin-limit\">Requires a compiled module for PhotoCraft ABI v1. Photoshop extensions are not interchangeable.</p><a href=\"https://github.com/storytold/photocraft/blob/v0.7.0/docs/plugins.md\" target=\"_blank\" rel=\"noopener noreferrer\">Source & usage ↗</a></div><div class=\"plugin-card\"><span class=\"overline\">Official · Source code</span><h3>Invert developer example</h3><p>A small Rust filter showing how to implement the plug-in contract.</p><p class=\"plugin-limit\">Build with Rust and the wasm32-unknown-unknown target; no ready-made installer is offered here.</p><a href=\"https://github.com/storytold/photocraft/tree/v0.7.0/examples/plugins/invert-rs\" target=\"_blank\" rel=\"noopener noreferrer\">Source & usage ↗</a></div><div class=\"plugin-card\"><span class=\"overline\">Community · Integration</span><h3>ComfyUI ↔ PhotoCraft Bridge</h3><p>Send an image and selection to ComfyUI; return the result as a new layer.</p><p class=\"plugin-limit\">Install in ComfyUI. This is not a PhotoCraft WASM plug-in.</p><a href=\"https://github.com/the-aSak/ComfyUI-Photocraft-Bridge\" target=\"_blank\" rel=\"noopener noreferrer\">Source & usage ↗</a></div><div class=\"plugin-card\"><span class=\"overline\">Official · Automation</span><h3>MCP for AI assistants</h3><p>Use a compatible MCP client with a headless engine or a running desktop app.</p><p class=\"plugin-limit\">Desktop bridge mode needs PhotoCraft’s local control channel and token.</p><a href=\"https://github.com/storytold/photocraft/blob/v0.7.0/docs/control-protocol.md#mcp-bridge\" target=\"_blank\" rel=\"noopener noreferrer\">Source & usage ↗</a></div><div class=\"plugin-card\"><span class=\"overline\">Official · Command line</span><h3>CLI conversion & batches</h3><p>Inspect documents, export files, apply action lists and run droplets.</p><p class=\"plugin-limit\">Use separate output files. PNG export flattens the image.</p><a href=\"https://github.com/storytold/photocraft/blob/v0.7.0/apps/photocraft-cli/src/lib.rs\" target=\"_blank\" rel=\"noopener noreferrer\">Source & usage ↗</a></div><div class=\"plugin-card\"><span class=\"overline\">Official · Developer API</span><h3>Local control & headless server</h3><p>Build scripts around JSON-lines requests and persistent editing sessions.</p><p class=\"plugin-limit\">An integration building block, not a downloadable end-user filter.</p><a href=\"https://github.com/storytold/photocraft/blob/v0.7.0/docs/control-protocol.md#headless-server\" target=\"_blank\" rel=\"noopener noreferrer\">Source & usage ↗</a></div></div>",
+          "zh": "<div class=\"plugin-directory\"><div class=\"plugin-card\"><span class=\"overline\">官方 · API</span><h3>WASM 滤镜插件</h3><p>通过 Filter → Plug-ins 运行兼容的 .wasm 滤镜。</p><p class=\"plugin-limit\">需要面向 PhotoCraft ABI v1 编译的模块，不能直接使用 Photoshop 扩展。</p><a href=\"https://github.com/storytold/photocraft/blob/v0.7.0/docs/plugins.md\" target=\"_blank\" rel=\"noopener noreferrer\">来源与使用说明 ↗</a></div><div class=\"plugin-card\"><span class=\"overline\">官方 · 示例源码</span><h3>Invert 开发者示例</h3><p>用小型 Rust 反相滤镜了解插件接口。</p><p class=\"plugin-limit\">需要 Rust 与 wasm32-unknown-unknown 编译目标，本站不提供已打包安装器。</p><a href=\"https://github.com/storytold/photocraft/tree/v0.7.0/examples/plugins/invert-rs\" target=\"_blank\" rel=\"noopener noreferrer\">来源与使用说明 ↗</a></div><div class=\"plugin-card\"><span class=\"overline\">社区 · 集成</span><h3>ComfyUI ↔ PhotoCraft 桥接</h3><p>将图像与选区发送至 ComfyUI，再把结果作为新图层传回。</p><p class=\"plugin-limit\">安装在 ComfyUI 中，不是 PhotoCraft WASM 插件。</p><a href=\"https://github.com/the-aSak/ComfyUI-Photocraft-Bridge\" target=\"_blank\" rel=\"noopener noreferrer\">来源与使用说明 ↗</a></div><div class=\"plugin-card\"><span class=\"overline\">官方 · 自动化</span><h3>面向 AI 助手的 MCP</h3><p>通过兼容 MCP 客户端连接无界面引擎或正在运行的桌面应用。</p><p class=\"plugin-limit\">桌面桥接模式需要启用本地控制通道并配置令牌。</p><a href=\"https://github.com/storytold/photocraft/blob/v0.7.0/docs/control-protocol.md#mcp-bridge\" target=\"_blank\" rel=\"noopener noreferrer\">来源与使用说明 ↗</a></div><div class=\"plugin-card\"><span class=\"overline\">官方 · 命令行</span><h3>CLI 转换与批处理</h3><p>检查文档、导出文件、执行动作列表与 droplet。</p><p class=\"plugin-limit\">使用独立输出文件；PNG 导出为平面图像。</p><a href=\"https://github.com/storytold/photocraft/blob/v0.7.0/apps/photocraft-cli/src/lib.rs\" target=\"_blank\" rel=\"noopener noreferrer\">来源与使用说明 ↗</a></div><div class=\"plugin-card\"><span class=\"overline\">官方 · 开发接口</span><h3>本地控制与无界面服务</h3><p>使用 JSON 行协议与持久编辑会话编写脚本。</p><p class=\"plugin-limit\">这是集成开发接口，不是可直接安装的滤镜。</p><a href=\"https://github.com/storytold/photocraft/blob/v0.7.0/docs/control-protocol.md#headless-server\" target=\"_blank\" rel=\"noopener noreferrer\">来源与使用说明 ↗</a></div></div>"
+        }
+      },
+      {
+        "id": "workflows",
+        "title": {
+          "en": "Five community workflow files",
+          "zh": "五个社区示例工作流"
+        },
+        "body": {
+          "en": "<p>These five JSON files come from the bridge author’s example_workflows folder. File and node structure checked; model inference untested. Referenced models and extra nodes are separate dependencies.</p><div class=\"plugin-directory\"><div class=\"plugin-card\"><span class=\"overline\">COMFYUI / JSON</span><h3>Flux.2 round trip</h3><p>Includes Get/Send nodes and an rgthree Power LoRA Loader. Review the referenced LoRA path.</p><p><a href=\"https://github.com/the-aSak/ComfyUI-Photocraft-Bridge/blob/main/example_workflows/Example_Flux2_Bridge_from_and_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">View workflow ↗</a> · <a href=\"https://raw.githubusercontent.com/the-aSak/ComfyUI-Photocraft-Bridge/main/example_workflows/Example_Flux2_Bridge_from_and_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">Open raw JSON ↗</a></p></div><div class=\"plugin-card\"><span class=\"overline\">COMFYUI / JSON</span><h3>Flux.2 Klein 4B bridge</h3><p>Contains a selection-cropping Get node and two Send nodes. Check which outputs you enable.</p><p><a href=\"https://github.com/the-aSak/ComfyUI-Photocraft-Bridge/blob/main/example_workflows/Example_Flux2_Klein_4B_Bridges_from_and_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">View workflow ↗</a> · <a href=\"https://raw.githubusercontent.com/the-aSak/ComfyUI-Photocraft-Bridge/main/example_workflows/Example_Flux2_Klein_4B_Bridges_from_and_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">Open raw JSON ↗</a></p></div><div class=\"plugin-card\"><span class=\"overline\">COMFYUI / JSON</span><h3>Flux.2 Klein Image Edit 4B</h3><p>A Get/Send graph for an image-editing workflow with selection cropping configured.</p><p><a href=\"https://github.com/the-aSak/ComfyUI-Photocraft-Bridge/blob/main/example_workflows/Example_Flux2_Klein_Image_Edit_4B_Bridge_from_and_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">View workflow ↗</a> · <a href=\"https://raw.githubusercontent.com/the-aSak/ComfyUI-Photocraft-Bridge/main/example_workflows/Example_Flux2_Klein_Image_Edit_4B_Bridge_from_and_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">Open raw JSON ↗</a></p></div><div class=\"plugin-card\"><span class=\"overline\">COMFYUI / JSON</span><h3>Krea2 → PhotoCraft</h3><p>References Krea2 UNET, CLIP, VAE and LoRA files; replace the author’s local model paths.</p><p><a href=\"https://github.com/the-aSak/ComfyUI-Photocraft-Bridge/blob/main/example_workflows/Example_Krea2_Bridge_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">View workflow ↗</a> · <a href=\"https://raw.githubusercontent.com/the-aSak/ComfyUI-Photocraft-Bridge/main/example_workflows/Example_Krea2_Bridge_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">Open raw JSON ↗</a></p></div><div class=\"plugin-card\"><span class=\"overline\">COMFYUI / JSON</span><h3>Qwen 2.1 Image Edit</h3><p>Includes a separate reference-image input. Replace the example image before running.</p><p><a href=\"https://github.com/the-aSak/ComfyUI-Photocraft-Bridge/blob/main/example_workflows/Example_Qwen_2.1_Image_Edit_Bridge_from_and_to_PhotoCraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">View workflow ↗</a> · <a href=\"https://raw.githubusercontent.com/the-aSak/ComfyUI-Photocraft-Bridge/main/example_workflows/Example_Qwen_2.1_Image_Edit_Bridge_from_and_to_PhotoCraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">Open raw JSON ↗</a></p></div></div><p>Download the JSON from GitHub and drop it into ComfyUI. Resolve missing nodes, model names, paths and reference images, then try a small image. See the <a href=\"/guides/comfyui/\">ComfyUI bridge guide</a>.</p>",
+          "zh": "<p>以下五个 JSON 均来自桥接作者的 example_workflows 目录，已检查文件与节点结构，未运行模型推理。模型权重、额外节点和字体不会随工作流自动附带。</p><div class=\"plugin-directory\"><div class=\"plugin-card\"><span class=\"overline\">COMFYUI / JSON</span><h3>Flux.2 往返工作流</h3><p>包含 Get/Send 节点与 rgthree Power LoRA Loader；导入后需检查 LoRA 路径。</p><p><a href=\"https://github.com/the-aSak/ComfyUI-Photocraft-Bridge/blob/main/example_workflows/Example_Flux2_Bridge_from_and_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">查看工作流 ↗</a> · <a href=\"https://raw.githubusercontent.com/the-aSak/ComfyUI-Photocraft-Bridge/main/example_workflows/Example_Flux2_Bridge_from_and_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">打开原始 JSON ↗</a></p></div><div class=\"plugin-card\"><span class=\"overline\">COMFYUI / JSON</span><h3>Flux.2 Klein 4B 桥接</h3><p>包含按选区裁切的 Get 节点与两个 Send 节点，运行前检查启用的输出。</p><p><a href=\"https://github.com/the-aSak/ComfyUI-Photocraft-Bridge/blob/main/example_workflows/Example_Flux2_Klein_4B_Bridges_from_and_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">查看工作流 ↗</a> · <a href=\"https://raw.githubusercontent.com/the-aSak/ComfyUI-Photocraft-Bridge/main/example_workflows/Example_Flux2_Klein_4B_Bridges_from_and_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">打开原始 JSON ↗</a></p></div><div class=\"plugin-card\"><span class=\"overline\">COMFYUI / JSON</span><h3>Flux.2 Klein Image Edit 4B</h3><p>用于图像编辑的 Get/Send 工作流，已配置按选区裁切。</p><p><a href=\"https://github.com/the-aSak/ComfyUI-Photocraft-Bridge/blob/main/example_workflows/Example_Flux2_Klein_Image_Edit_4B_Bridge_from_and_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">查看工作流 ↗</a> · <a href=\"https://raw.githubusercontent.com/the-aSak/ComfyUI-Photocraft-Bridge/main/example_workflows/Example_Flux2_Klein_Image_Edit_4B_Bridge_from_and_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">打开原始 JSON ↗</a></p></div><div class=\"plugin-card\"><span class=\"overline\">COMFYUI / JSON</span><h3>Krea2 → PhotoCraft</h3><p>引用 Krea2 UNET、CLIP、VAE 与 LoRA 文件，需要替换作者本地模型路径。</p><p><a href=\"https://github.com/the-aSak/ComfyUI-Photocraft-Bridge/blob/main/example_workflows/Example_Krea2_Bridge_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">查看工作流 ↗</a> · <a href=\"https://raw.githubusercontent.com/the-aSak/ComfyUI-Photocraft-Bridge/main/example_workflows/Example_Krea2_Bridge_to_Photocraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">打开原始 JSON ↗</a></p></div><div class=\"plugin-card\"><span class=\"overline\">COMFYUI / JSON</span><h3>Qwen 2.1 图像编辑</h3><p>包含额外参考图输入，运行前请替换示例图片。</p><p><a href=\"https://github.com/the-aSak/ComfyUI-Photocraft-Bridge/blob/main/example_workflows/Example_Qwen_2.1_Image_Edit_Bridge_from_and_to_PhotoCraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">查看工作流 ↗</a> · <a href=\"https://raw.githubusercontent.com/the-aSak/ComfyUI-Photocraft-Bridge/main/example_workflows/Example_Qwen_2.1_Image_Edit_Bridge_from_and_to_PhotoCraft.json\" target=\"_blank\" rel=\"noopener noreferrer\">打开原始 JSON ↗</a></p></div></div><p>从 GitHub 文件页下载 JSON，再拖入 ComfyUI；核对缺失节点、模型名称、路径与参考图后，先用小图测试。详细步骤见 <a href=\"/zh/guides/comfyui/\">ComfyUI 桥接指南</a>。</p>"
         }
       },
       {
@@ -776,6 +798,39 @@
         "body": {
           "en": "<ol><li>Check the author, supported PhotoCraft version, license and whether a compiled <code>.wasm</code> file is supplied.</li><li>Open a small duplicate image and select a pixel layer.</li><li>In a build that exposes the documented menu, choose <strong>Filter → Plug-ins → Install Plug-in…</strong> and select the module.</li><li>Run the installed filter, inspect its result and confirm Undo works.</li></ol><p>The official preference path is <strong>Edit → Preferences → Plug-ins</strong>. Desktop builds can load an additional plug-ins folder; the web build installs from bytes. If the menu is absent, compare your release with the documentation rather than renaming a Photoshop plug-in.</p>",
           "zh": "<ol><li>检查作者、支持版本、许可，以及是否提供已编译的 <code>.wasm</code> 文件。</li><li>打开小图片的副本，选中像素图层。</li><li>在提供相应菜单的版本中，选择 <strong>Filter → Plug-ins → Install Plug-in…</strong>，选取模块。</li><li>运行滤镜，检查结果，并确认可以撤销。</li></ol><p>官方给出的设置入口为 <strong>Edit → Preferences → Plug-ins</strong>。桌面版可读取额外插件文件夹，网页版从文件字节安装。如果没有该菜单，应核对发行版本与文档，不要通过改扩展名安装 Photoshop 插件。</p>"
+        }
+      },
+      {
+        "id": "cli",
+        "title": {
+          "en": "Try the CLI on a copy",
+          "zh": "使用副本试用 CLI"
+        },
+        "body": {
+          "en": "<p>The CLI is useful for asset pipelines and repeatable exports. Put your own PSD copy at <code>input.psd</code>, then run:</p><pre><code>photocraft-cli info input.psd\nphotocraft-cli convert input.psd preview.png\nphotocraft-cli commands --filter layer\nphotocraft-cli batch --help</code></pre><p><code>info</code> reports document structure; <code>convert</code> exports a separate file. For batches, supply an actions JSON, input folder and separate output folder. Droplets can reuse saved actions with <code>photocraft-cli droplet</code>.</p><p>We used CLI 0.7.0 to test all 14 downloadable PSD templates. <a href=\"/templates/#tested\">Read the actual test scope and results</a>.</p>",
+          "zh": "<p>CLI 适合素材流水线和可重复导出。将自己的 PSD 副本命名为 <code>input.psd</code> 后尝试：</p><pre><code>photocraft-cli info input.psd\nphotocraft-cli convert input.psd preview.png\nphotocraft-cli commands --filter layer\nphotocraft-cli batch --help</code></pre><p><code>info</code>显示文档结构；<code>convert</code>导出新文件。批处理需提供动作 JSON、输入目录与独立输出目录；已保存的 droplet 可通过 <code>photocraft-cli droplet</code> 使用。</p><p>本站已用 CLI 0.7.0 测试全部 14 套 PSD 模板，<a href=\"/zh/templates/#tested\">查看实际测试范围与结果</a>。</p>"
+        }
+      },
+      {
+        "id": "mcp",
+        "title": {
+          "en": "MCP: headless or desktop bridge",
+          "zh": "MCP：无界面引擎或桌面桥接"
+        },
+        "body": {
+          "en": "<p><strong>Headless:</strong> launch <code>photocraft-cli mcp</code> from a compatible client, with explicit <code>--automation-read-root</code> and <code>--automation-write-root</code> folders. It runs its own document session.</p><p><strong>Desktop bridge:</strong> start PhotoCraft with its control channel, then use <code>photocraft-cli mcp --bridge 127.0.0.1:7878 --control-token-file /private/control.token</code>. Both processes use the same token; file-access roots belong on the desktop launch command. Tools can inspect, open, save and render documents. UI tools require bridge mode.</p><p>Keep the token private and the connection on loopback. Client configuration varies; follow <a href=\"https://github.com/storytold/photocraft/blob/v0.7.0/docs/control-protocol.md#mcp-bridge\" target=\"_blank\" rel=\"noopener noreferrer\">the official setup ↗</a>.</p>",
+          "zh": "<p><strong>无界面模式：</strong>由兼容客户端启动 <code>photocraft-cli mcp</code>，明确配置 <code>--automation-read-root</code> 与 <code>--automation-write-root</code> 目录，使用独立文档会话。</p><p><strong>桌面桥接：</strong>先开启 PhotoCraft 控制通道，再启动 <code>photocraft-cli mcp --bridge 127.0.0.1:7878 --control-token-file /private/control.token</code>。两进程使用同一令牌，文件访问目录在桌面启动命令中配置。支持文档检查、打开、保存与预览；UI 工具需要桥接模式。</p><p>令牌保密、连接仅限本机；客户端配置方式不同，请遵循<a href=\"https://github.com/storytold/photocraft/blob/v0.7.0/docs/control-protocol.md#mcp-bridge\" target=\"_blank\" rel=\"noopener noreferrer\">官方配置说明 ↗</a>。</p>"
+        }
+      },
+      {
+        "id": "troubleshooting",
+        "title": {
+          "en": "Common integration problems",
+          "zh": "常见集成问题"
+        },
+        "body": {
+          "en": "<ul><li><strong>Plug-in missing after restart:</strong> verify the additional plug-ins folder is enabled and contains the compiled WASM.</li><li><strong>ComfyUI cannot connect:</strong> use the PhotoCraft launch command printed by the bridge and match the exchange directory.</li><li><strong>Wrong mask area:</strong> compare Quick Mask semantics and the bridge’s invert-mask option.</li><li><strong>Shifted AI result:</strong> connect Get’s target to Send and check crop/resize settings.</li><li><strong>Missing workflow nodes:</strong> install the referenced node packages and select models present on your machine.</li><li><strong>Changed image precision:</strong> the ComfyUI bridge exchanges 8-bit PNG; do not assume a 16-bit round trip.</li></ul><p>For a repeatable check: keep the input, record versions, export a reference, run one operation, save a copy and reopen it. Compare both appearance and editability.</p>",
+          "zh": "<ul><li><strong>重启后插件消失：</strong>检查附加插件目录是否启用，目录内是否有编译好的 WASM。</li><li><strong>ComfyUI 连接失败：</strong>使用桥接输出的 PhotoCraft 启动命令，并核对交换目录。</li><li><strong>蒙版区域相反：</strong>检查 Quick Mask 含义及桥接的 invert-mask 选项。</li><li><strong>生成结果错位：</strong>连接 Get 的 target 至 Send，并检查裁切、缩放设置。</li><li><strong>工作流缺失节点：</strong>安装对应节点包，并选择本机已下载的模型。</li><li><strong>图像精度变化：</strong>桥接通过 8 位 PNG 交换图像，不保证 16 位往返。</li></ul><p>建议保留输入、记录版本、导出参考图、执行单次操作，再另存重开，比较外观与可编辑性。</p>"
         }
       },
       {
@@ -792,16 +847,28 @@
     ],
     "sources": [
       {
-        "url": "https://github.com/storytold/photocraft/blob/main/docs/plugins.md",
-        "label": "Official plug-in API"
+        "url": "https://github.com/storytold/photocraft/blob/v0.7.0/docs/plugins.md",
+        "label": "Official WASM plug-in API · v0.7.0"
       },
       {
-        "url": "https://github.com/storytold/photocraft/tree/main/examples/plugins/invert-rs",
-        "label": "Official Invert source example"
+        "url": "https://github.com/storytold/photocraft/tree/v0.7.0/examples/plugins/invert-rs",
+        "label": "Official Invert source example · v0.7.0"
+      },
+      {
+        "url": "https://github.com/storytold/photocraft/blob/v0.7.0/docs/control-protocol.md",
+        "label": "Official control protocol and MCP · v0.7.0"
+      },
+      {
+        "url": "https://github.com/storytold/photocraft/blob/v0.7.0/apps/photocraft-cli/src/lib.rs",
+        "label": "Official CLI command reference · v0.7.0"
       },
       {
         "url": "https://github.com/the-aSak/ComfyUI-Photocraft-Bridge",
-        "label": "Community ComfyUI bridge"
+        "label": "ComfyUI–PhotoCraft Bridge · author README"
+      },
+      {
+        "url": "https://github.com/the-aSak/ComfyUI-Photocraft-Bridge/tree/main/example_workflows",
+        "label": "Five workflow JSON files · author repository"
       }
     ],
     "related": [
