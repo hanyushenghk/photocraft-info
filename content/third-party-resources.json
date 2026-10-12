@@ -1,0 +1,290 @@
+[
+  {
+    "id": "external-flyer-psd-template-1",
+    "kind": "template",
+    "title": {
+      "en": "Conference Flyer",
+      "zh": "会议活动传单"
+    },
+    "description": {
+      "en": "A compact typographic flyer for an event or invitation.",
+      "zh": "适合活动邀请与宣传的文字排版传单。"
+    },
+    "format": "PSD",
+    "preview": "/assets/resources/third-party/flyer-psd-template-1.jpg",
+    "preview_width": 594,
+    "preview_height": 274,
+    "width": 1287,
+    "height": 1795,
+    "color_mode": "RGB",
+    "layers": 60,
+    "text_layers": 29,
+    "author": "Free PSD Files",
+    "source": "https://freepsdfiles.net/print-templates/flyer-psd-template-1",
+    "license_url": "https://freepsdfiles.net/terms-of-use",
+    "fonts": "Canter, Deming, Mission Gothic",
+    "checked": "2026-10-12",
+    "original_archive_sha256": "8e06b7ca677cb9ab719ab3c578e1b78dbc7231fe47be41b570cca533cfe888ab",
+    "psd_sha256": "e28cbec9252da0c306b3e922e37bf431d14dcdcc9f5006f67bf3975723313e25",
+    "downloads": [
+      {
+        "label": "ZIP",
+        "url": "/downloads/third-party/flyer-psd-template-1.zip",
+        "bytes": 587089,
+        "sha256": "b3eebf81bd7b4439ef39cb8bbc590a1413ab1de73e3d394f25a028f58f20a765"
+      }
+    ]
+  },
+  {
+    "id": "external-free-flyer-template",
+    "kind": "template",
+    "title": {
+      "en": "Business Flyer",
+      "zh": "企业宣传单"
+    },
+    "description": {
+      "en": "A promotional flyer with separate content and graphic layers.",
+      "zh": "分层管理文字与图形的企业推广传单。"
+    },
+    "format": "PSD",
+    "preview": "/assets/resources/third-party/free-flyer-template.jpg",
+    "preview_width": 594,
+    "preview_height": 274,
+    "width": 1242,
+    "height": 1750,
+    "color_mode": "CMYK",
+    "layers": 58,
+    "text_layers": 12,
+    "author": "Free PSD Files",
+    "source": "https://freepsdfiles.net/print-templates/free-flyer-template",
+    "license_url": "https://freepsdfiles.net/terms-of-use",
+    "fonts": "Impact, Georgia, Arial",
+    "checked": "2026-10-12",
+    "original_archive_sha256": "2cfa3ec42a10233feebc807f5e37a1832eb7ca4f0dc2fbc9c17e8d62e1cfd8ec",
+    "psd_sha256": "ba905a210354a407cf951c03336a8d90b61b139822c856930b36189088dc50f8",
+    "downloads": [
+      {
+        "label": "ZIP",
+        "url": "/downloads/third-party/free-flyer-template.zip",
+        "bytes": 1159658,
+        "sha256": "7337e9622146b79abe2c6270331fd02b14fa26e18f0062369c1586dc83b8b0ce"
+      }
+    ]
+  },
+  {
+    "id": "external-brochure-template-psd-2",
+    "kind": "template",
+    "title": {
+      "en": "Corporate Brochure 02",
+      "zh": "企业折页 02"
+    },
+    "description": {
+      "en": "A brochure layout for company introductions and service information.",
+      "zh": "适合公司介绍与服务信息的宣传折页版式。"
+    },
+    "format": "PSD",
+    "preview": "/assets/resources/third-party/brochure-template-psd-2.jpg",
+    "preview_width": 594,
+    "preview_height": 274,
+    "width": 3347,
+    "height": 2597,
+    "color_mode": "CMYK",
+    "layers": 81,
+    "text_layers": 40,
+    "author": "Free PSD Files",
+    "source": "https://freepsdfiles.net/print-templates/brochure-template-psd-2",
+    "license_url": "https://freepsdfiles.net/terms-of-use",
+    "fonts": "Klinic Slab, Maven Pro",
+    "checked": "2026-10-12",
+    "original_archive_sha256": "320565abf28aed06bae3dc9e9f92613cc5d332dc88829018181fe354aaf99eea",
+    "psd_sha256": "14ab70b7663376ad8931d06ef81111c85180685bb70faf1c75c8f9488ecfdfe5",
+    "downloads": [
+      {
+        "label": "ZIP",
+        "url": "/downloads/third-party/brochure-template-psd-2.zip",
+        "bytes": 1976058,
+        "sha256": "cf87b0159c0bbe8f4e9b406a0872c41344f761dd4ea8cfdc2101f5e350a63f1c"
+      }
+    ]
+  },
+  {
+    "id": "external-brochure-template-psd-1",
+    "kind": "template",
+    "title": {
+      "en": "Corporate Brochure 01",
+      "zh": "企业折页 01"
+    },
+    "description": {
+      "en": "A clean brochure layout for services, contact details and an about section.",
+      "zh": "适合服务、联系方式与公司简介的简洁折页。"
+    },
+    "format": "PSD",
+    "preview": "/assets/resources/third-party/brochure-template-psd-1.jpg",
+    "preview_width": 594,
+    "preview_height": 274,
+    "width": 3347,
+    "height": 2597,
+    "color_mode": "CMYK",
+    "layers": 58,
+    "text_layers": 24,
+    "author": "Free PSD Files",
+    "source": "https://freepsdfiles.net/print-templates/brochure-template-psd-1",
+    "license_url": "https://freepsdfiles.net/terms-of-use",
+    "fonts": "Fairview, Klinic Slab",
+    "checked": "2026-10-12",
+    "original_archive_sha256": "849a9f748c4c7cdb84bfaaa84c65d11dda0f7c17601b8667047ff97b445b1c85",
+    "psd_sha256": "87d6c8d334650c6281f59692cf720574a46c677c5d4a55d78d702f6f0edc28a8",
+    "downloads": [
+      {
+        "label": "ZIP",
+        "url": "/downloads/third-party/brochure-template-psd-1.zip",
+        "bytes": 4374840,
+        "sha256": "028475027f07a01263f8bf01a16d561278d9f2aed110f80b1d93bebb59f2bb07"
+      }
+    ]
+  },
+  {
+    "id": "external-leaflet-psd-template",
+    "kind": "template",
+    "title": {
+      "en": "Business Leaflet",
+      "zh": "商务宣传折页"
+    },
+    "description": {
+      "en": "A structured leaflet for technology, construction or service businesses.",
+      "zh": "适合科技、工程与服务企业的结构化宣传折页。"
+    },
+    "format": "PSD",
+    "preview": "/assets/resources/third-party/leaflet-psd-template.jpg",
+    "preview_width": 594,
+    "preview_height": 274,
+    "width": 3350,
+    "height": 2600,
+    "color_mode": "CMYK",
+    "layers": 65,
+    "text_layers": 21,
+    "author": "Free PSD Files",
+    "source": "https://freepsdfiles.net/print-templates/leaflet-psd-template",
+    "license_url": "https://freepsdfiles.net/terms-of-use",
+    "fonts": "Ubuntu",
+    "checked": "2026-10-12",
+    "original_archive_sha256": "f7526dfc19513729ffb40c754d728818c3cdeea24908a93e9062a3bb1baca058",
+    "psd_sha256": "ffd3e05118c480dac3de16aa87ce736049a922b1df47a5eeb5f30c4c7ac03873",
+    "downloads": [
+      {
+        "label": "ZIP",
+        "url": "/downloads/third-party/leaflet-psd-template.zip",
+        "bytes": 2558592,
+        "sha256": "31643cbba5497ae0c37e27d78bca3f6cd0ba5484b255edcccf6b9aabc7182887"
+      }
+    ]
+  },
+  {
+    "id": "external-free-psd-modern-business-resume",
+    "kind": "template",
+    "title": {
+      "en": "Modern Business Resume",
+      "zh": "现代商务简历"
+    },
+    "description": {
+      "en": "A resume layout with sections for experience, education and skills.",
+      "zh": "包含经历、教育与技能分区的商务简历。"
+    },
+    "format": "PSD",
+    "preview": "/assets/resources/third-party/free-psd-modern-business-resume.jpg",
+    "preview_width": 594,
+    "preview_height": 274,
+    "width": 2550,
+    "height": 3300,
+    "color_mode": "RGB",
+    "layers": 144,
+    "text_layers": 37,
+    "author": "Free PSD Files",
+    "source": "https://freepsdfiles.net/print-templates/free-psd-modern-business-resume",
+    "license_url": "https://freepsdfiles.net/terms-of-use",
+    "fonts": "Helvetica Neue",
+    "checked": "2026-10-12",
+    "original_archive_sha256": "3ebe7e9bb57e95710255513da465e232a2a8dd1eaa350a00b6f098696f0cbc10",
+    "psd_sha256": "0bb344fd3e24f105de6c9581988c7c4c2966abb5c7dd757c137846638dcd7010",
+    "downloads": [
+      {
+        "label": "ZIP",
+        "url": "/downloads/third-party/free-psd-modern-business-resume.zip",
+        "bytes": 1700807,
+        "sha256": "14be53ff68f13d05eacfa35dce7fce68c6fdc7493371a9c8db4692d4977253d1"
+      }
+    ]
+  },
+  {
+    "id": "external-free-psd-professional-business-resume",
+    "kind": "template",
+    "title": {
+      "en": "Professional Resume",
+      "zh": "专业求职简历"
+    },
+    "description": {
+      "en": "A professional resume layout with clear information hierarchy.",
+      "zh": "信息层级清晰的专业求职简历版式。"
+    },
+    "format": "PSD",
+    "preview": "/assets/resources/third-party/free-psd-professional-business-resume.jpg",
+    "preview_width": 594,
+    "preview_height": 274,
+    "width": 2550,
+    "height": 3300,
+    "color_mode": "RGB",
+    "layers": 146,
+    "text_layers": 72,
+    "author": "Free PSD Files",
+    "source": "https://freepsdfiles.net/print-templates/free-psd-professional-business-resume",
+    "license_url": "https://freepsdfiles.net/terms-of-use",
+    "fonts": "Museo Sans",
+    "checked": "2026-10-12",
+    "original_archive_sha256": "770ff66491f8cbed4cb7c3fccd6569cec2fe135adbc0fe8888a280bd22ab7959",
+    "psd_sha256": "7588c33991942556ff375f30d379e8d2e8b129c8679032805ac0a22c03d0ca39",
+    "downloads": [
+      {
+        "label": "ZIP",
+        "url": "/downloads/third-party/free-psd-professional-business-resume.zip",
+        "bytes": 1244808,
+        "sha256": "d1fb04511e02d26b221e23ce0a2465f81f3f1e7d99c9f78fc6e9e1317cfcfa9d"
+      }
+    ]
+  },
+  {
+    "id": "external-restaurant-menu-psd-template",
+    "kind": "template",
+    "title": {
+      "en": "Restaurant Menu",
+      "zh": "餐厅菜单"
+    },
+    "description": {
+      "en": "A restaurant menu composition for food names, descriptions and prices.",
+      "zh": "适合菜名、说明和价格展示的餐厅菜单版式。"
+    },
+    "format": "PSD",
+    "preview": "/assets/resources/third-party/restaurant-menu-psd-template.jpg",
+    "preview_width": 594,
+    "preview_height": 274,
+    "width": 3142,
+    "height": 2230,
+    "color_mode": "RGB",
+    "layers": 71,
+    "text_layers": 18,
+    "author": "Free PSD Files",
+    "source": "https://freepsdfiles.net/print-templates/restaurant-menu-psd-template",
+    "license_url": "https://freepsdfiles.net/terms-of-use",
+    "fonts": "Lavanderia, Geared",
+    "checked": "2026-10-12",
+    "original_archive_sha256": "ba3c808b06a445e4263579b7ad2fe97564ea872847786a24df12e00af59e3097",
+    "psd_sha256": "c3381507f1d39123844c94a7fb2609e8cc8c3be4fbbaaf5cc175037f5b3ffb24",
+    "downloads": [
+      {
+        "label": "ZIP",
+        "url": "/downloads/third-party/restaurant-menu-psd-template.zip",
+        "bytes": 5860633,
+        "sha256": "dd3bb1dd470d48cd81ef0adce512d6f45a923b7ea907312e0364431a05981000"
+      }
+    ]
+  }
+]

@@ -13,3 +13,5 @@
 
 @media(min-width:761px) and (max-width:1000px){.topbar .nav{gap:12px;padding-left:22px;padding-right:22px}.topbar .brand{font-size:20px;gap:8px}.topbar .brand small{display:none}.topbar .navlinks{display:flex;gap:10px;font-size:12px}.topbar .nav-actions{gap:8px}.topbar .menubtn{display:none}}
 @media(min-width:761px){.topbar .mobile-nav.open{display:none}}
+
+.asset-content .asset-attribution{font-size:11px;line-height:1.7;color:#68705f}.asset-attribution a{color:#a74923;text-decoration:underline;text-underline-offset:3px}

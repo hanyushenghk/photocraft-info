@@ -894,8 +894,8 @@
       "zh": "免费 PhotoCraft 模板与素材下载"
     },
     "intro": {
-      "en": "Download original layered PSD templates, PNG backgrounds and CUBE color presets. Clear previews, direct links and permission for personal and commercial projects.",
-      "zh": "直接下载原创分层 PSD 模板、PNG 背景和 CUBE 调色预设。提供预览、使用说明及个人与商业项目授权。"
+      "en": "Download 14 template packs, 4 PNG textures and 4 CUBE presets. Browse original designs and credited third-party PSDs with clear usage notes.",
+      "zh": "下载 14 套模板、4 款 PNG 纹理与 4 款 CUBE 调色预设。浏览本站原创与注明来源的第三方 PSD，查看使用方法与授权。"
     },
     "category": {
       "en": "TEMPLATES & RESOURCES",
@@ -910,8 +910,8 @@
           "zh": "选择合适的下载文件"
         },
         "body": {
-          "en": "<p><strong>Template ZIP:</strong> layered PSD, ready-to-use PNG, optional SVG vector source, bilingual README and license. <strong>PSD:</strong> download the layered document alone. <strong>PNG:</strong> download a flattened image ready to place in a layout. <strong>CUBE:</strong> download a color preset.</p><p>All 14 resources are original geometric layouts, procedural textures or mathematical color looks produced for this independent site. They contain no third-party photographs and no bundled font files. Template lettering is in English as an example; replace it with your own language.</p><p><a href=\"/downloads/LICENSE.txt\" download>Download the permission file</a> · <a href=\"/downloads/README.txt\" download>Download the bilingual instructions</a></p>",
-          "zh": "<p><strong>模板 ZIP：</strong>包含分层 PSD、可直接使用的 PNG、可选 SVG 矢量源码、中英文 README 与授权。<strong>PSD：</strong>仅下载分层文档。<strong>PNG：</strong>下载可放入作品的平面图片。<strong>CUBE：</strong>下载调色预设。</p><p>14 份资源均为本站制作的原创几何版式、程序纹理或数学调色风格，不包含第三方照片和字体文件。模板中的英文是示例文案，可替换成你需要的语言。</p><p><a href=\"/downloads/LICENSE.txt\" download>下载授权说明</a> · <a href=\"/downloads/README.txt\" download>下载中英文使用说明</a></p>"
+          "en": "<p><strong>Template ZIP:</strong> layered PSD, ready-to-use PNG, optional SVG vector source, bilingual README and license. <strong>PSD:</strong> download the layered document alone. <strong>PNG:</strong> download a flattened image ready to place in a layout. <strong>CUBE:</strong> download a color preset.</p><p>The 14-asset starter bundle contains original geometric layouts, procedural textures or mathematical color looks produced for this independent site. They contain no third-party photographs and no bundled font files. Template lettering is in English as an example; replace it with your own language.</p><p><a href=\"/downloads/LICENSE.txt\" download>Download the permission file</a> · <a href=\"/downloads/README.txt\" download>Download the bilingual instructions</a></p><p><strong>Eight additional third-party templates:</strong> two flyers, two brochures, a business leaflet, two resumes and a restaurant menu. Each ZIP preserves the original PSD and adds source/permission notes. These are separate downloads, not part of the original-assets bundle.</p>",
+          "zh": "<p><strong>模板 ZIP：</strong>包含分层 PSD、可直接使用的 PNG、可选 SVG 矢量源码、中英文 README 与授权。<strong>PSD：</strong>仅下载分层文档。<strong>PNG：</strong>下载可放入作品的平面图片。<strong>CUBE：</strong>下载调色预设。</p><p>14 份原创资源包内均为本站制作的原创几何版式、程序纹理或数学调色风格，不包含第三方照片和字体文件。模板中的英文是示例文案，可替换成你需要的语言。</p><p><a href=\"/downloads/LICENSE.txt\" download>下载授权说明</a> · <a href=\"/downloads/README.txt\" download>下载中英文使用说明</a></p><p><strong>另新增 8 套第三方模板：</strong>两款传单、两款企业折页、一款商务折页、两款简历及餐厅菜单。每份 ZIP 保留原始 PSD，并增加来源与许可说明。这些单独下载，不包含在本站原创资源包内。</p>"
         }
       },
       {
@@ -921,8 +921,8 @@
           "zh": "编辑分层模板"
         },
         "body": {
-          "en": "<ol><li>Unzip the pack and open its PSD using File → Open.</li><li>Find the separate background, decorative shapes, image placeholder and sample lettering layers.</li><li>To replace words, hide <strong>Sample lettering - hide and replace</strong> and use the Type tool to add new text. The included PSD lettering is rasterized, not live type.</li><li>Replace the image placeholder with your own image on a new layer. Move and resize it to fit.</li><li>Save to a new filename and reopen it before exporting PNG or JPEG.</li></ol><p>The optional SVG keeps text elements editable in a vector editor. Font substitution may change line lengths. We do not claim PhotoCraft SVG import support or include smart-object mockups.</p>",
-          "zh": "<ol><li>解压模板包，通过 File → Open 打开 PSD。</li><li>找到独立的背景、装饰形状、图片占位和示例文字图层。</li><li>修改文案时，隐藏 <strong>Sample lettering - hide and replace</strong> 图层，再使用文字工具输入。PSD 示例文字已栅格化，不能直接当文字图层编辑。</li><li>将自己的图片放到新图层，替换占位区域，并调整位置和大小。</li><li>另存为新文件，重新打开确认后再导出 PNG 或 JPEG。</li></ol><p>可选 SVG 在矢量编辑器中保留文字元素，字体替换可能影响排版。本站不宣称 PhotoCraft 支持 SVG 导入，也不将这些版式标为智能对象样机。</p>"
+          "en": "<p>The following lettering instructions apply to our six original layouts. Third-party PSDs contain text layers, but missing fonts, effects and PhotoCraft editing behavior still need checking on a copy.</p><ol><li>Unzip the pack and open its PSD using File → Open.</li><li>Find the separate background, decorative shapes, image placeholder and sample lettering layers.</li><li>To replace words, hide <strong>Sample lettering - hide and replace</strong> and use the Type tool to add new text. The included PSD lettering is rasterized, not live type.</li><li>Replace the image placeholder with your own image on a new layer. Move and resize it to fit.</li><li>Save to a new filename and reopen it before exporting PNG or JPEG.</li></ol><p>The optional SVG keeps text elements editable in a vector editor. Font substitution may change line lengths. We do not claim PhotoCraft SVG import support or include smart-object mockups.</p>",
+          "zh": "<p>以下示例文字替换方法适用于本站六套原创版式。第三方 PSD 含文字图层，但缺失字体、图层效果及 PhotoCraft 编辑行为仍需使用副本检查。</p><ol><li>解压模板包，通过 File → Open 打开 PSD。</li><li>找到独立的背景、装饰形状、图片占位和示例文字图层。</li><li>修改文案时，隐藏 <strong>Sample lettering - hide and replace</strong> 图层，再使用文字工具输入。PSD 示例文字已栅格化，不能直接当文字图层编辑。</li><li>将自己的图片放到新图层，替换占位区域，并调整位置和大小。</li><li>另存为新文件，重新打开确认后再导出 PNG 或 JPEG。</li></ol><p>可选 SVG 在矢量编辑器中保留文字元素，字体替换可能影响排版。本站不宣称 PhotoCraft 支持 SVG 导入，也不将这些版式标为智能对象样机。</p>"
         }
       },
       {
@@ -943,8 +943,8 @@
           "zh": "授权与验证范围"
         },
         "body": {
-          "en": "<p><strong>Commercial use permitted.</strong> You may use, modify and redistribute these original assets in personal work, client projects and finished products. Attribution is appreciated but not required. This permission applies to the files in this collection, not to linked third-party resources or software.</p><p>Validation includes PSD layer decoding and composite comparison, PNG decoding, CUBE entry counts and ranges, and ZIP integrity. <strong>We have not opened these files inside PhotoCraft.</strong> Keep originals and test a copy before relying on a production workflow. Assets are provided as-is without warranty.</p><p>Created October 12, 2026 · Collection v1.0 · Independent of ArtCraft and Adobe.</p>",
-          "zh": "<p><strong>允许商业使用。</strong>可在个人作品、客户项目与成品中使用、修改和再分发这些原创资源，欢迎署名但不强制。该授权仅适用于本资源包，不适用于外部链接素材或第三方软件。</p><p>已验证 PSD 图层读取及合成图一致性、PNG 解码、CUBE 数据行数与范围、ZIP 完整性。<strong>尚未在 PhotoCraft 应用中打开实测。</strong>正式使用前保留原文件，并用副本验证工作流。资源按现状提供，不作保证。</p><p>创建日期：2026 年 10 月 12 日 · 资源包 v1.0 · 与 ArtCraft、Adobe 无隶属关系。</p>"
+          "en": "<p><strong>Commercial use permitted.</strong> You may use, modify and redistribute these original assets in personal work, client projects and finished products. Attribution is appreciated but not required. This permission applies to the files in this collection, not to linked third-party resources or software.</p><p>Validation includes PSD layer decoding and composite comparison, PNG decoding, CUBE entry counts and ranges, and ZIP integrity. <strong>We have not opened these files inside PhotoCraft.</strong> Keep originals and test a copy before relying on a production workflow. Assets are provided as-is without warranty.</p><p>Created October 12, 2026 · Collection v1.0 · Independent of ArtCraft and Adobe.</p><p><strong>Third-party templates have separate terms.</strong> Free PSD Files permits sharing its own resources with a backlink to the exact resource page, and prohibits selling or sublicensing source files. Each card and ZIP includes that source. Font files are not supplied. We checked ZIP integrity, parsed the PSD layers and decoded its embedded composite; this is not a PhotoCraft compatibility test.</p>",
+          "zh": "<p><strong>允许商业使用。</strong>可在个人作品、客户项目与成品中使用、修改和再分发这些原创资源，欢迎署名但不强制。该授权仅适用于本资源包，不适用于外部链接素材或第三方软件。</p><p>已验证 PSD 图层读取及合成图一致性、PNG 解码、CUBE 数据行数与范围、ZIP 完整性。<strong>尚未在 PhotoCraft 应用中打开实测。</strong>正式使用前保留原文件，并用副本验证工作流。资源按现状提供，不作保证。</p><p>创建日期：2026 年 10 月 12 日 · 资源包 v1.0 · 与 ArtCraft、Adobe 无隶属关系。</p><p><strong>第三方模板适用独立条款。</strong>Free PSD Files 允许在保留具体资源页面链接的情况下分享其自制资源，不得出售或转授权源文件。卡片与 ZIP 均包含来源，未附字体文件。本站已检查 ZIP 完整性、解析 PSD 图层并解码内嵌合成图，不代表 PhotoCraft 兼容性实测通过。</p>"
         }
       },
       {
@@ -971,6 +971,10 @@
       {
         "url": "https://resourceboy.com/license/",
         "label": "Resource Boy license"
+      },
+      {
+        "url": "https://freepsdfiles.net/terms-of-use",
+        "label": "Free PSD Files redistribution and usage terms"
       }
     ],
     "related": [

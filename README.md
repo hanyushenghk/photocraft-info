@@ -72,3 +72,16 @@ To regenerate assets: install `scripts/requirements-resources.txt`, then run
 `python scripts/build_resources.py`, `python scripts/build_content.py`,
 `python scripts/check_resources.py` and `python scripts/check_site.py`.
 The generator uses DejaVu Sans from the host; no font files are distributed.
+
+
+## Third-party template collection
+
+Eight PSD template packs from Free PSD Files are listed in
+`content/third-party-resources.json` and hosted under `dist/downloads/third-party/`.
+The original PSD bytes are preserved; each ZIP adds SOURCE-AND-LICENSE.txt with
+the author, specific source URL, publisher terms and font/compatibility notes.
+Publisher terms permit redistribution of its own resources with source backlinks;
+these files are not covered by the original-assets license and cannot be resold.
+They are intentionally excluded from the 14-original-asset starter ZIP.
+Validation: ZIP integrity, PSD parsing, embedded composite decoding and SHA-256.
+PhotoCraft application compatibility remains untested.

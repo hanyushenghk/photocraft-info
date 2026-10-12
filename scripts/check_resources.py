@@ -25,3 +25,15 @@ for p in (dist/'downloads').glob('*.zip'):
   assert z.testzip() is None;assert 'LICENSE.txt' in z.namelist() and 'README.txt' in z.namelist()
   assert all(not n.startswith('/') and '..' not in Path(n).parts for n in z.namelist())
 print('PASS: 14 assets; PSD layers/composites, PNG decoding, LUT size/range, ZIP integrity and catalog hashes.')
+
+third=json.loads((ROOT/'content/third-party-resources.json').read_text())
+for item in third:
+ d=item['downloads'][0];path=dist/d['url'].lstrip('/')
+ assert path.stat().st_size==d['bytes']
+ assert hashlib.sha256(path.read_bytes()).hexdigest()==d['sha256']
+ with zipfile.ZipFile(path) as z:
+  assert z.testzip() is None
+  assert item['source'] in z.read('SOURCE-AND-LICENSE.txt').decode()
+  names=[n for n in z.namelist() if n.lower().endswith('.psd')];assert len(names)==1
+  raw=z.read(names[0]);assert hashlib.sha256(raw).hexdigest()==item['psd_sha256']
+print(f'PASS: {len(third)} attributed third-party template archives and unmodified PSD hashes.')
