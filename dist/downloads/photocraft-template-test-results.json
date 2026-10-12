@@ -1,0 +1,1400 @@
+{
+  "tested_at": "2026-10-12",
+  "engine": "photocraft-cli 0.7.0 (792616159, 2026-10-11)",
+  "platform": "Linux x86_64",
+  "release_url": "https://github.com/storytold/photocraft/releases/tag/v0.7.0",
+  "release_sha256": "641f831252fd31b43ee1a12e572d7442e5652c2e5bf623de085741c370f0c91d",
+  "scope": "Official headless engine; not desktop GUI testing. One edit per template, not every effect or text layer. No additional fonts installed. CMYK reference comparisons use Pillow RGB conversion, not a color-managed proof.",
+  "results": [
+    {
+      "id": "social-launch",
+      "title": {
+        "en": "Fresh Perspective · Social Post",
+        "zh": "全新视角 · 社交帖子"
+      },
+      "sha256": "0eb47dd3f94650e37ddacf12071f09431140813a05bc84bfa4752dd8a6ba293e",
+      "tests": {
+        "open": {
+          "exit_code": 0,
+          "seconds": 0.052,
+          "stderr": ""
+        },
+        "png_export": {
+          "exit_code": 0,
+          "seconds": 0.087,
+          "stderr": "warning: 4 layer(s) flattened; layers, masks and blend modes are not kept\n"
+        },
+        "save_psd": {
+          "exit_code": 0,
+          "seconds": 0.101,
+          "stderr": ""
+        },
+        "reopen_psd": {
+          "exit_code": 0,
+          "seconds": 0.045,
+          "stderr": "",
+          "layer_count": 4,
+          "text_layer_count": 0,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_psd": {
+          "exit_code": 0,
+          "seconds": 0.085,
+          "stderr": "warning: 4 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "save_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.16,
+          "stderr": ""
+        },
+        "reopen_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.029,
+          "stderr": "",
+          "layer_count": 4,
+          "text_layer_count": 0,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.067,
+          "stderr": "warning: 4 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "edit": {
+          "exit_code": 0,
+          "seconds": 0.172,
+          "stderr": "",
+          "command": "layer.setProps"
+        },
+        "edit_reopen": {
+          "exit_code": 0,
+          "seconds": 0.03,
+          "stderr": "",
+          "change_persisted": true
+        },
+        "edited_render": {
+          "exit_code": 0,
+          "stderr": "warning: 4 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "changed_pixels": 30522
+        }
+      },
+      "width": 1080,
+      "height": 1080,
+      "mode": "Rgb",
+      "layer_count": 4,
+      "text_layer_count": 0,
+      "warnings": [],
+      "expected_layer_count": 4,
+      "reference_diff": {
+        "mean_abs_8bit": 0.0,
+        "max_abs_8bit": 0,
+        "pixels_delta_gt_10_pct": 0.0
+      }
+    },
+    {
+      "id": "video-cover",
+      "title": {
+        "en": "The Creative Edit · Video Cover",
+        "zh": "创意时刻 · 视频封面"
+      },
+      "sha256": "b9396a08fde2d362b5d443853a999b5893cf9c824fef8ff8d69b7f7178eaca55",
+      "tests": {
+        "open": {
+          "exit_code": 0,
+          "seconds": 0.034,
+          "stderr": ""
+        },
+        "png_export": {
+          "exit_code": 0,
+          "seconds": 0.063,
+          "stderr": "warning: 4 layer(s) flattened; layers, masks and blend modes are not kept\n"
+        },
+        "save_psd": {
+          "exit_code": 0,
+          "seconds": 0.069,
+          "stderr": ""
+        },
+        "reopen_psd": {
+          "exit_code": 0,
+          "seconds": 0.032,
+          "stderr": "",
+          "layer_count": 4,
+          "text_layer_count": 0,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_psd": {
+          "exit_code": 0,
+          "seconds": 0.067,
+          "stderr": "warning: 4 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "save_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.121,
+          "stderr": ""
+        },
+        "reopen_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.027,
+          "stderr": "",
+          "layer_count": 4,
+          "text_layer_count": 0,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.062,
+          "stderr": "warning: 4 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "edit": {
+          "exit_code": 0,
+          "seconds": 0.13,
+          "stderr": "",
+          "command": "layer.setProps"
+        },
+        "edit_reopen": {
+          "exit_code": 0,
+          "seconds": 0.024,
+          "stderr": "",
+          "change_persisted": true
+        },
+        "edited_render": {
+          "exit_code": 0,
+          "stderr": "warning: 4 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "changed_pixels": 59114
+        }
+      },
+      "width": 1280,
+      "height": 720,
+      "mode": "Rgb",
+      "layer_count": 4,
+      "text_layer_count": 0,
+      "warnings": [],
+      "expected_layer_count": 4,
+      "reference_diff": {
+        "mean_abs_8bit": 0.0,
+        "max_abs_8bit": 0,
+        "pixels_delta_gt_10_pct": 0.0
+      }
+    },
+    {
+      "id": "vertical-story",
+      "title": {
+        "en": "Next Chapter · Story",
+        "zh": "下一章 · 竖版故事"
+      },
+      "sha256": "9acb9dcb22d50c29c2b7f15c6328c8df34756877b2ac0137feadfdbfaa7a789d",
+      "tests": {
+        "open": {
+          "exit_code": 0,
+          "seconds": 0.07,
+          "stderr": ""
+        },
+        "png_export": {
+          "exit_code": 0,
+          "seconds": 0.141,
+          "stderr": "warning: 3 layer(s) flattened; layers, masks and blend modes are not kept\n"
+        },
+        "save_psd": {
+          "exit_code": 0,
+          "seconds": 0.153,
+          "stderr": ""
+        },
+        "reopen_psd": {
+          "exit_code": 0,
+          "seconds": 0.066,
+          "stderr": "",
+          "layer_count": 3,
+          "text_layer_count": 0,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_psd": {
+          "exit_code": 0,
+          "seconds": 0.133,
+          "stderr": "warning: 3 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "save_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.207,
+          "stderr": ""
+        },
+        "reopen_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.034,
+          "stderr": "",
+          "layer_count": 3,
+          "text_layer_count": 0,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.112,
+          "stderr": "warning: 3 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "edit": {
+          "exit_code": 0,
+          "seconds": 0.208,
+          "stderr": "",
+          "command": "layer.setProps"
+        },
+        "edit_reopen": {
+          "exit_code": 0,
+          "seconds": 0.039,
+          "stderr": "",
+          "change_persisted": true
+        },
+        "edited_render": {
+          "exit_code": 0,
+          "stderr": "warning: 3 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "changed_pixels": 75910
+        }
+      },
+      "width": 1080,
+      "height": 1920,
+      "mode": "Rgb",
+      "layer_count": 3,
+      "text_layer_count": 0,
+      "warnings": [],
+      "expected_layer_count": 3,
+      "reference_diff": {
+        "mean_abs_8bit": 0.0,
+        "max_abs_8bit": 0,
+        "pixels_delta_gt_10_pct": 0.0
+      }
+    },
+    {
+      "id": "product-square",
+      "title": {
+        "en": "Everyday Essentials · Product",
+        "zh": "日常精选 · 产品主图"
+      },
+      "sha256": "de3a79ed107521b54cd2f3f3d6f385ae1e53c9aa1ff95caebd4fd0e737e175cc",
+      "tests": {
+        "open": {
+          "exit_code": 0,
+          "seconds": 0.076,
+          "stderr": ""
+        },
+        "png_export": {
+          "exit_code": 0,
+          "seconds": 0.148,
+          "stderr": "warning: 4 layer(s) flattened; layers, masks and blend modes are not kept\n"
+        },
+        "save_psd": {
+          "exit_code": 0,
+          "seconds": 0.112,
+          "stderr": ""
+        },
+        "reopen_psd": {
+          "exit_code": 0,
+          "seconds": 0.049,
+          "stderr": "",
+          "layer_count": 4,
+          "text_layer_count": 0,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_psd": {
+          "exit_code": 0,
+          "seconds": 0.099,
+          "stderr": "warning: 4 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "save_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.182,
+          "stderr": ""
+        },
+        "reopen_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.03,
+          "stderr": "",
+          "layer_count": 4,
+          "text_layer_count": 0,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.088,
+          "stderr": "warning: 4 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "edit": {
+          "exit_code": 0,
+          "seconds": 0.166,
+          "stderr": "",
+          "command": "layer.setProps"
+        },
+        "edit_reopen": {
+          "exit_code": 0,
+          "seconds": 0.035,
+          "stderr": "",
+          "change_persisted": true
+        },
+        "edited_render": {
+          "exit_code": 0,
+          "stderr": "warning: 4 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "changed_pixels": 36740
+        }
+      },
+      "width": 1200,
+      "height": 1200,
+      "mode": "Rgb",
+      "layer_count": 4,
+      "text_layer_count": 0,
+      "warnings": [],
+      "expected_layer_count": 4,
+      "reference_diff": {
+        "mean_abs_8bit": 0.0,
+        "max_abs_8bit": 0,
+        "pixels_delta_gt_10_pct": 0.0
+      }
+    },
+    {
+      "id": "website-banner",
+      "title": {
+        "en": "Ideas Into Impact · Banner",
+        "zh": "创意成效 · 网站横幅"
+      },
+      "sha256": "61a6e051f83340853134fb3c0b56799dd31f838806537ba8a2bf5788e940cef3",
+      "tests": {
+        "open": {
+          "exit_code": 0,
+          "seconds": 0.04,
+          "stderr": ""
+        },
+        "png_export": {
+          "exit_code": 0,
+          "seconds": 0.073,
+          "stderr": "warning: 3 layer(s) flattened; layers, masks and blend modes are not kept\n"
+        },
+        "save_psd": {
+          "exit_code": 0,
+          "seconds": 0.123,
+          "stderr": ""
+        },
+        "reopen_psd": {
+          "exit_code": 0,
+          "seconds": 0.058,
+          "stderr": "",
+          "layer_count": 3,
+          "text_layer_count": 0,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_psd": {
+          "exit_code": 0,
+          "seconds": 0.071,
+          "stderr": "warning: 3 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "save_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.117,
+          "stderr": ""
+        },
+        "reopen_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.023,
+          "stderr": "",
+          "layer_count": 3,
+          "text_layer_count": 0,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.067,
+          "stderr": "warning: 3 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "edit": {
+          "exit_code": 0,
+          "seconds": 0.111,
+          "stderr": "",
+          "command": "layer.setProps"
+        },
+        "edit_reopen": {
+          "exit_code": 0,
+          "seconds": 0.025,
+          "stderr": "",
+          "change_persisted": true
+        },
+        "edited_render": {
+          "exit_code": 0,
+          "stderr": "warning: 3 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "changed_pixels": 39966
+        }
+      },
+      "width": 1600,
+      "height": 600,
+      "mode": "Rgb",
+      "layer_count": 3,
+      "text_layer_count": 0,
+      "warnings": [],
+      "expected_layer_count": 3,
+      "reference_diff": {
+        "mean_abs_8bit": 0.0,
+        "max_abs_8bit": 0,
+        "pixels_delta_gt_10_pct": 0.0
+      }
+    },
+    {
+      "id": "creative-poster",
+      "title": {
+        "en": "Creative Session · Poster",
+        "zh": "创意聚会 · 活动海报"
+      },
+      "sha256": "7ad847d6a4b1cfb1b3fed2f1d270df40acc4b67b047187c0b64f6381962baa68",
+      "tests": {
+        "open": {
+          "exit_code": 0,
+          "seconds": 0.049,
+          "stderr": ""
+        },
+        "png_export": {
+          "exit_code": 0,
+          "seconds": 0.104,
+          "stderr": "warning: 3 layer(s) flattened; layers, masks and blend modes are not kept\n"
+        },
+        "save_psd": {
+          "exit_code": 0,
+          "seconds": 0.124,
+          "stderr": ""
+        },
+        "reopen_psd": {
+          "exit_code": 0,
+          "seconds": 0.057,
+          "stderr": "",
+          "layer_count": 3,
+          "text_layer_count": 0,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_psd": {
+          "exit_code": 0,
+          "seconds": 0.096,
+          "stderr": "warning: 3 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "save_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.162,
+          "stderr": ""
+        },
+        "reopen_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.032,
+          "stderr": "",
+          "layer_count": 3,
+          "text_layer_count": 0,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.087,
+          "stderr": "warning: 3 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "edit": {
+          "exit_code": 0,
+          "seconds": 0.173,
+          "stderr": "",
+          "command": "layer.setProps"
+        },
+        "edit_reopen": {
+          "exit_code": 0,
+          "seconds": 0.034,
+          "stderr": "",
+          "change_persisted": true
+        },
+        "edited_render": {
+          "exit_code": 0,
+          "stderr": "warning: 3 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "changed_pixels": 78237
+        }
+      },
+      "width": 1080,
+      "height": 1350,
+      "mode": "Rgb",
+      "layer_count": 3,
+      "text_layer_count": 0,
+      "warnings": [],
+      "expected_layer_count": 3,
+      "reference_diff": {
+        "mean_abs_8bit": 0.0,
+        "max_abs_8bit": 0,
+        "pixels_delta_gt_10_pct": 0.0
+      }
+    },
+    {
+      "id": "external-flyer-psd-template-1",
+      "title": {
+        "en": "Conference Flyer",
+        "zh": "会议活动传单"
+      },
+      "sha256": "e28cbec9252da0c306b3e922e37bf431d14dcdcc9f5006f67bf3975723313e25",
+      "tests": {
+        "open": {
+          "exit_code": 0,
+          "seconds": 0.26,
+          "stderr": ""
+        },
+        "png_export": {
+          "exit_code": 0,
+          "seconds": 0.344,
+          "stderr": "warning: font 'Deming EP' is not installed; text may render using a fallback face\nwarning: font 'Mission Gothic' is not installed; text may render using a fallback face\nwarning: font 'Canter Bold' is not installed; text may render using a fallback face\nwarning: font 'Canter Outline' is not installed; text may render using a fallback face\nwarning: font 'Canter Bold3D' is not installed; text may render using a fallback face\nwarning: 60 layer(s) flattened; layers, masks and blend modes are not kept\n"
+        },
+        "save_psd": {
+          "exit_code": 0,
+          "seconds": 0.444,
+          "stderr": "warning: font 'Deming EP' is not installed; text may render using a fallback face\nwarning: font 'Mission Gothic' is not installed; text may render using a fallback face\nwarning: font 'Canter Bold' is not installed; text may render using a fallback face\nwarning: font 'Canter Outline' is not installed; text may render using a fallback face\nwarning: font 'Canter Bold3D' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_psd": {
+          "exit_code": 0,
+          "seconds": 0.181,
+          "stderr": "",
+          "layer_count": 60,
+          "text_layer_count": 29,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_psd": {
+          "exit_code": 0,
+          "seconds": 0.333,
+          "stderr": "warning: font 'Deming EP' is not installed; text may render using a fallback face\nwarning: font 'Mission Gothic' is not installed; text may render using a fallback face\nwarning: font 'Canter Bold' is not installed; text may render using a fallback face\nwarning: font 'Canter Outline' is not installed; text may render using a fallback face\nwarning: font 'Canter Bold3D' is not installed; text may render using a fallback face\nwarning: 60 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "save_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.58,
+          "stderr": "warning: font 'Deming EP' is not installed; text may render using a fallback face\nwarning: font 'Mission Gothic' is not installed; text may render using a fallback face\nwarning: font 'Canter Bold' is not installed; text may render using a fallback face\nwarning: font 'Canter Outline' is not installed; text may render using a fallback face\nwarning: font 'Canter Bold3D' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.119,
+          "stderr": "",
+          "layer_count": 60,
+          "text_layer_count": 29,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.335,
+          "stderr": "warning: font 'Deming EP' is not installed; text may render using a fallback face\nwarning: font 'Mission Gothic' is not installed; text may render using a fallback face\nwarning: font 'Canter Bold' is not installed; text may render using a fallback face\nwarning: font 'Canter Outline' is not installed; text may render using a fallback face\nwarning: font 'Canter Bold3D' is not installed; text may render using a fallback face\nwarning: 60 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "edit": {
+          "exit_code": 0,
+          "seconds": 0.538,
+          "stderr": "warning: font 'Deming EP' is not installed; text may render using a fallback face\nwarning: font 'Mission Gothic' is not installed; text may render using a fallback face\nwarning: font 'Canter Bold' is not installed; text may render using a fallback face\nwarning: font 'Canter Outline' is not installed; text may render using a fallback face\nwarning: font 'Canter Bold3D' is not installed; text may render using a fallback face\n",
+          "command": "type.edit"
+        },
+        "edit_reopen": {
+          "exit_code": 0,
+          "seconds": 0.113,
+          "stderr": "",
+          "change_persisted": true
+        },
+        "edited_render": {
+          "exit_code": 0,
+          "stderr": "warning: font 'Deming EP' is not installed; text may render using a fallback face\nwarning: font 'Mission Gothic' is not installed; text may render using a fallback face\nwarning: font 'Canter Bold' is not installed; text may render using a fallback face\nwarning: font 'Canter Outline' is not installed; text may render using a fallback face\nwarning: font 'Canter Bold3D' is not installed; text may render using a fallback face\nwarning: 60 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "changed_pixels": 4134
+        }
+      },
+      "width": 1287,
+      "height": 1795,
+      "mode": "Rgb",
+      "layer_count": 60,
+      "text_layer_count": 29,
+      "warnings": [
+        "font 'Deming EP' is not installed; text may render using a fallback face",
+        "font 'Mission Gothic' is not installed; text may render using a fallback face",
+        "font 'Canter Bold' is not installed; text may render using a fallback face",
+        "font 'Canter Outline' is not installed; text may render using a fallback face",
+        "font 'Canter Bold3D' is not installed; text may render using a fallback face"
+      ],
+      "expected_layer_count": 60,
+      "reference_diff": {
+        "mean_abs_8bit": 0.2352,
+        "max_abs_8bit": 16,
+        "pixels_delta_gt_10_pct": 0.406
+      }
+    },
+    {
+      "id": "external-free-flyer-template",
+      "title": {
+        "en": "Business Flyer",
+        "zh": "企业宣传单"
+      },
+      "sha256": "ba905a210354a407cf951c03336a8d90b61b139822c856930b36189088dc50f8",
+      "tests": {
+        "open": {
+          "exit_code": 0,
+          "seconds": 0.274,
+          "stderr": ""
+        },
+        "png_export": {
+          "exit_code": 0,
+          "seconds": 0.395,
+          "stderr": "warning: font 'Impact' is not installed; text may render using a fallback face\nwarning: font 'Arial' is not installed; text may render using a fallback face\nwarning: font 'Georgia' is not installed; text may render using a fallback face\nwarning: 58 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n"
+        },
+        "save_psd": {
+          "exit_code": 0,
+          "seconds": 0.575,
+          "stderr": "warning: font 'Impact' is not installed; text may render using a fallback face\nwarning: font 'Arial' is not installed; text may render using a fallback face\nwarning: font 'Georgia' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_psd": {
+          "exit_code": 0,
+          "seconds": 0.256,
+          "stderr": "",
+          "layer_count": 58,
+          "text_layer_count": 12,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_psd": {
+          "exit_code": 0,
+          "seconds": 0.381,
+          "stderr": "warning: font 'Impact' is not installed; text may render using a fallback face\nwarning: font 'Arial' is not installed; text may render using a fallback face\nwarning: font 'Georgia' is not installed; text may render using a fallback face\nwarning: 58 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "save_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.68,
+          "stderr": "warning: font 'Impact' is not installed; text may render using a fallback face\nwarning: font 'Arial' is not installed; text may render using a fallback face\nwarning: font 'Georgia' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.194,
+          "stderr": "",
+          "layer_count": 58,
+          "text_layer_count": 12,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.36,
+          "stderr": "warning: font 'Impact' is not installed; text may render using a fallback face\nwarning: font 'Arial' is not installed; text may render using a fallback face\nwarning: font 'Georgia' is not installed; text may render using a fallback face\nwarning: 58 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "edit": {
+          "exit_code": 0,
+          "seconds": 0.684,
+          "stderr": "warning: font 'Impact' is not installed; text may render using a fallback face\nwarning: font 'Arial' is not installed; text may render using a fallback face\nwarning: font 'Georgia' is not installed; text may render using a fallback face\n",
+          "command": "type.edit"
+        },
+        "edit_reopen": {
+          "exit_code": 0,
+          "seconds": 0.196,
+          "stderr": "",
+          "change_persisted": true
+        },
+        "edited_render": {
+          "exit_code": 0,
+          "stderr": "warning: font 'Impact' is not installed; text may render using a fallback face\nwarning: font 'Arial' is not installed; text may render using a fallback face\nwarning: font 'Georgia' is not installed; text may render using a fallback face\nwarning: 58 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n",
+          "changed_pixels": 2964
+        }
+      },
+      "width": 1242,
+      "height": 1750,
+      "mode": "Cmyk",
+      "layer_count": 58,
+      "text_layer_count": 12,
+      "warnings": [
+        "font 'Impact' is not installed; text may render using a fallback face",
+        "font 'Arial' is not installed; text may render using a fallback face",
+        "font 'Georgia' is not installed; text may render using a fallback face"
+      ],
+      "expected_layer_count": 58,
+      "reference_diff": {
+        "mean_abs_8bit": 2.048,
+        "max_abs_8bit": 34,
+        "pixels_delta_gt_10_pct": 14.2352
+      }
+    },
+    {
+      "id": "external-brochure-template-psd-2",
+      "title": {
+        "en": "Corporate Brochure 02",
+        "zh": "企业折页 02"
+      },
+      "sha256": "14ab70b7663376ad8931d06ef81111c85180685bb70faf1c75c8f9488ecfdfe5",
+      "tests": {
+        "open": {
+          "exit_code": 0,
+          "seconds": 0.581,
+          "stderr": ""
+        },
+        "png_export": {
+          "exit_code": 0,
+          "seconds": 0.774,
+          "stderr": "warning: font 'Klinic Slab' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Bold' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light300' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light200' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Regular' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light100' is not installed; text may render using a fallback face\nwarning: font 'Mission Gothic' is not installed; text may render using a fallback face\nwarning: 81 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n"
+        },
+        "save_psd": {
+          "exit_code": 0,
+          "seconds": 1.186,
+          "stderr": "warning: font 'Klinic Slab' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Bold' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light300' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light200' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Regular' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light100' is not installed; text may render using a fallback face\nwarning: font 'Mission Gothic' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_psd": {
+          "exit_code": 0,
+          "seconds": 0.564,
+          "stderr": "",
+          "layer_count": 81,
+          "text_layer_count": 40,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_psd": {
+          "exit_code": 0,
+          "seconds": 0.805,
+          "stderr": "warning: font 'Klinic Slab' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Bold' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light300' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light200' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Regular' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light100' is not installed; text may render using a fallback face\nwarning: font 'Mission Gothic' is not installed; text may render using a fallback face\nwarning: 81 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "save_pcraft": {
+          "exit_code": 0,
+          "seconds": 1.208,
+          "stderr": "warning: font 'Klinic Slab' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Bold' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light300' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light200' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Regular' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light100' is not installed; text may render using a fallback face\nwarning: font 'Mission Gothic' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.424,
+          "stderr": "",
+          "layer_count": 81,
+          "text_layer_count": 40,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.685,
+          "stderr": "warning: font 'Klinic Slab' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Bold' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light300' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light200' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Regular' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light100' is not installed; text may render using a fallback face\nwarning: font 'Mission Gothic' is not installed; text may render using a fallback face\nwarning: 81 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "edit": {
+          "exit_code": 0,
+          "seconds": 1.102,
+          "stderr": "warning: font 'Klinic Slab' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Bold' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light300' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light200' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Regular' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light100' is not installed; text may render using a fallback face\nwarning: font 'Mission Gothic' is not installed; text may render using a fallback face\n",
+          "command": "type.edit"
+        },
+        "edit_reopen": {
+          "exit_code": 0,
+          "seconds": 0.417,
+          "stderr": "",
+          "change_persisted": true
+        },
+        "edited_render": {
+          "exit_code": 0,
+          "stderr": "warning: font 'Klinic Slab' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Bold' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light300' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light200' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Regular' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Light100' is not installed; text may render using a fallback face\nwarning: font 'Mission Gothic' is not installed; text may render using a fallback face\nwarning: 81 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n",
+          "changed_pixels": 35018
+        }
+      },
+      "width": 3347,
+      "height": 2597,
+      "mode": "Cmyk",
+      "layer_count": 81,
+      "text_layer_count": 40,
+      "warnings": [
+        "font 'Klinic Slab' is not installed; text may render using a fallback face",
+        "font 'Maven Pro Bold' is not installed; text may render using a fallback face",
+        "font 'Maven Pro Light300' is not installed; text may render using a fallback face",
+        "font 'Maven Pro Light200' is not installed; text may render using a fallback face",
+        "font 'Maven Pro Regular' is not installed; text may render using a fallback face",
+        "font 'Maven Pro Light100' is not installed; text may render using a fallback face",
+        "font 'Mission Gothic' is not installed; text may render using a fallback face"
+      ],
+      "expected_layer_count": 81,
+      "reference_diff": {
+        "mean_abs_8bit": 1.616,
+        "max_abs_8bit": 17,
+        "pixels_delta_gt_10_pct": 13.1775
+      }
+    },
+    {
+      "id": "external-brochure-template-psd-1",
+      "title": {
+        "en": "Corporate Brochure 01",
+        "zh": "企业折页 01"
+      },
+      "sha256": "87d6c8d334650c6281f59692cf720574a46c677c5d4a55d78d702f6f0edc28a8",
+      "tests": {
+        "open": {
+          "exit_code": 0,
+          "seconds": 0.616,
+          "stderr": ""
+        },
+        "png_export": {
+          "exit_code": 0,
+          "seconds": 0.873,
+          "stderr": "warning: font 'Klinic Slab' is not installed; text may render using a fallback face\nwarning: font 'Fairview' is not installed; text may render using a fallback face\nwarning: font 'Sreda' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Regular' is not installed; text may render using a fallback face\nwarning: 58 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n"
+        },
+        "save_psd": {
+          "exit_code": 0,
+          "seconds": 1.221,
+          "stderr": "warning: font 'Klinic Slab' is not installed; text may render using a fallback face\nwarning: font 'Fairview' is not installed; text may render using a fallback face\nwarning: font 'Sreda' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Regular' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_psd": {
+          "exit_code": 0,
+          "seconds": 0.524,
+          "stderr": "",
+          "layer_count": 58,
+          "text_layer_count": 24,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_psd": {
+          "exit_code": 0,
+          "seconds": 0.841,
+          "stderr": "warning: font 'Klinic Slab' is not installed; text may render using a fallback face\nwarning: font 'Fairview' is not installed; text may render using a fallback face\nwarning: font 'Sreda' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Regular' is not installed; text may render using a fallback face\nwarning: 58 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "save_pcraft": {
+          "exit_code": 0,
+          "seconds": 1.359,
+          "stderr": "warning: font 'Klinic Slab' is not installed; text may render using a fallback face\nwarning: font 'Fairview' is not installed; text may render using a fallback face\nwarning: font 'Sreda' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Regular' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.382,
+          "stderr": "",
+          "layer_count": 58,
+          "text_layer_count": 24,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.704,
+          "stderr": "warning: font 'Klinic Slab' is not installed; text may render using a fallback face\nwarning: font 'Fairview' is not installed; text may render using a fallback face\nwarning: font 'Sreda' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Regular' is not installed; text may render using a fallback face\nwarning: 58 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "edit": {
+          "exit_code": 0,
+          "seconds": 1.282,
+          "stderr": "warning: font 'Klinic Slab' is not installed; text may render using a fallback face\nwarning: font 'Fairview' is not installed; text may render using a fallback face\nwarning: font 'Sreda' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Regular' is not installed; text may render using a fallback face\n",
+          "command": "type.edit"
+        },
+        "edit_reopen": {
+          "exit_code": 0,
+          "seconds": 0.44,
+          "stderr": "",
+          "change_persisted": true
+        },
+        "edited_render": {
+          "exit_code": 0,
+          "stderr": "warning: font 'Klinic Slab' is not installed; text may render using a fallback face\nwarning: font 'Fairview' is not installed; text may render using a fallback face\nwarning: font 'Sreda' is not installed; text may render using a fallback face\nwarning: font 'Maven Pro Regular' is not installed; text may render using a fallback face\nwarning: 58 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n",
+          "changed_pixels": 173425
+        }
+      },
+      "width": 3347,
+      "height": 2597,
+      "mode": "Cmyk",
+      "layer_count": 58,
+      "text_layer_count": 24,
+      "warnings": [
+        "font 'Klinic Slab' is not installed; text may render using a fallback face",
+        "font 'Fairview' is not installed; text may render using a fallback face",
+        "font 'Sreda' is not installed; text may render using a fallback face",
+        "font 'Maven Pro Regular' is not installed; text may render using a fallback face"
+      ],
+      "expected_layer_count": 58,
+      "reference_diff": {
+        "mean_abs_8bit": 3.7986,
+        "max_abs_8bit": 27,
+        "pixels_delta_gt_10_pct": 48.5671
+      }
+    },
+    {
+      "id": "external-leaflet-psd-template",
+      "title": {
+        "en": "Business Leaflet",
+        "zh": "商务宣传折页"
+      },
+      "sha256": "ffd3e05118c480dac3de16aa87ce736049a922b1df47a5eeb5f30c4c7ac03873",
+      "tests": {
+        "open": {
+          "exit_code": 0,
+          "seconds": 0.639,
+          "stderr": ""
+        },
+        "png_export": {
+          "exit_code": 0,
+          "seconds": 0.854,
+          "stderr": "warning: font 'Ubuntu' is not installed; text may render using a fallback face\nwarning: 65 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n"
+        },
+        "save_psd": {
+          "exit_code": 0,
+          "seconds": 1.34,
+          "stderr": "warning: font 'Ubuntu' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_psd": {
+          "exit_code": 0,
+          "seconds": 0.646,
+          "stderr": "",
+          "layer_count": 65,
+          "text_layer_count": 21,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_psd": {
+          "exit_code": 0,
+          "seconds": 0.907,
+          "stderr": "warning: font 'Ubuntu' is not installed; text may render using a fallback face\nwarning: 65 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "save_pcraft": {
+          "exit_code": 0,
+          "seconds": 1.384,
+          "stderr": "warning: font 'Ubuntu' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.487,
+          "stderr": "",
+          "layer_count": 65,
+          "text_layer_count": 21,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.732,
+          "stderr": "warning: font 'Ubuntu' is not installed; text may render using a fallback face\nwarning: 65 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "edit": {
+          "exit_code": 0,
+          "seconds": 1.304,
+          "stderr": "warning: font 'Ubuntu' is not installed; text may render using a fallback face\n",
+          "command": "type.edit"
+        },
+        "edit_reopen": {
+          "exit_code": 0,
+          "seconds": 0.463,
+          "stderr": "",
+          "change_persisted": true
+        },
+        "edited_render": {
+          "exit_code": 0,
+          "stderr": "warning: font 'Ubuntu' is not installed; text may render using a fallback face\nwarning: 65 layer(s) flattened; layers, masks and blend modes are not kept\nwarning: Cmyk composite written as sRGB RGB (colour-managed conversion)\n",
+          "changed_pixels": 25649
+        }
+      },
+      "width": 3350,
+      "height": 2600,
+      "mode": "Cmyk",
+      "layer_count": 65,
+      "text_layer_count": 21,
+      "warnings": [
+        "font 'Ubuntu' is not installed; text may render using a fallback face"
+      ],
+      "expected_layer_count": 65,
+      "reference_diff": {
+        "mean_abs_8bit": 4.7577,
+        "max_abs_8bit": 21,
+        "pixels_delta_gt_10_pct": 31.1469
+      }
+    },
+    {
+      "id": "external-free-psd-modern-business-resume",
+      "title": {
+        "en": "Modern Business Resume",
+        "zh": "现代商务简历"
+      },
+      "sha256": "0bb344fd3e24f105de6c9581988c7c4c2966abb5c7dd757c137846638dcd7010",
+      "tests": {
+        "open": {
+          "exit_code": 0,
+          "seconds": 0.365,
+          "stderr": ""
+        },
+        "png_export": {
+          "exit_code": 0,
+          "seconds": 0.731,
+          "stderr": "warning: font 'Helvetica Neue' is not installed; text may render using a fallback face\nwarning: 144 layer(s) flattened; layers, masks and blend modes are not kept\n"
+        },
+        "save_psd": {
+          "exit_code": 0,
+          "seconds": 0.929,
+          "stderr": "warning: font 'Helvetica Neue' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_psd": {
+          "exit_code": 0,
+          "seconds": 0.369,
+          "stderr": "",
+          "layer_count": 144,
+          "text_layer_count": 37,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_psd": {
+          "exit_code": 0,
+          "seconds": 0.797,
+          "stderr": "warning: font 'Helvetica Neue' is not installed; text may render using a fallback face\nwarning: 144 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "save_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.965,
+          "stderr": "warning: font 'Helvetica Neue' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.228,
+          "stderr": "",
+          "layer_count": 144,
+          "text_layer_count": 37,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.579,
+          "stderr": "warning: font 'Helvetica Neue' is not installed; text may render using a fallback face\nwarning: 144 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "edit": {
+          "exit_code": 0,
+          "seconds": 0.978,
+          "stderr": "warning: font 'Helvetica Neue' is not installed; text may render using a fallback face\n",
+          "command": "type.edit"
+        },
+        "edit_reopen": {
+          "exit_code": 0,
+          "seconds": 0.238,
+          "stderr": "",
+          "change_persisted": true
+        },
+        "edited_render": {
+          "exit_code": 0,
+          "stderr": "warning: font 'Helvetica Neue' is not installed; text may render using a fallback face\nwarning: 144 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "changed_pixels": 6812
+        }
+      },
+      "width": 2550,
+      "height": 3300,
+      "mode": "Rgb",
+      "layer_count": 144,
+      "text_layer_count": 37,
+      "warnings": [
+        "font 'Helvetica Neue' is not installed; text may render using a fallback face"
+      ],
+      "expected_layer_count": 144,
+      "reference_diff": {
+        "mean_abs_8bit": 0.011,
+        "max_abs_8bit": 11,
+        "pixels_delta_gt_10_pct": 0.0053
+      }
+    },
+    {
+      "id": "external-free-psd-professional-business-resume",
+      "title": {
+        "en": "Professional Resume",
+        "zh": "专业求职简历"
+      },
+      "sha256": "7588c33991942556ff375f30d379e8d2e8b129c8679032805ac0a22c03d0ca39",
+      "tests": {
+        "open": {
+          "exit_code": 0,
+          "seconds": 0.45,
+          "stderr": ""
+        },
+        "png_export": {
+          "exit_code": 0,
+          "seconds": 0.674,
+          "stderr": "warning: font 'Museo Sans Cyrl' is not installed; text may render using a fallback face\nwarning: font 'Museo Sans' is not installed; text may render using a fallback face\nwarning: 146 layer(s) flattened; layers, masks and blend modes are not kept\n"
+        },
+        "save_psd": {
+          "exit_code": 0,
+          "seconds": 0.911,
+          "stderr": "warning: font 'Museo Sans Cyrl' is not installed; text may render using a fallback face\nwarning: font 'Museo Sans' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_psd": {
+          "exit_code": 0,
+          "seconds": 0.437,
+          "stderr": "",
+          "layer_count": 146,
+          "text_layer_count": 72,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_psd": {
+          "exit_code": 0,
+          "seconds": 0.613,
+          "stderr": "warning: font 'Museo Sans Cyrl' is not installed; text may render using a fallback face\nwarning: font 'Museo Sans' is not installed; text may render using a fallback face\nwarning: 146 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "save_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.889,
+          "stderr": "warning: font 'Museo Sans Cyrl' is not installed; text may render using a fallback face\nwarning: font 'Museo Sans' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.26,
+          "stderr": "",
+          "layer_count": 146,
+          "text_layer_count": 72,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.496,
+          "stderr": "warning: font 'Museo Sans Cyrl' is not installed; text may render using a fallback face\nwarning: font 'Museo Sans' is not installed; text may render using a fallback face\nwarning: 146 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "edit": {
+          "exit_code": 0,
+          "seconds": 0.913,
+          "stderr": "warning: font 'Museo Sans Cyrl' is not installed; text may render using a fallback face\nwarning: font 'Museo Sans' is not installed; text may render using a fallback face\n",
+          "command": "type.edit"
+        },
+        "edit_reopen": {
+          "exit_code": 0,
+          "seconds": 0.268,
+          "stderr": "",
+          "change_persisted": true
+        },
+        "edited_render": {
+          "exit_code": 0,
+          "stderr": "warning: font 'Museo Sans Cyrl' is not installed; text may render using a fallback face\nwarning: font 'Museo Sans' is not installed; text may render using a fallback face\nwarning: 146 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "changed_pixels": 4761
+        }
+      },
+      "width": 2550,
+      "height": 3300,
+      "mode": "Rgb",
+      "layer_count": 146,
+      "text_layer_count": 72,
+      "warnings": [
+        "font 'Museo Sans Cyrl' is not installed; text may render using a fallback face",
+        "font 'Museo Sans' is not installed; text may render using a fallback face"
+      ],
+      "expected_layer_count": 146,
+      "reference_diff": {
+        "mean_abs_8bit": 0.0003,
+        "max_abs_8bit": 1,
+        "pixels_delta_gt_10_pct": 0.0
+      }
+    },
+    {
+      "id": "external-restaurant-menu-psd-template",
+      "title": {
+        "en": "Restaurant Menu",
+        "zh": "餐厅菜单"
+      },
+      "sha256": "c3381507f1d39123844c94a7fb2609e8cc8c3be4fbbaaf5cc175037f5b3ffb24",
+      "tests": {
+        "open": {
+          "exit_code": 0,
+          "seconds": 0.648,
+          "stderr": ""
+        },
+        "png_export": {
+          "exit_code": 0,
+          "seconds": 1.069,
+          "stderr": "warning: font 'Myriad Pro' is not installed; text may render using a fallback face\nwarning: 71 layer(s) flattened; layers, masks and blend modes are not kept\n"
+        },
+        "save_psd": {
+          "exit_code": 0,
+          "seconds": 1.437,
+          "stderr": "warning: font 'Myriad Pro' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_psd": {
+          "exit_code": 0,
+          "seconds": 0.647,
+          "stderr": "",
+          "layer_count": 71,
+          "text_layer_count": 18,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_psd": {
+          "exit_code": 0,
+          "seconds": 1.064,
+          "stderr": "warning: font 'Myriad Pro' is not installed; text may render using a fallback face\nwarning: 71 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "save_pcraft": {
+          "exit_code": 0,
+          "seconds": 1.544,
+          "stderr": "warning: font 'Myriad Pro' is not installed; text may render using a fallback face\n"
+        },
+        "reopen_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.545,
+          "stderr": "",
+          "layer_count": 71,
+          "text_layer_count": 18,
+          "dimensions_match": true,
+          "layer_names_match": true
+        },
+        "roundtrip_render_pcraft": {
+          "exit_code": 0,
+          "seconds": 0.9,
+          "stderr": "warning: font 'Myriad Pro' is not installed; text may render using a fallback face\nwarning: 71 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "diff_from_first_render": {
+            "mean_abs_8bit": 0.0,
+            "max_abs_8bit": 0,
+            "pixels_delta_gt_10_pct": 0.0
+          }
+        },
+        "edit": {
+          "exit_code": 0,
+          "seconds": 1.63,
+          "stderr": "warning: font 'Myriad Pro' is not installed; text may render using a fallback face\n",
+          "command": "type.edit"
+        },
+        "edit_reopen": {
+          "exit_code": 0,
+          "seconds": 0.487,
+          "stderr": "",
+          "change_persisted": true
+        },
+        "edited_render": {
+          "exit_code": 0,
+          "stderr": "warning: font 'Myriad Pro' is not installed; text may render using a fallback face\nwarning: 71 layer(s) flattened; layers, masks and blend modes are not kept\n",
+          "changed_pixels": 15063
+        }
+      },
+      "width": 3142,
+      "height": 2230,
+      "mode": "Rgb",
+      "layer_count": 71,
+      "text_layer_count": 18,
+      "warnings": [
+        "font 'Myriad Pro' is not installed; text may render using a fallback face"
+      ],
+      "expected_layer_count": 71,
+      "reference_diff": {
+        "mean_abs_8bit": 0.0332,
+        "max_abs_8bit": 3,
+        "pixels_delta_gt_10_pct": 0.0
+      }
+    }
+  ]
+}

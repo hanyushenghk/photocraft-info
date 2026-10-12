@@ -66,7 +66,7 @@ The live site is public at https://photo-craft.io. `/templates/` and `/zh/templa
 include 6 original layered PSD layouts, 4 PNG textures and 4 CUBE LUTs. Downloads
 are self-hosted in `dist/downloads`, with permission and bilingual instructions.
 PSD sample lettering is rasterized; optional SVG source retains text elements.
-These assets are programmatically validated, not tested in the PhotoCraft app.
+The 14 PSD templates were tested with the official PhotoCraft 0.7.0 Linux CLI engine on 2026-10-12. Desktop GUI testing is not included; textures, LUTs and optional SVGs still have file-level checks only.
 
 To regenerate assets: install `scripts/requirements-resources.txt`, then run
 `python scripts/build_resources.py`, `python scripts/build_content.py`,
@@ -85,3 +85,13 @@ these files are not covered by the original-assets license and cannot be resold.
 They are intentionally excluded from the 14-original-asset starter ZIP.
 Validation: ZIP integrity, PSD parsing, embedded composite decoding and SHA-256.
 PhotoCraft application compatibility remains untested.
+
+## PhotoCraft template integration tests
+
+All 14 PSDs pass open/export/PSD and PCraft round trips. See `dist/downloads/photocraft-template-test-results.json` for version, input hashes, warnings, image differences and individual checks. Third-party fonts are missing in the test environment; cached unedited text does not prove font fidelity. CMYK reference metrics use Pillow RGB conversion and are not color-managed proofs. Every third-party PSD has a publisher promotion layer visible by default.
+
+Reproduce using an official CLI release and an empty output path:
+
+```bash
+python scripts/test_photocraft_templates.py --cli /absolute/path/photocraft-cli --out /tmp/photocraft-template-tests-new
+```
