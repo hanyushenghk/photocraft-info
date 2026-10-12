@@ -1,5 +1,11 @@
 /* Keep desktop and mobile navigation in sync with routes and home anchors. */
 (() => {
+ // Preserve old bookmarked homepage anchors after moving these sections.
+ const legacy = ['#compare', '#community'].includes(location.hash);
+ if (legacy && /^\/(?:zh\/|en\/)?$/.test(location.pathname)) {
+  location.replace((location.pathname.startsWith('/zh/') ? '/zh/' : '/') + location.hash.slice(1) + '/');
+  return;
+ }
  const links = [...document.querySelectorAll('.topbar .navlinks a, .topbar .mobile-nav a')];
  const route = path => path.replace(/^\/(zh|en)(?=\/|$)/, '').replace(/\/+$/, '') || '/';
  function update() {
@@ -8,7 +14,7 @@
   if (path === '/') {
    if (['#compare', '#community'].includes(location.hash)) section = location.hash;
   } else {
-   section = ['plugins', 'templates', 'download'].find(key => path === '/' + key || path.startsWith('/' + key + '/')) || 'guides';
+   section = ['plugins', 'templates', 'download', 'compare', 'community'].find(key => path === '/' + key || path.startsWith('/' + key + '/')) || 'guides';
   }
   links.forEach(link => {
    const url = new URL(link.href, location.href);

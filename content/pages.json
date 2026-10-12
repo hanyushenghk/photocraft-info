@@ -1166,5 +1166,89 @@
       "compatibility/psd",
       "templates"
     ]
+  },
+  {
+    "slug": "compare",
+    "title": {
+      "en": "PhotoCraft vs. Photoshop",
+      "zh": "PhotoCraft 与 Photoshop 功能对比"
+    },
+    "intro": {
+      "en": "Compare features, file compatibility and workflows before choosing your image editor.",
+      "zh": "比较功能、文件兼容性与工作流，选择适合自己的图像编辑器。"
+    },
+    "category": {
+      "en": "COMPARE",
+      "zh": "功能对比"
+    },
+    "checked": "2026-10-10",
+    "sections": [
+      {
+        "id": "features",
+        "title": {
+          "en": "Feature comparison",
+          "zh": "功能对比表"
+        },
+        "body": {
+          "en": "<div class=\"table-wrap\"><table><thead><tr><th>Feature / workflow</th><th>PhotoCraft <span class=\"tag\" style=\"margin-left:5px\">Open source</span></th><th>Adobe Photoshop</th></tr></thead><tbody><tr><td>Licensing &amp; usage</td><td>Free · MIT / Apache-2.0 dual license</td><td>Commercial software · Subscription license</td></tr><tr><td>Layers &amp; masks</td><td><span class=\"yes\">✓ Supported</span> · Still being refined</td><td>Supported · Mature workflows</td></tr><tr><td>PSD / PSB files</td><td><span class=\"partial\">◐ Read and write support</span> · Verify complex documents</td><td>Native format</td></tr><tr><td>Adjustment layers &amp; layer styles</td><td><span class=\"yes\">✓ Supported</span> · Check rendering differences</td><td>Supported · Widely used in professional production</td></tr><tr><td>Generative AI</td><td><span class=\"partial\">◐ Not yet on par with Photoshop</span></td><td>Generative Fill and other generative features</td></tr><tr><td>Plugins &amp; extensions</td><td><span class=\"partial\">◐ Developing ecosystem</span> · PS plugin compatibility is not guaranteed</td><td>Established plugin and extension ecosystem</td></tr><tr><td>Best suited for</td><td>Learning, exploration and open-source automation experiments</td><td>Professional delivery and established production workflows</td></tr></tbody></table></div><div class=\"comparison-note\"><span>✓ Feature available   ◐ Compatibility or maturity limitations</span><span>Feature availability does not guarantee identical behavior. Test with your own files.</span></div><p class=\"source-note\">Based on <a href=\"https://github.com/storytold/photocraft/blob/main/docs/roadmap.md\" target=\"_blank\" rel=\"noopener noreferrer\">PhotoCraft roadmap</a> , <a href=\"https://www.adobe.com/products/photoshop.html\" target=\"_blank\" rel=\"noopener noreferrer\">Adobe Photoshop product overview</a> and <a href=\"https://helpx.adobe.com/photoshop/desktop/generative-ai/generative-ai-features-overview.html\" target=\"_blank\" rel=\"noopener noreferrer\">Adobe generative AI documentation</a>. Last verified: Oct 10, 2026.</p>",
+          "zh": "<div class=\"table-wrap\"><table><thead><tr><th>功能 / 工作方式</th><th>PhotoCraft <span class=\"tag\" style=\"margin-left:5px\">开源</span></th><th>Adobe Photoshop</th></tr></thead><tbody><tr><td>授权与使用</td><td>免费 · MIT / Apache-2.0 双许可证</td><td>商业软件 · 订阅授权</td></tr><tr><td>图层与蒙版</td><td><span class=\"yes\">✓ 支持</span> · 仍在持续完善</td><td>支持 · 成熟工作流</td></tr><tr><td>PSD / PSB 文件</td><td><span class=\"partial\">◐ 支持读写</span> · 复杂文件需验证</td><td>原生格式</td></tr><tr><td>调整图层与图层样式</td><td><span class=\"yes\">✓ 支持</span> · 渲染差异需检查</td><td>支持 · 广泛用于专业制作</td></tr><tr><td>生成式 AI</td><td><span class=\"partial\">◐ 尚未达到 Photoshop 同等能力</span></td><td>Generative Fill 等生成式功能</td></tr><tr><td>插件与扩展</td><td><span class=\"partial\">◐ 生态建设中</span> · 不保证 PS 插件兼容</td><td>成熟的插件与扩展生态</td></tr><tr><td>适合的使用场景</td><td>学习、探索、开源与自动化实验</td><td>专业交付与成熟制作流程</td></tr></tbody></table></div><div class=\"comparison-note\"><span>✓ 已提供相关功能   ◐ 存在兼容性或成熟度限制</span><span>功能存在 ≠ 完整行为一致，建议使用自己的文件测试。</span></div><p class=\"source-note\">依据 <a href=\"https://github.com/storytold/photocraft/blob/main/docs/roadmap.md\" target=\"_blank\" rel=\"noopener noreferrer\">PhotoCraft 官方路线图</a>、<a href=\"https://www.adobe.com/products/photoshop.html\" target=\"_blank\" rel=\"noopener noreferrer\">Adobe Photoshop 产品介绍</a>与 <a href=\"https://helpx.adobe.com/photoshop/desktop/generative-ai/generative-ai-features-overview.html\" target=\"_blank\" rel=\"noopener noreferrer\">Adobe 生成式 AI 文档</a>整理。核对日期：2026.10.10。</p>"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://github.com/storytold/photocraft/blob/main/docs/roadmap.md",
+        "label": "PhotoCraft roadmap"
+      },
+      {
+        "url": "https://www.adobe.com/products/photoshop.html",
+        "label": "Adobe Photoshop"
+      }
+    ],
+    "related": [
+      "compatibility/psd",
+      "compatibility/photoshop-plugins",
+      "templates"
+    ]
+  },
+  {
+    "slug": "community",
+    "title": {
+      "en": "PhotoCraft community & official links",
+      "zh": "PhotoCraft 社区与官方链接"
+    },
+    "intro": {
+      "en": "Find the official GitHub repository, community chat, issue tracker and documentation in one place.",
+      "zh": "集中查找官方 GitHub、社区交流、问题反馈与使用文档。"
+    },
+    "category": {
+      "en": "COMMUNITY",
+      "zh": "社区"
+    },
+    "checked": "2026-10-10",
+    "sections": [
+      {
+        "id": "directory",
+        "title": {
+          "en": "Connect with the community",
+          "zh": "加入社区与查找文档"
+        },
+        "body": {
+          "en": "<div class=\"community-directory\"><a class=\"community-link\" href=\"https://github.com/storytold/photocraft\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Official GitHub ↗</strong><span>Source, contributions and progress</span></a><a class=\"community-link\" href=\"https://discord.gg/artcraft\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>ArtCraft Discord ↗</strong><span>Share ideas and meet the community</span></a><a class=\"community-link\" href=\"https://github.com/storytold/photocraft/issues\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Report an issue ↗</strong><span>Report bugs and suggest features</span></a><a class=\"community-link\" href=\"https://github.com/storytold/photocraft/tree/main/book\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Documentation ↗</strong><span>Installation, formats and automation</span></a></div>",
+          "zh": "<div class=\"community-directory\"><a class=\"community-link\" href=\"https://github.com/storytold/photocraft\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>官方 GitHub ↗</strong><span>源码、贡献与项目进展</span></a><a class=\"community-link\" href=\"https://discord.gg/artcraft\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>ArtCraft Discord ↗</strong><span>交流经验，与社区相遇</span></a><a class=\"community-link\" href=\"https://github.com/storytold/photocraft/issues\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>问题反馈 ↗</strong><span>报告 Bug 与功能建议</span></a><a class=\"community-link\" href=\"https://github.com/storytold/photocraft/tree/main/book\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>官方文档 ↗</strong><span>安装、格式与自动化指南</span></a></div>"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://github.com/storytold/photocraft",
+        "label": "Official PhotoCraft GitHub"
+      }
+    ],
+    "related": [
+      "plugins",
+      "templates",
+      "guides/comfyui"
+    ]
   }
 ]

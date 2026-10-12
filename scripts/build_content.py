@@ -14,7 +14,7 @@ def link(slug,lang,label=None):return f'<a href="{route(slug,lang)}">{escape(lab
 def header(lang,slug):
  t=T[lang];other='zh' if lang=='en' else 'en'
  labels=['指南','插件','模板','下载','对比','社区'] if lang=='zh' else ['Guides','Plugins','Templates','Download','Compare','Community']
- urls=[route(x,lang) for x in ['guides','plugins','templates','download']]+[route('',lang)+'#compare',route('',lang)+'#community']
+ urls=[route(x,lang) for x in ['guides','plugins','templates','download','compare','community']]
  navigation=''.join(f'<a href="{u}">{label}</a>' for u,label in zip(urls,labels))
  return f'''<header class="topbar"><div class="container nav"><a class="brand" href="{route('',lang)}"><span class="logo">◇</span>PhotoCraft</a><nav class="navlinks" aria-label="{'Main navigation' if lang=='en' else '主导航'}">{navigation}</nav><div class="nav-actions"><nav class="language-switch" aria-label="Language"><a href="{route(slug,'zh')}" lang="zh-CN" hreflang="zh-CN" {'aria-current="page"' if lang=='zh' else ''} data-language="zh">中文</a><a href="{route(slug,'en')}" lang="en" hreflang="en" {'aria-current="page"' if lang=='en' else ''} data-language="en">EN</a></nav><button class="menubtn" aria-label="{'Open menu' if lang=='en' else '展开导航'}" aria-expanded="false" aria-controls="mobile-nav">☰</button></div></div><nav class="mobile-nav" id="mobile-nav" aria-label="{'Mobile navigation' if lang=='en' else '移动导航'}">{navigation}</nav></header>'''
 def shell(slug,lang,title,intro,body):
@@ -50,7 +50,7 @@ for lang in ['en','zh']:
  resources=[('plugins','Plugins & integrations','插件与集成','Official WASM filters and community tools.','官方 WASM 滤镜与社区工具。'),('templates','Templates & resources','模板与素材','14 template packs, plus textures and color presets.','14 套模板，以及纹理和调色预设。'),('guides/luts','LUTs & color presets','LUT 与调色预设','Explore color looks and learn how to test them.','寻找调色风格，了解测试方法。'),('guides/comfyui','ComfyUI workflows','ComfyUI 工作流','Connect images, selections and AI workflows.','连接图像、选区与 AI 工作流。')]
  resource_cards=''.join(f'<a class="guide-card" href="{route(slug,lang)}"><div class="overline">PHOTOCRAFT RESOURCES</div><h3>{ze if lang=="zh" else en}</h3><p>{zd if lang=="zh" else ed}</p><span class="read">{t["read"]}</span></a>' for slug,en,ze,ed,zd in resources)
  resource_block=f'<div class="resource-library" id="resources"><div class="section-title"><div><div class="overline">EXTEND YOUR WORKFLOW</div><h2>{"Resources for your next project" if lang=="en" else "为下一个作品寻找资源"}</h2></div></div><p class="source-note">{"Original downloads, official documentation and community tools · application compatibility is labeled per resource." if lang=="en" else "原创下载、官方文档与社区工具 · 每项资源均注明兼容性验证范围。"}</p><div class="guide-grid">{resource_cards}</div><p><a class="text-link" href="{route('compatibility/photoshop-plugins',lang)}">{"Do Photoshop plugins work in PhotoCraft? →" if lang=="en" else "Photoshop 插件能在 PhotoCraft 中使用吗？ →"}</a></p></div>'
- home=re.sub(r'<div class="future">.*?</section>',resource_block+'</section>',home,count=1,flags=re.S)
+ home=home.replace('<!-- RESOURCE_LIBRARY -->',resource_block)
 
  path=DIST/('zh/index.html' if lang=='zh' else 'index.html');path.write_text(home)
  if lang=='en':
