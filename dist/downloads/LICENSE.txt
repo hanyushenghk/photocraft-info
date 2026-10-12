@@ -1,0 +1,13 @@
+PhotoCraft Resource Hub — Original Starter Assets, version 1.0 (2026-10-12)
+
+Permission is granted to use, copy, modify and redistribute these original layouts,
+geometric graphics, textures and LUT files for personal and commercial projects,
+including client work and finished products. Attribution is appreciated, not required.
+No third-party photographs or font files are included. This permission applies only
+to files in this pack, not to linked external resources or third-party software.
+Assets are provided as-is, without warranty. Do not imply endorsement by ArtCraft,
+Adobe or the creators of PhotoCraft. This is an independent resource collection.
+
+本站原创资源：允许个人与商业使用、修改、再分发及客户项目使用，无需署名。
+不包含第三方照片或字体文件。本授权不适用于外部链接的素材或第三方软件。
+按现状提供，不作兼容性保证；请勿暗示获得 ArtCraft 或 Adobe 官方背书。

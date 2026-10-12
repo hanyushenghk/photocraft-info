@@ -58,3 +58,17 @@ Homepage installation steps and all 12 shortcuts are pre-rendered from `content/
 Run `python3 scripts/check_site.py` after rebuilding to validate local links, language pairs, metadata, JSON-LD, sitemap coverage and static content. These checks do not substitute for browser rendering, live HTTP validation, Google Rich Results testing or Search Console inspection.
 
 The Sites deployment was owner-private when checked on October 12, 2026. Public crawling requires the owner to explicitly enable public access. No Search Console verification token, sitemap submission or indexing guarantee is included. When publishing on another domain, update the configured origin and rebuild before submitting its sitemap.
+
+
+## Original downloadable resource collection
+
+The live site is public at https://photo-craft.io. `/templates/` and `/zh/templates/`
+include 6 original layered PSD layouts, 4 PNG textures and 4 CUBE LUTs. Downloads
+are self-hosted in `dist/downloads`, with permission and bilingual instructions.
+PSD sample lettering is rasterized; optional SVG source retains text elements.
+These assets are programmatically validated, not tested in the PhotoCraft app.
+
+To regenerate assets: install `scripts/requirements-resources.txt`, then run
+`python scripts/build_resources.py`, `python scripts/build_content.py`,
+`python scripts/check_resources.py` and `python scripts/check_site.py`.
+The generator uses DejaVu Sans from the host; no font files are distributed.

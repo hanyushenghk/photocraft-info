@@ -890,12 +890,12 @@
   {
     "slug": "templates",
     "title": {
-      "en": "PhotoCraft templates & creative resources",
-      "zh": "PhotoCraft 模板与创作资源"
+      "en": "Free PhotoCraft templates & assets",
+      "zh": "免费 PhotoCraft 模板与素材下载"
     },
     "intro": {
-      "en": "Find PSD template sources, choose a practical starting layout and check editability before using it in PhotoCraft.",
-      "zh": "寻找 PSD 模板来源，选择实用版式，并在 PhotoCraft 中检查可编辑性与保存结果。"
+      "en": "Download original layered PSD templates, PNG backgrounds and CUBE color presets. Clear previews, direct links and permission for personal and commercial projects.",
+      "zh": "直接下载原创分层 PSD 模板、PNG 背景和 CUBE 调色预设。提供预览、使用说明及个人与商业项目授权。"
     },
     "category": {
       "en": "TEMPLATES & RESOURCES",
@@ -904,47 +904,58 @@
     "checked": "2026-10-12",
     "sections": [
       {
-        "id": "status",
+        "id": "use",
         "title": {
-          "en": "A curated starting point",
-          "zh": "从可靠的素材入口开始"
+          "en": "Choose the right download",
+          "zh": "选择合适的下载文件"
         },
         "body": {
-          "en": "<p><strong>Source directory · compatibility not yet tested by this site.</strong> PhotoCraft documents layered PSD support, but that is not a guarantee that every Photoshop template, font or smart-object effect will survive editing and saving.</p><p>This page links to original resource providers. We do not currently host a tested PhotoCraft template pack. Treat every external PSD as a candidate until you complete the checks below.</p>",
-          "zh": "<p><strong>素材来源目录 · 本站尚未实测兼容性。</strong> PhotoCraft 文档提供分层 PSD 支持，但不代表所有 Photoshop 模板、字体或智能对象效果都能在编辑和保存后完整保留。</p><p>本页链接原始素材提供方，目前没有托管经过实测的 PhotoCraft 模板包。外部 PSD 在完成以下检查前均属于候选素材。</p>"
+          "en": "<p><strong>Template ZIP:</strong> layered PSD, ready-to-use PNG, optional SVG vector source, bilingual README and license. <strong>PSD:</strong> download the layered document alone. <strong>PNG:</strong> download a flattened image ready to place in a layout. <strong>CUBE:</strong> download a color preset.</p><p>All 14 resources are original geometric layouts, procedural textures or mathematical color looks produced for this independent site. They contain no third-party photographs and no bundled font files. Template lettering is in English as an example; replace it with your own language.</p><p><a href=\"/downloads/LICENSE.txt\" download>Download the permission file</a> · <a href=\"/downloads/README.txt\" download>Download the bilingual instructions</a></p>",
+          "zh": "<p><strong>模板 ZIP：</strong>包含分层 PSD、可直接使用的 PNG、可选 SVG 矢量源码、中英文 README 与授权。<strong>PSD：</strong>仅下载分层文档。<strong>PNG：</strong>下载可放入作品的平面图片。<strong>CUBE：</strong>下载调色预设。</p><p>14 份资源均为本站制作的原创几何版式、程序纹理或数学调色风格，不包含第三方照片和字体文件。模板中的英文是示例文案，可替换成你需要的语言。</p><p><a href=\"/downloads/LICENSE.txt\" download>下载授权说明</a> · <a href=\"/downloads/README.txt\" download>下载中英文使用说明</a></p>"
         }
       },
       {
-        "id": "sources-list",
+        "id": "edit",
         "title": {
-          "en": "Browse original sources",
-          "zh": "浏览原始来源"
+          "en": "Edit a layered template",
+          "zh": "编辑分层模板"
         },
         "body": {
-          "en": "<h3>Resource Boy</h3><p>A general design resource directory with templates and mockups. Start at <a href=\"https://resourceboy.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Resource Boy ↗</a> or browse <a href=\"https://resourceboy.com/mockups/\" target=\"_blank\" rel=\"noopener noreferrer\">PSD mockups ↗</a> for packaging, apparel and stationery.</p><p><strong>Format:</strong> check each listing. <strong>PhotoCraft compatibility:</strong> untested. <strong>Download:</strong> on the provider’s website. <strong>License:</strong> check the individual resource and provider terms; free access does not grant redistribution rights.</p><h3>Need color rather than a layout?</h3><p><a href=\"/guides/luts/\">Explore LUT sources and the PhotoCraft color lookup guide →</a></p>",
-          "zh": "<h3>Resource Boy</h3><p>通用设计素材目录，包含模板与样机。可访问<a href=\"https://resourceboy.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Resource Boy 首页 ↗</a>，或浏览<a href=\"https://resourceboy.com/mockups/\" target=\"_blank\" rel=\"noopener noreferrer\">PSD 样机分类 ↗</a>中的包装、服装和品牌物料。</p><p><strong>格式：</strong>逐项查看。<strong>PhotoCraft 兼容性：</strong>未实测。<strong>下载：</strong>前往作者网站。<strong>许可：</strong>检查具体素材与提供方条款；免费下载不等于允许再次分发。</p><h3>需要调色而不是版式？</h3><p><a href=\"/zh/guides/luts/\">查看 LUT 来源与 PhotoCraft 调色指南 →</a></p>"
+          "en": "<ol><li>Unzip the pack and open its PSD using File → Open.</li><li>Find the separate background, decorative shapes, image placeholder and sample lettering layers.</li><li>To replace words, hide <strong>Sample lettering - hide and replace</strong> and use the Type tool to add new text. The included PSD lettering is rasterized, not live type.</li><li>Replace the image placeholder with your own image on a new layer. Move and resize it to fit.</li><li>Save to a new filename and reopen it before exporting PNG or JPEG.</li></ol><p>The optional SVG keeps text elements editable in a vector editor. Font substitution may change line lengths. We do not claim PhotoCraft SVG import support or include smart-object mockups.</p>",
+          "zh": "<ol><li>解压模板包，通过 File → Open 打开 PSD。</li><li>找到独立的背景、装饰形状、图片占位和示例文字图层。</li><li>修改文案时，隐藏 <strong>Sample lettering - hide and replace</strong> 图层，再使用文字工具输入。PSD 示例文字已栅格化，不能直接当文字图层编辑。</li><li>将自己的图片放到新图层，替换占位区域，并调整位置和大小。</li><li>另存为新文件，重新打开确认后再导出 PNG 或 JPEG。</li></ol><p>可选 SVG 在矢量编辑器中保留文字元素，字体替换可能影响排版。本站不宣称 PhotoCraft 支持 SVG 导入，也不将这些版式标为智能对象样机。</p>"
         }
       },
       {
-        "id": "choose",
+        "id": "textures",
         "title": {
-          "en": "Choose a first template",
-          "zh": "第一份模板怎么选"
+          "en": "Use a texture or color preset",
+          "zh": "使用纹理与调色预设"
         },
         "body": {
-          "en": "<ul><li><strong>Social graphics:</strong> a photo, editable headline and a small number of shape layers make a manageable first test.</li><li><strong>Product banners:</strong> choose layouts with separate product, background and text layers.</li><li><strong>Business graphics:</strong> check required fonts, output dimensions and whether the intended print workflow is supported.</li><li><strong>Packaging and apparel mockups:</strong> expect more testing when replacement depends on smart objects, warps or complex effects.</li></ul><p>These are suggested use cases, not claims that specific packs have passed compatibility testing.</p>",
-          "zh": "<ul><li><strong>社交媒体图片：</strong>照片、可编辑标题与少量形状图层，适合第一次测试。</li><li><strong>产品横幅：</strong>优先选择产品、背景与文字分层清晰的版式。</li><li><strong>企业物料：</strong>检查所需字体、输出尺寸与目标印刷工作流是否得到支持。</li><li><strong>包装和服装样机：</strong>如依赖智能对象替换、变形和复杂特效，应预留更多测试时间。</li></ul><p>这些是选题与使用建议，不代表具体素材包已经通过兼容性测试。</p>"
+          "en": "<p><strong>PNG textures:</strong> open the texture, copy it into your project as a layer and resize it. Lower opacity for a subtler background. Four 1024 × 1024 images are included; they are not ABR brush files or PAT preset files.</p><p><strong>CUBE LUTs:</strong> use the documented Color Lookup adjustment in a compatible PhotoCraft build. Load the .cube file, compare visibility and adjust opacity. These are creative looks for standard RGB photos, not LOG conversions. The previews are generated color charts, not app screenshots.</p><p><a href=\"/guides/luts/\">Read the LUT workflow guide →</a></p>",
+          "zh": "<p><strong>PNG 纹理：</strong>打开后复制到项目成为图层，调整尺寸。降低不透明度可获得更轻柔的背景。包含 4 张 1024 × 1024 图片，它们不是 ABR 笔刷或 PAT 预设文件。</p><p><strong>CUBE LUT：</strong>在兼容的 PhotoCraft 版本中，通过文档所述 Color Lookup 调整加载 .cube 文件，切换可见性并调整不透明度。这些是用于常规 RGB 照片的创意风格，不是 LOG 转换预设。预览为程序生成色卡，不是应用截图。</p><p><a href=\"/zh/guides/luts/\">阅读 LUT 操作指南 →</a></p>"
         }
       },
       {
-        "id": "check",
+        "id": "license",
         "title": {
-          "en": "Check before committing to a template",
-          "zh": "正式使用前的检查步骤"
+          "en": "License and validation",
+          "zh": "授权与验证范围"
         },
         "body": {
-          "en": "<ol><li>Read the author’s license and list of fonts. Keep the original archive unchanged.</li><li>Open a copy of the PSD and compare it with the author’s preview.</li><li>Edit one text layer and one image placeholder. Check masks, clipping and effects.</li><li>Save under a new filename, close it and reopen it.</li><li>Export a PNG or JPEG and compare dimensions, typography and color outside the editor.</li><li>Record the PhotoCraft version, operating system, template source and any differences.</li></ol><p>Only call a resource “tested” when that exact file has passed a documented workflow. Resource Boy restricts repackaging its resources for distribution; use original download links.</p>",
-          "zh": "<ol><li>阅读作者许可与字体清单，保留原始压缩包。</li><li>打开 PSD 副本，与作者预览图比较。</li><li>修改一个文字图层和一个图片占位，检查蒙版、剪贴与效果。</li><li>用新文件名保存，关闭后重新打开。</li><li>导出 PNG 或 JPEG，在编辑器外检查尺寸、文字与颜色。</li><li>记录 PhotoCraft 版本、系统、素材来源和观察到的差异。</li></ol><p>只有针对该文件完成明确流程后，才应标记“已实测”。Resource Boy 限制素材重新打包分发，请使用原始下载入口。</p>"
+          "en": "<p><strong>Commercial use permitted.</strong> You may use, modify and redistribute these original assets in personal work, client projects and finished products. Attribution is appreciated but not required. This permission applies to the files in this collection, not to linked third-party resources or software.</p><p>Validation includes PSD layer decoding and composite comparison, PNG decoding, CUBE entry counts and ranges, and ZIP integrity. <strong>We have not opened these files inside PhotoCraft.</strong> Keep originals and test a copy before relying on a production workflow. Assets are provided as-is without warranty.</p><p>Created October 12, 2026 · Collection v1.0 · Independent of ArtCraft and Adobe.</p>",
+          "zh": "<p><strong>允许商业使用。</strong>可在个人作品、客户项目与成品中使用、修改和再分发这些原创资源，欢迎署名但不强制。该授权仅适用于本资源包，不适用于外部链接素材或第三方软件。</p><p>已验证 PSD 图层读取及合成图一致性、PNG 解码、CUBE 数据行数与范围、ZIP 完整性。<strong>尚未在 PhotoCraft 应用中打开实测。</strong>正式使用前保留原文件，并用副本验证工作流。资源按现状提供，不作保证。</p><p>创建日期：2026 年 10 月 12 日 · 资源包 v1.0 · 与 ArtCraft、Adobe 无隶属关系。</p>"
+        }
+      },
+      {
+        "id": "more",
+        "title": {
+          "en": "Explore external resource sources",
+          "zh": "更多外部素材来源"
+        },
+        "body": {
+          "en": "<p>For additional third-party layouts, browse <a href=\"https://resourceboy.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Resource Boy</a>. External assets have their own licenses and are not part of our starter collection. Their PhotoCraft compatibility has not been tested here.</p>",
+          "zh": "<p>更多第三方版式可浏览 <a href=\"https://resourceboy.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Resource Boy</a>。外部素材有独立许可，不属于本站原创资源包，本站未测试其 PhotoCraft 兼容性。</p>"
         }
       }
     ],
@@ -993,6 +1004,17 @@
         "body": {
           "en": "<p>A LUT maps input colors to output colors. It is useful for a repeatable color treatment; it does not fix every exposure or white-balance problem.</p><p>The PhotoCraft README lists <strong>Color Lookup</strong> with <code>.cube</code>, <code>.3dl</code> and <code>.look</code> support. This is a documented format capability, not a test of every LUT file. The resources below have not been imported by this site.</p>",
           "zh": "<p>LUT 将输入颜色映射为输出颜色，可重复应用调色风格，但不能自动解决所有曝光或白平衡问题。</p><p>PhotoCraft README 列出 <strong>Color Lookup</strong> 对 <code>.cube</code>、<code>.3dl</code>、<code>.look</code> 的支持。这是文档中的格式能力，不是对每个 LUT 文件的兼容测试。本站尚未导入测试下列资源。</p>"
+        }
+      },
+      {
+        "id": "starter",
+        "title": {
+          "en": "Download four original LUTs",
+          "zh": "下载四款原创 LUT"
+        },
+        "body": {
+          "en": "<p>Try Warm Editorial, Cool Slate, Soft Matte and Monochrome Contrast. Each .cube file uses a 17³ grid for standard RGB photos. <a href=\"/templates/#resources-luts\">Browse previews in the resource library</a>, or <a href=\"/downloads/luts-starter.zip\" download>download all four LUTs with instructions</a>. Files have passed structural checks, but have not been tested inside PhotoCraft.</p>",
+          "zh": "<p>提供暖调编辑、冷调青灰、柔和哑光、黑白对比四款原创风格，每份 .cube 使用 17³ 网格，面向常规 RGB 照片。<a href=\"/zh/templates/#resources-luts\">在资源库浏览预览</a>，或<a href=\"/downloads/luts-starter.zip\" download>下载四款预设与说明</a>。文件已通过结构校验，尚未在 PhotoCraft 内实测。</p>"
         }
       },
       {

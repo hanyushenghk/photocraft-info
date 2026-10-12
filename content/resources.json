@@ -1,0 +1,416 @@
+[
+  {
+    "id": "social-launch",
+    "kind": "template",
+    "title": {
+      "en": "Fresh Perspective · Social Post",
+      "zh": "全新视角 · 社交帖子"
+    },
+    "description": {
+      "en": "An editorial square with separate color blocks and a generous headline area.",
+      "zh": "编辑风格方形版式，独立色块与宽敞标题区域。"
+    },
+    "width": 1080,
+    "height": 1080,
+    "preview": "/assets/resources/social-launch.webp",
+    "downloads": [
+      {
+        "label": "ZIP",
+        "url": "/downloads/social-launch.zip",
+        "bytes": 89558,
+        "sha256": "234903e1c18aed75674e90c78cbe6bc1104c9abc072daf546660979e649ef335"
+      },
+      {
+        "label": "PSD",
+        "url": "/downloads/social-launch.psd",
+        "bytes": 353139,
+        "sha256": "0eb47dd3f94650e37ddacf12071f09431140813a05bc84bfa4752dd8a6ba293e"
+      },
+      {
+        "label": "PNG",
+        "url": "/downloads/social-launch.png",
+        "bytes": 29382,
+        "sha256": "f3e877cc96825c6064d186ed4f376accc52f101855fe8ef16893237b5db59618"
+      }
+    ],
+    "layers": 4,
+    "format": "PSD + PNG + SVG"
+  },
+  {
+    "id": "video-cover",
+    "kind": "template",
+    "title": {
+      "en": "The Creative Edit · Video Cover",
+      "zh": "创意时刻 · 视频封面"
+    },
+    "description": {
+      "en": "A bold 16:9 thumbnail with a replaceable illustration panel.",
+      "zh": "醒目的 16:9 视频缩略图，带可替换插图区域。"
+    },
+    "width": 1280,
+    "height": 720,
+    "preview": "/assets/resources/video-cover.webp",
+    "downloads": [
+      {
+        "label": "ZIP",
+        "url": "/downloads/video-cover.zip",
+        "bytes": 89765,
+        "sha256": "15c42877bf6c7b2ed05441a9c0995db9e13f600ac0eb8c32764c088f628dac96"
+      },
+      {
+        "label": "PSD",
+        "url": "/downloads/video-cover.psd",
+        "bytes": 296976,
+        "sha256": "b9396a08fde2d362b5d443853a999b5893cf9c824fef8ff8d69b7f7178eaca55"
+      },
+      {
+        "label": "PNG",
+        "url": "/downloads/video-cover.png",
+        "bytes": 29881,
+        "sha256": "331ac6f019bddb377851b94297df47b31f3364d2ebca662455e58582622596b0"
+      }
+    ],
+    "layers": 4,
+    "format": "PSD + PNG + SVG"
+  },
+  {
+    "id": "vertical-story",
+    "kind": "template",
+    "title": {
+      "en": "Next Chapter · Story",
+      "zh": "下一章 · 竖版故事"
+    },
+    "description": {
+      "en": "A 9:16 vertical layout with a large art panel and call-to-action area.",
+      "zh": "9:16 竖版布局，大幅视觉区与行动按钮区域。"
+    },
+    "width": 1080,
+    "height": 1920,
+    "preview": "/assets/resources/vertical-story.webp",
+    "downloads": [
+      {
+        "label": "ZIP",
+        "url": "/downloads/vertical-story.zip",
+        "bytes": 127824,
+        "sha256": "0d13b89e7234d80cd63c00fab681539605712e987723fbff5159352fb990ae96"
+      },
+      {
+        "label": "PSD",
+        "url": "/downloads/vertical-story.psd",
+        "bytes": 632588,
+        "sha256": "9acb9dcb22d50c29c2b7f15c6328c8df34756877b2ac0137feadfdbfaa7a789d"
+      },
+      {
+        "label": "PNG",
+        "url": "/downloads/vertical-story.png",
+        "bytes": 43097,
+        "sha256": "1812d150a728ef1a5e8ed8b8b2c882282439ed4cbc2082b5e1a550842ae14e06"
+      }
+    ],
+    "layers": 3,
+    "format": "PSD + PNG + SVG"
+  },
+  {
+    "id": "product-square",
+    "kind": "template",
+    "title": {
+      "en": "Everyday Essentials · Product",
+      "zh": "日常精选 · 产品主图"
+    },
+    "description": {
+      "en": "A clean product layout with a separate geometric bottle placeholder.",
+      "zh": "简洁产品版式，附独立几何瓶身占位图层。"
+    },
+    "width": 1200,
+    "height": 1200,
+    "preview": "/assets/resources/product-square.webp",
+    "downloads": [
+      {
+        "label": "ZIP",
+        "url": "/downloads/product-square.zip",
+        "bytes": 91136,
+        "sha256": "142e2424a8ee77225de544470c2df08e83f355e19a2567eb655761fc956755ef"
+      },
+      {
+        "label": "PSD",
+        "url": "/downloads/product-square.psd",
+        "bytes": 419562,
+        "sha256": "de3a79ed107521b54cd2f3f3d6f385ae1e53c9aa1ff95caebd4fd0e737e175cc"
+      },
+      {
+        "label": "PNG",
+        "url": "/downloads/product-square.png",
+        "bytes": 32045,
+        "sha256": "1cc4985bf2b02cc93903dda09ad961533b7cbbd1fe36ccfff67e9fe564bb0cff"
+      }
+    ],
+    "layers": 4,
+    "format": "PSD + PNG + SVG"
+  },
+  {
+    "id": "website-banner",
+    "kind": "template",
+    "title": {
+      "en": "Ideas Into Impact · Banner",
+      "zh": "创意成效 · 网站横幅"
+    },
+    "description": {
+      "en": "A panoramic hero banner for a studio, business or portfolio.",
+      "zh": "适合工作室、企业与作品集的宽幅首屏横幅。"
+    },
+    "width": 1600,
+    "height": 600,
+    "preview": "/assets/resources/website-banner.webp",
+    "downloads": [
+      {
+        "label": "ZIP",
+        "url": "/downloads/website-banner.zip",
+        "bytes": 90582,
+        "sha256": "3b59c968c16fb8961e95bd3f6b627a45f231e5a77adc27f87949a035636211c0"
+      },
+      {
+        "label": "PSD",
+        "url": "/downloads/website-banner.psd",
+        "bytes": 282356,
+        "sha256": "61a6e051f83340853134fb3c0b56799dd31f838806537ba8a2bf5788e940cef3"
+      },
+      {
+        "label": "PNG",
+        "url": "/downloads/website-banner.png",
+        "bytes": 30303,
+        "sha256": "bf7cca9996edf24b01726ad89e813a54478115e154bda5ac9896c032374e3fd8"
+      }
+    ],
+    "layers": 3,
+    "format": "PSD + PNG + SVG"
+  },
+  {
+    "id": "creative-poster",
+    "kind": "template",
+    "title": {
+      "en": "Creative Session · Poster",
+      "zh": "创意聚会 · 活动海报"
+    },
+    "description": {
+      "en": "A 4:5 event poster with clear type hierarchy and a separate footer.",
+      "zh": "4:5 活动海报，清晰标题层级与独立底栏。"
+    },
+    "width": 1080,
+    "height": 1350,
+    "preview": "/assets/resources/creative-poster.webp",
+    "downloads": [
+      {
+        "label": "ZIP",
+        "url": "/downloads/creative-poster.zip",
+        "bytes": 117521,
+        "sha256": "f54c2183b70f08ccfc56eadb6c634266db54099f7165c6910df2a3f012110a00"
+      },
+      {
+        "label": "PSD",
+        "url": "/downloads/creative-poster.psd",
+        "bytes": 502789,
+        "sha256": "7ad847d6a4b1cfb1b3fed2f1d270df40acc4b67b047187c0b64f6381962baa68"
+      },
+      {
+        "label": "PNG",
+        "url": "/downloads/creative-poster.png",
+        "bytes": 37645,
+        "sha256": "6fb07c6128c5c558dadaf933569d7fdb672c0f53339bd002cd8c9d637cb57dea"
+      }
+    ],
+    "layers": 3,
+    "format": "PSD + PNG + SVG"
+  },
+  {
+    "id": "linen-grid",
+    "kind": "texture",
+    "title": {
+      "en": "Linen Grid",
+      "zh": "亚麻网格"
+    },
+    "description": {
+      "en": "Original 1024 px background. Import as an image layer and adjust opacity.",
+      "zh": "原创 1024 像素背景，导入为图像图层后调整不透明度。"
+    },
+    "width": 1024,
+    "height": 1024,
+    "preview": "/assets/resources/linen-grid.webp",
+    "downloads": [
+      {
+        "label": "PNG",
+        "url": "/downloads/linen-grid.png",
+        "bytes": 77012,
+        "sha256": "babee18c3b961f885c75a20206eec66dc48d741c320b7230ffaf681cb3eb833d"
+      }
+    ],
+    "format": "PNG"
+  },
+  {
+    "id": "paper-grain",
+    "kind": "texture",
+    "title": {
+      "en": "Warm Paper",
+      "zh": "暖色纸纹"
+    },
+    "description": {
+      "en": "Original 1024 px background. Import as an image layer and adjust opacity.",
+      "zh": "原创 1024 像素背景，导入为图像图层后调整不透明度。"
+    },
+    "width": 1024,
+    "height": 1024,
+    "preview": "/assets/resources/paper-grain.webp",
+    "downloads": [
+      {
+        "label": "PNG",
+        "url": "/downloads/paper-grain.png",
+        "bytes": 630793,
+        "sha256": "4fcc17eeef53fc1723f0343d8c9e8be64d99a37467f4c7c53e321bce97882307"
+      }
+    ],
+    "format": "PNG"
+  },
+  {
+    "id": "dot-matrix",
+    "kind": "texture",
+    "title": {
+      "en": "Dot Matrix",
+      "zh": "点阵纹理"
+    },
+    "description": {
+      "en": "Original 1024 px background. Import as an image layer and adjust opacity.",
+      "zh": "原创 1024 像素背景，导入为图像图层后调整不透明度。"
+    },
+    "width": 1024,
+    "height": 1024,
+    "preview": "/assets/resources/dot-matrix.webp",
+    "downloads": [
+      {
+        "label": "PNG",
+        "url": "/downloads/dot-matrix.png",
+        "bytes": 7566,
+        "sha256": "e95d20b2f144a8d90df0912fcbf130f37c06f8a9f0411afbc950f3cb84156ef4"
+      }
+    ],
+    "format": "PNG"
+  },
+  {
+    "id": "diagonal-lines",
+    "kind": "texture",
+    "title": {
+      "en": "Diagonal Lines",
+      "zh": "斜线纹理"
+    },
+    "description": {
+      "en": "Original 1024 px background. Import as an image layer and adjust opacity.",
+      "zh": "原创 1024 像素背景，导入为图像图层后调整不透明度。"
+    },
+    "width": 1024,
+    "height": 1024,
+    "preview": "/assets/resources/diagonal-lines.webp",
+    "downloads": [
+      {
+        "label": "PNG",
+        "url": "/downloads/diagonal-lines.png",
+        "bytes": 13859,
+        "sha256": "7eaf547681e73699fd35cdc2351c9c54d7e8ab642c4ff98649a85722d934be01"
+      }
+    ],
+    "format": "PNG"
+  },
+  {
+    "id": "warm-editorial",
+    "kind": "lut",
+    "title": {
+      "en": "Warm Editorial",
+      "zh": "暖调编辑"
+    },
+    "description": {
+      "en": "17³ creative LUT for standard RGB photos; not a LOG conversion. Chart preview only.",
+      "zh": "17³ 创意 LUT，适用于常规 RGB 照片；非 LOG 转换。预览为色卡示意。"
+    },
+    "width": 720,
+    "height": 720,
+    "preview": "/assets/resources/warm-editorial.webp",
+    "downloads": [
+      {
+        "label": "CUBE",
+        "url": "/downloads/warm-editorial.cube",
+        "bytes": 132761,
+        "sha256": "ba4008558ffb8b4baba93936a6d7974bec5b72f28be1653fd4e2f0060c15432b"
+      }
+    ],
+    "format": "CUBE · 17³"
+  },
+  {
+    "id": "cool-slate",
+    "kind": "lut",
+    "title": {
+      "en": "Cool Slate",
+      "zh": "冷调青灰"
+    },
+    "description": {
+      "en": "17³ creative LUT for standard RGB photos; not a LOG conversion. Chart preview only.",
+      "zh": "17³ 创意 LUT，适用于常规 RGB 照片；非 LOG 转换。预览为色卡示意。"
+    },
+    "width": 720,
+    "height": 720,
+    "preview": "/assets/resources/cool-slate.webp",
+    "downloads": [
+      {
+        "label": "CUBE",
+        "url": "/downloads/cool-slate.cube",
+        "bytes": 132757,
+        "sha256": "9a70b3b82744ee31a21e876d70dea8dbde65f72f22204b662c3fc00da3d57aad"
+      }
+    ],
+    "format": "CUBE · 17³"
+  },
+  {
+    "id": "soft-matte",
+    "kind": "lut",
+    "title": {
+      "en": "Soft Matte",
+      "zh": "柔和哑光"
+    },
+    "description": {
+      "en": "17³ creative LUT for standard RGB photos; not a LOG conversion. Chart preview only.",
+      "zh": "17³ 创意 LUT，适用于常规 RGB 照片；非 LOG 转换。预览为色卡示意。"
+    },
+    "width": 720,
+    "height": 720,
+    "preview": "/assets/resources/soft-matte.webp",
+    "downloads": [
+      {
+        "label": "CUBE",
+        "url": "/downloads/soft-matte.cube",
+        "bytes": 132757,
+        "sha256": "d90e89f26bd1574875508ad50359d0df2460feda0c1028b59ef32a868c5aad7c"
+      }
+    ],
+    "format": "CUBE · 17³"
+  },
+  {
+    "id": "mono-contrast",
+    "kind": "lut",
+    "title": {
+      "en": "Monochrome Contrast",
+      "zh": "黑白对比"
+    },
+    "description": {
+      "en": "17³ creative LUT for standard RGB photos; not a LOG conversion. Chart preview only.",
+      "zh": "17³ 创意 LUT，适用于常规 RGB 照片；非 LOG 转换。预览为色卡示意。"
+    },
+    "width": 720,
+    "height": 720,
+    "preview": "/assets/resources/mono-contrast.webp",
+    "downloads": [
+      {
+        "label": "CUBE",
+        "url": "/downloads/mono-contrast.cube",
+        "bytes": 132766,
+        "sha256": "0ba676daaedc45c94c2dd744bdb208dce59d5299125e199189068c1f7bca7413"
+      }
+    ],
+    "format": "CUBE · 17³"
+  }
+]
