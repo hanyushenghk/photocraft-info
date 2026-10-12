@@ -15,3 +15,5 @@
 @media(min-width:761px){.topbar .mobile-nav.open{display:none}}
 
 .asset-content .asset-attribution{font-size:11px;line-height:1.7;color:#68705f}.asset-attribution a{color:#a74923;text-decoration:underline;text-underline-offset:3px}
+
+.asset-test{margin:8px 0 14px;padding:14px;border:1px solid #d2dac7;border-radius:7px;background:#f4f6ee;overflow-wrap:anywhere}.asset-test strong{display:block;color:#294334;font-size:12px}.asset-test>span{display:block;margin:5px 0 9px;color:#62695a;font-size:10px}.asset-content .asset-test p{margin:6px 0;font-size:11px;line-height:1.6}.asset-content .asset-test .asset-test-caution{color:#775032}.asset-test a{display:inline-block;margin-top:5px;font-size:11px;color:#294334;text-decoration:underline;text-underline-offset:3px}
