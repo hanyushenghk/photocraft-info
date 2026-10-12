@@ -1,0 +1,246 @@
+{
+  "en": {
+    "installs": {
+      "windows": {
+        "title": "PhotoCraft for Windows",
+        "format": "MSI installer / portable ZIP",
+        "steps": [
+          [
+            "Choose your architecture",
+            "Choose x64 for most Intel / AMD PCs, or arm64 for ARM devices. Match the official installer to your device architecture."
+          ],
+          [
+            "Install or extract",
+            "Run the MSI and follow the installation wizard. For the portable ZIP, extract all files before launching the app."
+          ],
+          [
+            "Open your first file",
+            "Use File → Open to open an image or a copy of a PSD. Check the layers, then save it as a new file."
+          ]
+        ]
+      },
+      "mac": {
+        "title": "PhotoCraft for macOS",
+        "format": "Universal DMG · Apple silicon / Intel",
+        "steps": [
+          [
+            "Get the official DMG",
+            "Select the macOS Universal disk image from the official download page. It supports Apple silicon and Intel architectures."
+          ],
+          [
+            "Install the app",
+            "Open the DMG, drag PhotoCraft into Applications, then launch it from Applications."
+          ],
+          [
+            "Try it and save a copy",
+            "Open an image with File → Open. Save a copy when testing a PSD for the first time. Consult the official installation guide if the system shows a warning."
+          ]
+        ]
+      },
+      "linux": {
+        "title": "PhotoCraft for Linux",
+        "format": "AppImage / DEB / RPM / Flatpak",
+        "steps": [
+          [
+            "Choose your package",
+            "Choose AppImage, DEB, RPM or Flatpak for your distribution and architecture. An AppImage for your architecture is a good starting point."
+          ],
+          [
+            "Allow execution",
+            "For AppImage, allow execution as a program in file properties, then launch it. For DEB / RPM, use your distribution’s package installer."
+          ],
+          [
+            "Open and inspect a file",
+            "Open a test image with File → Open. Drag and drop may be limited on Wayland; use the menu to open files."
+          ]
+        ]
+      }
+    },
+    "shortcuts": [
+      [
+        "Open file",
+        "Open",
+        "O"
+      ],
+      [
+        "Save file",
+        "Save",
+        "S"
+      ],
+      [
+        "Undo",
+        "Undo",
+        "Z"
+      ],
+      [
+        "Duplicate layer",
+        "Duplicate layer",
+        "J"
+      ],
+      [
+        "Deselect",
+        "Deselect",
+        "D"
+      ],
+      [
+        "Free transform",
+        "Free transform",
+        "T"
+      ],
+      [
+        "Select all",
+        "Select all",
+        "A"
+      ],
+      [
+        "New document",
+        "New document",
+        "N"
+      ],
+      [
+        "Copy",
+        "Copy",
+        "C"
+      ],
+      [
+        "Paste",
+        "Paste",
+        "V"
+      ],
+      [
+        "Brush tool",
+        "Brush",
+        "B",
+        true
+      ],
+      [
+        "Move tool",
+        "Move",
+        "V",
+        true
+      ]
+    ]
+  },
+  "zh": {
+    "installs": {
+      "windows": {
+        "title": "PhotoCraft for Windows",
+        "format": "MSI 安装包 / ZIP 便携版",
+        "steps": [
+          [
+            "选择设备架构",
+            "普通 Intel / AMD 电脑选择 x64；ARM 设备选择 arm64。按设备架构选择官方安装包。"
+          ],
+          [
+            "安装或解压",
+            "运行 MSI 并按照安装向导完成；便携 ZIP 版本先完整解压，再启动其中的程序。"
+          ],
+          [
+            "打开第一个文件",
+            "启动后通过 File → Open 打开图片或 PSD 副本；检查图层，再另存为新文件。"
+          ]
+        ]
+      },
+      "mac": {
+        "title": "PhotoCraft for macOS",
+        "format": "Universal DMG · Apple silicon / Intel",
+        "steps": [
+          [
+            "获取官方 DMG",
+            "在官网下载区选择 macOS Universal 磁盘映像，兼容 Apple silicon 与 Intel 架构。"
+          ],
+          [
+            "完成安装",
+            "打开 DMG，将 PhotoCraft 拖入 Applications（应用程序），再从应用程序中启动。"
+          ],
+          [
+            "试用并保存副本",
+            "用 File → Open 打开图片；首次测试 PSD 时另存为副本。遇到系统提示请查官方安装文档。"
+          ]
+        ]
+      },
+      "linux": {
+        "title": "PhotoCraft for Linux",
+        "format": "AppImage / DEB / RPM / Flatpak",
+        "steps": [
+          [
+            "选择适合的包",
+            "按发行版与架构选择 AppImage、DEB、RPM 或 Flatpak。新手可先尝试对应架构的 AppImage。"
+          ],
+          [
+            "授予执行权限",
+            "AppImage：在文件属性中允许作为程序执行，然后启动。DEB / RPM 可使用发行版的软件安装器。"
+          ],
+          [
+            "打开文件并检查",
+            "通过 File → Open 打开测试图片。Wayland 下拖放可能受限，可使用菜单打开文件。"
+          ]
+        ]
+      }
+    },
+    "shortcuts": [
+      [
+        "打开文件",
+        "Open",
+        "O"
+      ],
+      [
+        "保存文件",
+        "Save",
+        "S"
+      ],
+      [
+        "撤销操作",
+        "Undo",
+        "Z"
+      ],
+      [
+        "复制图层",
+        "Duplicate layer",
+        "J"
+      ],
+      [
+        "取消选择",
+        "Deselect",
+        "D"
+      ],
+      [
+        "自由变换",
+        "Free transform",
+        "T"
+      ],
+      [
+        "全选",
+        "Select all",
+        "A"
+      ],
+      [
+        "新建文件",
+        "New document",
+        "N"
+      ],
+      [
+        "复制",
+        "Copy",
+        "C"
+      ],
+      [
+        "粘贴",
+        "Paste",
+        "V"
+      ],
+      [
+        "画笔工具",
+        "Brush",
+        "B",
+        true
+      ],
+      [
+        "移动工具",
+        "Move",
+        "V",
+        true
+      ]
+    ]
+  }
+}

@@ -48,3 +48,13 @@ Content snapshot: October 10, 2026. Release highlights are dated snapshots, not 
 ## 中文说明
 
 PhotoCraft 独立中英文资源站，默认英文，包含 8 篇双语详细指南、可搜索教程中心、快捷键和功能对比。修改 `content/` 中的内容后运行 `python3 scripts/build_content.py`，再将 `dist/` 部署到静态网站根目录。新域名或 GitHub Pages 子路径需要相应修改 URL。
+
+## SEO and validation
+
+`python3 scripts/build_content.py` also runs `scripts/seo.py`, which provides unique bilingual titles, descriptions, canonical and reciprocal hreflang links, Open Graph/Twitter image metadata, and WebSite/WebPage/BreadcrumbList JSON-LD. The `/en/` alias canonicalizes to `/`. The sitemap lists only the 20 canonical URLs.
+
+Homepage installation steps and all 12 shortcuts are pre-rendered from `content/home-data.json` and enhanced with the existing JavaScript controls. The hero image has high fetch priority; lower-page screenshots use lazy loading, explicit dimensions, descriptive alt text and asynchronous decoding.
+
+Run `python3 scripts/check_site.py` after rebuilding to validate local links, language pairs, metadata, JSON-LD, sitemap coverage and static content. These checks do not substitute for browser rendering, live HTTP validation, Google Rich Results testing or Search Console inspection.
+
+The Sites deployment was owner-private when checked on October 12, 2026. Public crawling requires the owner to explicitly enable public access. No Search Console verification token, sitemap submission or indexing guarantee is included. When publishing on another domain, update the configured origin and rebuild before submitting its sitemap.

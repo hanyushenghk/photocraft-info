@@ -54,3 +54,5 @@ for url in urls:
 ET.ElementTree(xml).write(DIST/'sitemap.xml',encoding='utf-8',xml_declaration=True)
 (DIST/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+ORIGIN+'/sitemap.xml\n')
 print(f'Built {len(PAGES)*2} article pages, 2 guide hubs, 3 home routes and sitemap.')
+from seo import optimize
+optimize(ROOT, ORIGIN)
