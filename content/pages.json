@@ -728,5 +728,406 @@
       "compatibility/psd",
       "troubleshooting"
     ]
+  },
+  {
+    "slug": "plugins",
+    "title": {
+      "en": "PhotoCraft plugins & integrations",
+      "zh": "PhotoCraft 插件与集成"
+    },
+    "intro": {
+      "en": "Explore the official WebAssembly filter API, an example plug-in and a community ComfyUI bridge—with clear compatibility labels.",
+      "zh": "了解官方 WebAssembly 滤镜接口、示例插件与社区 ComfyUI 集成，分清格式支持与实测兼容。"
+    },
+    "category": {
+      "en": "PLUGINS & INTEGRATIONS",
+      "zh": "插件与集成"
+    },
+    "checked": "2026-10-12",
+    "sections": [
+      {
+        "id": "status",
+        "title": {
+          "en": "Know what each resource is",
+          "zh": "先分清资源类型"
+        },
+        "body": {
+          "en": "<p><strong>Documentation checked · October 12, 2026.</strong> These entries have not been installed or benchmarked by this site. The upstream main branch may describe features newer than your installed release.</p><p>PhotoCraft filter plug-ins use sandboxed WebAssembly modules. A community bridge is a separate integration, not necessarily a filter you can install inside PhotoCraft.</p>",
+          "zh": "<p><strong>文档核对：2026 年 10 月 12 日。</strong> 本站尚未安装或测试这些资源。上游 main 分支的文档可能包含早于正式发行的功能，请核对本机版本。</p><p>PhotoCraft 滤镜插件采用沙盒中的 WebAssembly 模块。社区桥接工具属于另一类集成，不一定能在 PhotoCraft 内作为滤镜安装。</p>"
+        }
+      },
+      {
+        "id": "directory",
+        "title": {
+          "en": "The resource directory",
+          "zh": "资源目录"
+        },
+        "body": {
+          "en": "<h3>Official · WebAssembly filter API</h3><p>The documented ABI v1 supports filter modules in <code>.wasm</code> format. Installed filters appear under <strong>Filter → Plug-ins</strong>. Read <a href=\"https://github.com/storytold/photocraft/blob/main/docs/plugins.md\" target=\"_blank\" rel=\"noopener noreferrer\">the official installation and API reference ↗</a>.</p><h3>Official example · Invert</h3><p>A small Rust source example for developers learning the plug-in contract. It requires a build step; this is not a hosted, one-click plug-in download. <a href=\"https://github.com/storytold/photocraft/tree/main/examples/plugins/invert-rs\" target=\"_blank\" rel=\"noopener noreferrer\">View example source ↗</a></p><h3>Community · ComfyUI–PhotoCraft Bridge</h3><p>ComfyUI nodes read an image and selection, then return the result as a new layer through the control channel. It needs ComfyUI and a configured PhotoCraft desktop process. <a href=\"/guides/comfyui/\">Read the bridge guide →</a></p>",
+          "zh": "<h3>官方文档 · WebAssembly 滤镜 API</h3><p>文档中的 ABI v1 支持 <code>.wasm</code> 格式滤镜，安装后出现在 <strong>Filter → Plug-ins</strong>。查看<a href=\"https://github.com/storytold/photocraft/blob/main/docs/plugins.md\" target=\"_blank\" rel=\"noopener noreferrer\">官方安装与 API 说明 ↗</a>。</p><h3>官方示例 · Invert 反相滤镜</h3><p>用于学习插件接口的 Rust 源码示例，需要编译。这里提供源码入口，并非本站托管的一键安装包。<a href=\"https://github.com/storytold/photocraft/tree/main/examples/plugins/invert-rs\" target=\"_blank\" rel=\"noopener noreferrer\">查看示例源码 ↗</a></p><h3>社区项目 · ComfyUI–PhotoCraft Bridge</h3><p>ComfyUI 节点通过控制通道读取图像和选区，将结果送回新图层。需要配置 ComfyUI 与 PhotoCraft 桌面进程。<a href=\"/zh/guides/comfyui/\">阅读桥接教程 →</a></p>"
+        }
+      },
+      {
+        "id": "install",
+        "title": {
+          "en": "Install a compatible filter",
+          "zh": "安装兼容滤镜"
+        },
+        "body": {
+          "en": "<ol><li>Check the author, supported PhotoCraft version, license and whether a compiled <code>.wasm</code> file is supplied.</li><li>Open a small duplicate image and select a pixel layer.</li><li>In a build that exposes the documented menu, choose <strong>Filter → Plug-ins → Install Plug-in…</strong> and select the module.</li><li>Run the installed filter, inspect its result and confirm Undo works.</li></ol><p>The official preference path is <strong>Edit → Preferences → Plug-ins</strong>. Desktop builds can load an additional plug-ins folder; the web build installs from bytes. If the menu is absent, compare your release with the documentation rather than renaming a Photoshop plug-in.</p>",
+          "zh": "<ol><li>检查作者、支持版本、许可，以及是否提供已编译的 <code>.wasm</code> 文件。</li><li>打开小图片的副本，选中像素图层。</li><li>在提供相应菜单的版本中，选择 <strong>Filter → Plug-ins → Install Plug-in…</strong>，选取模块。</li><li>运行滤镜，检查结果，并确认可以撤销。</li></ol><p>官方给出的设置入口为 <strong>Edit → Preferences → Plug-ins</strong>。桌面版可读取额外插件文件夹，网页版从文件字节安装。如果没有该菜单，应核对发行版本与文档，不要通过改扩展名安装 Photoshop 插件。</p>"
+        }
+      },
+      {
+        "id": "limits",
+        "title": {
+          "en": "What this API does not provide",
+          "zh": "当前接口的边界"
+        },
+        "body": {
+          "en": "<p>ABI v1 does not provide panel/UI plug-ins, access to other documents or plug-in-defined file formats. Its sandbox has no file-system or network imports. Native Photoshop <code>.8BF</code>, CEP and UXP extensions are not supported by this host.</p><p>For an automation or AI integration, start with the control channel or MCP documentation instead of trying to turn a network client into a filter. <a href=\"/compatibility/photoshop-plugins/\">Read the Photoshop plug-in compatibility guide →</a></p>",
+          "zh": "<p>ABI v1 不提供面板/UI 插件、跨文档访问或插件自定义文件格式，沙盒也不开放文件系统和网络导入。该插件宿主不支持 Photoshop 的 <code>.8BF</code>、CEP 和 UXP 扩展。</p><p>自动化或 AI 集成应从控制通道或 MCP 文档入手。<a href=\"/zh/compatibility/photoshop-plugins/\">查看 Photoshop 插件兼容说明 →</a></p>"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://github.com/storytold/photocraft/blob/main/docs/plugins.md",
+        "label": "Official plug-in API"
+      },
+      {
+        "url": "https://github.com/storytold/photocraft/tree/main/examples/plugins/invert-rs",
+        "label": "Official Invert source example"
+      },
+      {
+        "url": "https://github.com/the-aSak/ComfyUI-Photocraft-Bridge",
+        "label": "Community ComfyUI bridge"
+      }
+    ],
+    "related": [
+      "guides/comfyui",
+      "compatibility/photoshop-plugins",
+      "templates"
+    ]
+  },
+  {
+    "slug": "guides/comfyui",
+    "title": {
+      "en": "Connect PhotoCraft to ComfyUI",
+      "zh": "连接 PhotoCraft 与 ComfyUI"
+    },
+    "intro": {
+      "en": "A documentation-based setup guide for exchanging selections and images with the community PhotoCraft Bridge.",
+      "zh": "根据社区文档配置 PhotoCraft Bridge，在 PhotoCraft 与 ComfyUI 之间传递图像、选区和处理结果。"
+    },
+    "category": {
+      "en": "AI WORKFLOWS",
+      "zh": "AI 工作流"
+    },
+    "checked": "2026-10-12",
+    "sections": [
+      {
+        "id": "overview",
+        "title": {
+          "en": "What the bridge does",
+          "zh": "桥接工具如何工作"
+        },
+        "body": {
+          "en": "<p><strong>Community project · documentation reviewed, not locally tested.</strong> <a href=\"https://github.com/the-aSak/ComfyUI-Photocraft-Bridge\" target=\"_blank\" rel=\"noopener noreferrer\">ComfyUI–PhotoCraft Bridge ↗</a> supplies two ComfyUI nodes: <strong>Get Image</strong> reads a flattened document and selection mask; <strong>Send Image</strong> returns a result as a new layer.</p><p>It uses PhotoCraft’s local control channel and a shared folder. It is not a PhotoCraft WASM filter. A compatible image-editing or inpainting workflow and its model files must already be available in ComfyUI.</p>",
+          "zh": "<p><strong>社区项目 · 已核对文档，尚未本机实测。</strong> <a href=\"https://github.com/the-aSak/ComfyUI-Photocraft-Bridge\" target=\"_blank\" rel=\"noopener noreferrer\">ComfyUI–PhotoCraft Bridge ↗</a> 提供两个 ComfyUI 节点：<strong>Get Image</strong> 读取合成图像和选区蒙版，<strong>Send Image</strong> 将结果作为新图层送回。</p><p>它使用本机控制通道和共享文件夹，不是 PhotoCraft WASM 滤镜。你还需要在 ComfyUI 中准备可运行的图像编辑或局部重绘工作流，以及相应模型文件。</p>"
+        }
+      },
+      {
+        "id": "setup",
+        "title": {
+          "en": "1. Install and connect",
+          "zh": "1. 安装并建立连接"
+        },
+        "body": {
+          "en": "<ol><li>Install PhotoCraft desktop and confirm ComfyUI can run a simple workflow on its own.</li><li>In ComfyUI-Manager, search for <strong>PhotoCraft Bridge</strong>, or follow the repository’s manual installation instructions.</li><li>Restart ComfyUI. The bridge creates an exchange folder and prints a PhotoCraft startup command in the console.</li><li>Start PhotoCraft with that exact platform-specific command. It enables the control channel, token file and read/write roots for the exchange folder.</li></ol><p>The documented default exchange folder is <code>~/photocraft-bridge</code> (under your user profile on Windows). Keep the control endpoint local and do not share the token file. The author’s README is the source of truth for launch flags and current requirements.</p>",
+          "zh": "<ol><li>安装 PhotoCraft 桌面版，先确认 ComfyUI 本身能运行简单工作流。</li><li>在 ComfyUI-Manager 搜索 <strong>PhotoCraft Bridge</strong>，或按仓库说明手动安装。</li><li>重启 ComfyUI。桥接工具会创建交换文件夹，并在控制台输出 PhotoCraft 启动命令。</li><li>使用对应系统的该命令启动 PhotoCraft，启用控制通道、令牌文件及交换目录的读写范围。</li></ol><p>文档默认交换目录为 <code>~/photocraft-bridge</code>，Windows 位于用户目录下。控制接口保持本机访问，不要分享令牌文件。启动参数与要求以作者 README 为准。</p>"
+        }
+      },
+      {
+        "id": "round-trip",
+        "title": {
+          "en": "2. Try one small round trip",
+          "zh": "2. 完成一次小图往返"
+        },
+        "body": {
+          "en": "<ol><li>Open a duplicate image in PhotoCraft and create a selection.</li><li>Add the bridge’s Get Image and Send Image nodes to your working ComfyUI graph.</li><li>Connect Get’s image to the image-processing workflow, and the processed image to Send. Connect Get’s target to Send’s target so the result returns to the correct document.</li><li>For a selection workflow, enable <code>crop_to_selection</code> and choose padding to include useful surrounding context.</li><li>Press Queue in ComfyUI. Inspect the new layer in PhotoCraft, toggle its visibility and confirm placement and edges.</li></ol><p>Begin with the repository’s <strong>example_workflows</strong> folder. Each example may need additional models or nodes; inspect those requirements before running it. A prompt can be taken from a document note.</p>",
+          "zh": "<ol><li>在 PhotoCraft 打开图片副本，并建立选区。</li><li>在已有可运行的 ComfyUI 工作流中加入 Get Image 和 Send Image 节点。</li><li>把 Get 的 image 接入图像处理流程，将处理结果接给 Send，并连接两端的 target，确保回到正确文档。</li><li>局部编辑可启用 <code>crop_to_selection</code>，用 padding 保留适当的周边上下文。</li><li>在 ComfyUI 点击 Queue，再到 PhotoCraft 检查新图层、位置和边缘，切换可见性比较效果。</li></ol><p>可从仓库的 <strong>example_workflows</strong> 文件夹开始，但示例可能依赖额外模型或节点，运行前需检查。提示词可从文档备注读取。</p>"
+        }
+      },
+      {
+        "id": "troubleshoot",
+        "title": {
+          "en": "If no image comes back",
+          "zh": "没有返回图像时检查什么"
+        },
+        "body": {
+          "en": "<ul><li><strong>Connection fails:</strong> confirm PhotoCraft was started with the bridge-generated command, not an ordinary app shortcut.</li><li><strong>Missing nodes or model:</strong> fix the ComfyUI graph independently before retrying the bridge.</li><li><strong>Wrong position:</strong> verify the target connection and keep the destination document open.</li><li><strong>Wrong masked area:</strong> check Quick Mask semantics and the bridge’s invert_mask setting.</li><li><strong>Folder or token error:</strong> compare port, token path, shared folder and automation roots with the README.</li></ul><p>Record both app versions, the bridge revision and the exact error when reporting an issue. This integration does not establish full Photoshop Generative Fill parity.</p>",
+          "zh": "<ul><li><strong>连接失败：</strong>确认 PhotoCraft 使用桥接工具生成的命令启动，而不是普通应用快捷方式。</li><li><strong>缺少节点或模型：</strong>先让 ComfyUI 工作流独立运行，再测试桥接。</li><li><strong>返回位置错误：</strong>检查 target 连接，并保持目标文档打开。</li><li><strong>修改区域相反：</strong>检查快速蒙版含义和 invert_mask 设置。</li><li><strong>目录或令牌错误：</strong>按 README 核对端口、令牌路径、共享目录和自动化读写范围。</li></ul><p>反馈问题时记录两个应用版本、桥接工具版本及完整错误。该集成不代表已实现与 Photoshop 生成式填充完全相同的能力。</p>"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://github.com/the-aSak/ComfyUI-Photocraft-Bridge",
+        "label": "Bridge README, setup and example workflows"
+      },
+      {
+        "url": "https://github.com/storytold/photocraft/blob/main/docs/control-protocol.md",
+        "label": "Official control protocol"
+      }
+    ],
+    "related": [
+      "plugins",
+      "troubleshooting",
+      "guide"
+    ]
+  },
+  {
+    "slug": "templates",
+    "title": {
+      "en": "PhotoCraft templates & creative resources",
+      "zh": "PhotoCraft 模板与创作资源"
+    },
+    "intro": {
+      "en": "Find PSD template sources, choose a practical starting layout and check editability before using it in PhotoCraft.",
+      "zh": "寻找 PSD 模板来源，选择实用版式，并在 PhotoCraft 中检查可编辑性与保存结果。"
+    },
+    "category": {
+      "en": "TEMPLATES & RESOURCES",
+      "zh": "模板与素材"
+    },
+    "checked": "2026-10-12",
+    "sections": [
+      {
+        "id": "status",
+        "title": {
+          "en": "A curated starting point",
+          "zh": "从可靠的素材入口开始"
+        },
+        "body": {
+          "en": "<p><strong>Source directory · compatibility not yet tested by this site.</strong> PhotoCraft documents layered PSD support, but that is not a guarantee that every Photoshop template, font or smart-object effect will survive editing and saving.</p><p>This page links to original resource providers. We do not currently host a tested PhotoCraft template pack. Treat every external PSD as a candidate until you complete the checks below.</p>",
+          "zh": "<p><strong>素材来源目录 · 本站尚未实测兼容性。</strong> PhotoCraft 文档提供分层 PSD 支持，但不代表所有 Photoshop 模板、字体或智能对象效果都能在编辑和保存后完整保留。</p><p>本页链接原始素材提供方，目前没有托管经过实测的 PhotoCraft 模板包。外部 PSD 在完成以下检查前均属于候选素材。</p>"
+        }
+      },
+      {
+        "id": "sources-list",
+        "title": {
+          "en": "Browse original sources",
+          "zh": "浏览原始来源"
+        },
+        "body": {
+          "en": "<h3>Resource Boy</h3><p>A general design resource directory with templates and mockups. Start at <a href=\"https://resourceboy.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Resource Boy ↗</a> or browse <a href=\"https://resourceboy.com/mockups/\" target=\"_blank\" rel=\"noopener noreferrer\">PSD mockups ↗</a> for packaging, apparel and stationery.</p><p><strong>Format:</strong> check each listing. <strong>PhotoCraft compatibility:</strong> untested. <strong>Download:</strong> on the provider’s website. <strong>License:</strong> check the individual resource and provider terms; free access does not grant redistribution rights.</p><h3>Need color rather than a layout?</h3><p><a href=\"/guides/luts/\">Explore LUT sources and the PhotoCraft color lookup guide →</a></p>",
+          "zh": "<h3>Resource Boy</h3><p>通用设计素材目录，包含模板与样机。可访问<a href=\"https://resourceboy.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Resource Boy 首页 ↗</a>，或浏览<a href=\"https://resourceboy.com/mockups/\" target=\"_blank\" rel=\"noopener noreferrer\">PSD 样机分类 ↗</a>中的包装、服装和品牌物料。</p><p><strong>格式：</strong>逐项查看。<strong>PhotoCraft 兼容性：</strong>未实测。<strong>下载：</strong>前往作者网站。<strong>许可：</strong>检查具体素材与提供方条款；免费下载不等于允许再次分发。</p><h3>需要调色而不是版式？</h3><p><a href=\"/zh/guides/luts/\">查看 LUT 来源与 PhotoCraft 调色指南 →</a></p>"
+        }
+      },
+      {
+        "id": "choose",
+        "title": {
+          "en": "Choose a first template",
+          "zh": "第一份模板怎么选"
+        },
+        "body": {
+          "en": "<ul><li><strong>Social graphics:</strong> a photo, editable headline and a small number of shape layers make a manageable first test.</li><li><strong>Product banners:</strong> choose layouts with separate product, background and text layers.</li><li><strong>Business graphics:</strong> check required fonts, output dimensions and whether the intended print workflow is supported.</li><li><strong>Packaging and apparel mockups:</strong> expect more testing when replacement depends on smart objects, warps or complex effects.</li></ul><p>These are suggested use cases, not claims that specific packs have passed compatibility testing.</p>",
+          "zh": "<ul><li><strong>社交媒体图片：</strong>照片、可编辑标题与少量形状图层，适合第一次测试。</li><li><strong>产品横幅：</strong>优先选择产品、背景与文字分层清晰的版式。</li><li><strong>企业物料：</strong>检查所需字体、输出尺寸与目标印刷工作流是否得到支持。</li><li><strong>包装和服装样机：</strong>如依赖智能对象替换、变形和复杂特效，应预留更多测试时间。</li></ul><p>这些是选题与使用建议，不代表具体素材包已经通过兼容性测试。</p>"
+        }
+      },
+      {
+        "id": "check",
+        "title": {
+          "en": "Check before committing to a template",
+          "zh": "正式使用前的检查步骤"
+        },
+        "body": {
+          "en": "<ol><li>Read the author’s license and list of fonts. Keep the original archive unchanged.</li><li>Open a copy of the PSD and compare it with the author’s preview.</li><li>Edit one text layer and one image placeholder. Check masks, clipping and effects.</li><li>Save under a new filename, close it and reopen it.</li><li>Export a PNG or JPEG and compare dimensions, typography and color outside the editor.</li><li>Record the PhotoCraft version, operating system, template source and any differences.</li></ol><p>Only call a resource “tested” when that exact file has passed a documented workflow. Resource Boy restricts repackaging its resources for distribution; use original download links.</p>",
+          "zh": "<ol><li>阅读作者许可与字体清单，保留原始压缩包。</li><li>打开 PSD 副本，与作者预览图比较。</li><li>修改一个文字图层和一个图片占位，检查蒙版、剪贴与效果。</li><li>用新文件名保存，关闭后重新打开。</li><li>导出 PNG 或 JPEG，在编辑器外检查尺寸、文字与颜色。</li><li>记录 PhotoCraft 版本、系统、素材来源和观察到的差异。</li></ol><p>只有针对该文件完成明确流程后，才应标记“已实测”。Resource Boy 限制素材重新打包分发，请使用原始下载入口。</p>"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://github.com/storytold/photocraft/blob/main/README.md",
+        "label": "PhotoCraft format and PSD documentation"
+      },
+      {
+        "url": "https://resourceboy.com/",
+        "label": "Resource Boy"
+      },
+      {
+        "url": "https://resourceboy.com/license/",
+        "label": "Resource Boy license"
+      }
+    ],
+    "related": [
+      "compatibility/psd",
+      "guides/luts",
+      "guide"
+    ]
+  },
+  {
+    "slug": "guides/luts",
+    "title": {
+      "en": "How to use LUTs in PhotoCraft",
+      "zh": "如何在 PhotoCraft 中使用 LUT"
+    },
+    "intro": {
+      "en": "Understand Color Lookup, find two LUT sources and compare a color treatment without losing your editable original.",
+      "zh": "了解 Color Lookup、寻找两款 LUT 资源，并在保留可编辑原稿的情况下比较调色效果。"
+    },
+    "category": {
+      "en": "COLOR & PRESETS",
+      "zh": "调色与预设"
+    },
+    "checked": "2026-10-12",
+    "sections": [
+      {
+        "id": "formats",
+        "title": {
+          "en": "What is supported in the documentation?",
+          "zh": "文档支持哪些格式？"
+        },
+        "body": {
+          "en": "<p>A LUT maps input colors to output colors. It is useful for a repeatable color treatment; it does not fix every exposure or white-balance problem.</p><p>The PhotoCraft README lists <strong>Color Lookup</strong> with <code>.cube</code>, <code>.3dl</code> and <code>.look</code> support. This is a documented format capability, not a test of every LUT file. The resources below have not been imported by this site.</p>",
+          "zh": "<p>LUT 将输入颜色映射为输出颜色，可重复应用调色风格，但不能自动解决所有曝光或白平衡问题。</p><p>PhotoCraft README 列出 <strong>Color Lookup</strong> 对 <code>.cube</code>、<code>.3dl</code>、<code>.look</code> 的支持。这是文档中的格式能力，不是对每个 LUT 文件的兼容测试。本站尚未导入测试下列资源。</p>"
+        }
+      },
+      {
+        "id": "resources",
+        "title": {
+          "en": "Two LUT sources to explore",
+          "zh": "两款可供测试的 LUT"
+        },
+        "body": {
+          "en": "<h3>Aspen · IWLTBAP</h3><p>A film-inspired look offered in CUBE and 3DL formats. <a href=\"https://www.luts.iwltbap.com/color-grade-free-lut-aspen/\" target=\"_blank\" rel=\"noopener noreferrer\">View the author’s preview and download ↗</a></p><h3>Sedona · IWLTBAP</h3><p>A warm color treatment, also supplied in CUBE and 3DL formats. <a href=\"https://www.luts.iwltbap.com/free-lut-download-color-grade-sedona/\" target=\"_blank\" rel=\"noopener noreferrer\">View the author’s preview and download ↗</a></p><p><strong>Status for both:</strong> source and file-format information checked on October 12, 2026; PhotoCraft rendering untested. Check the provider’s current terms before commercial use or redistribution. Preview images on the provider’s site are not evidence of PhotoCraft rendering.</p>",
+          "zh": "<h3>Aspen · IWLTBAP</h3><p>胶片风格调色，提供 CUBE 和 3DL 格式。<a href=\"https://www.luts.iwltbap.com/color-grade-free-lut-aspen/\" target=\"_blank\" rel=\"noopener noreferrer\">查看作者预览与下载 ↗</a></p><h3>Sedona · IWLTBAP</h3><p>暖色调风格，同样提供 CUBE 和 3DL 格式。<a href=\"https://www.luts.iwltbap.com/free-lut-download-color-grade-sedona/\" target=\"_blank\" rel=\"noopener noreferrer\">查看作者预览与下载 ↗</a></p><p><strong>两款资源状态：</strong>2026 年 10 月 12 日核对来源与格式信息，尚未在 PhotoCraft 中测试。商业使用或再次分发前请检查提供方当前条款。作者网站的预览图不是 PhotoCraft 渲染效果证明。</p>"
+        }
+      },
+      {
+        "id": "apply",
+        "title": {
+          "en": "A reversible color lookup workflow",
+          "zh": "保留可编辑性的操作流程"
+        },
+        "body": {
+          "en": "<ol><li>Download from the author and unpack the LUT file. Read which input color profile or image type it expects.</li><li>Open a copy of a modest-size photo. Start with a normal photo, not a LOG image requiring a different conversion LUT.</li><li>In a build with the documented adjustment, look for <strong>Color Lookup</strong> in adjustment-layer controls and load the supported LUT file. Exact labels can differ by release.</li><li>Keep the color treatment on its own adjustment layer where available. Toggle visibility to compare and reduce opacity if the treatment is too strong.</li><li>Save a new editable project, reopen it and verify the look remains. Export a comparison image and inspect it outside the editor.</li></ol><p>If your build lacks the control or rejects the file, record the version and format and consult upstream documentation. Do not change the file extension to force acceptance.</p>",
+          "zh": "<ol><li>从作者处下载并解压，阅读 LUT 所需的输入色彩配置或图片类型。</li><li>打开普通大小照片的副本，先用常规照片，不要混用需要专门转换 LUT 的 LOG 图像。</li><li>在提供该功能的版本中，从调整图层控件寻找 <strong>Color Lookup</strong> 并加载支持的 LUT 文件。具体名称可能随发行版本变化。</li><li>尽可能将调色保留在独立调整图层，切换可见性比较，效果太强时降低不透明度。</li><li>另存为新项目，重新打开确认效果，再导出图片到编辑器外检查。</li></ol><p>如果本机版本缺少控件或拒绝文件，请记录版本与格式，查阅上游说明，不要通过改扩展名强制导入。</p>"
+        }
+      },
+      {
+        "id": "review",
+        "title": {
+          "en": "Evaluate the result",
+          "zh": "如何判断效果"
+        },
+        "body": {
+          "en": "<p>Check skin tones, white objects, shadows and highlight detail. A pleasing thumbnail can hide clipped channels or a strong color cast. Use the same input photo for comparisons and record your LUT filename, opacity and PhotoCraft version.</p><p>For shareable results, publish your own before/after images and test notes. Do not label an author’s promotional image as a PhotoCraft test.</p>",
+          "zh": "<p>检查肤色、白色物体、阴影与高光细节。缩略图好看不代表没有通道溢出或明显偏色。比较时使用同一张原图，记录 LUT 文件名、不透明度与 PhotoCraft 版本。</p><p>分享效果时使用自己生成的前后对比图与测试记录，不要把作者宣传图标为 PhotoCraft 实测。</p>"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://github.com/storytold/photocraft/blob/main/README.md",
+        "label": "Official Color Lookup format support"
+      },
+      {
+        "url": "https://www.luts.iwltbap.com/color-grade-free-lut-aspen/",
+        "label": "IWLTBAP Aspen"
+      },
+      {
+        "url": "https://www.luts.iwltbap.com/free-lut-download-color-grade-sedona/",
+        "label": "IWLTBAP Sedona"
+      }
+    ],
+    "related": [
+      "templates",
+      "guide",
+      "troubleshooting"
+    ]
+  },
+  {
+    "slug": "compatibility/photoshop-plugins",
+    "title": {
+      "en": "Do Photoshop plugins work in PhotoCraft?",
+      "zh": "Photoshop 插件能在 PhotoCraft 中使用吗？"
+    },
+    "intro": {
+      "en": "Understand why .8BF, CEP and UXP extensions differ from PhotoCraft WASM filters, PSD templates and LUT resources.",
+      "zh": "区分 .8BF、CEP、UXP 扩展与 PhotoCraft WASM 滤镜、PSD 模板和 LUT 资源，避免误判兼容性。"
+    },
+    "category": {
+      "en": "COMPATIBILITY",
+      "zh": "兼容性"
+    },
+    "checked": "2026-10-12",
+    "sections": [
+      {
+        "id": "answer",
+        "title": {
+          "en": "The short answer",
+          "zh": "先说结论"
+        },
+        "body": {
+          "en": "<p><strong>The official PhotoCraft plug-in host does not load native Photoshop .8BF, CEP or UXP extensions.</strong> Its plug-ins are sandboxed WebAssembly filter modules using the PhotoCraft API. A similar editing interface does not make Photoshop extension code compatible.</p><p>This conclusion comes from the upstream plug-in documentation checked on October 12, 2026. No commercial Photoshop extension has been tested by this site.</p>",
+          "zh": "<p><strong>PhotoCraft 官方插件宿主不加载 Photoshop 的 .8BF、CEP 或 UXP 扩展。</strong> 它使用基于 PhotoCraft API 的沙盒 WebAssembly 滤镜模块。编辑界面相似，不代表 Photoshop 扩展代码兼容。</p><p>该结论依据 2026 年 10 月 12 日核对的上游插件文档。本站没有测试商业 Photoshop 扩展。</p>"
+        }
+      },
+      {
+        "id": "formats",
+        "title": {
+          "en": "Compare resource types",
+          "zh": "不同资源类型对比"
+        },
+        "body": {
+          "en": "<div class=\"table-wrap\"><table><thead><tr><th>Resource</th><th>What to expect</th></tr></thead><tbody><tr><td>.8BF / CEP / UXP</td><td>Not supported by the documented PhotoCraft plug-in host.</td></tr><tr><td>PhotoCraft .wasm filter</td><td>Must implement the PhotoCraft API; an arbitrary WASM file is not enough.</td></tr><tr><td>PSD template</td><td>A document, not a plug-in. Check layers, text, smart objects and saved results.</td></tr><tr><td>.cube / .3dl / .look LUT</td><td>Documented Color Lookup formats; test the actual file and input profile.</td></tr><tr><td>ComfyUI bridge</td><td>Separate ComfyUI nodes using the control channel, not a native Photoshop extension.</td></tr></tbody></table></div>",
+          "zh": "<div class=\"table-wrap\"><table><thead><tr><th>资源</th><th>应如何理解</th></tr></thead><tbody><tr><td>.8BF / CEP / UXP</td><td>文档中的 PhotoCraft 插件宿主不支持。</td></tr><tr><td>PhotoCraft .wasm 滤镜</td><td>必须实现 PhotoCraft API，不是任意 WASM 文件都能使用。</td></tr><tr><td>PSD 模板</td><td>属于文档而非插件，需要检查图层、文字、智能对象与保存结果。</td></tr><tr><td>.cube / .3dl / .look LUT</td><td>文档支持的 Color Lookup 格式，仍需测试文件与输入色彩配置。</td></tr><tr><td>ComfyUI 桥接工具</td><td>通过控制通道工作的 ComfyUI 节点，不是 Photoshop 原生扩展。</td></tr></tbody></table></div>"
+        }
+      },
+      {
+        "id": "alternatives",
+        "title": {
+          "en": "Find an alternative by task",
+          "zh": "按任务寻找替代方案"
+        },
+        "body": {
+          "en": "<ul><li><strong>A color look:</strong> first check built-in adjustments or the <a href=\"/guides/luts/\">LUT guide</a>.</li><li><strong>A reusable layout:</strong> start with the <a href=\"/templates/\">template source directory</a> and verify PSD editability.</li><li><strong>AI image editing:</strong> examine the <a href=\"/guides/comfyui/\">community ComfyUI bridge</a> and its requirements.</li><li><strong>A custom pixel filter:</strong> use the <a href=\"/plugins/\">official WASM API and source example</a>.</li></ul><p>None of these guarantees a drop-in replacement for a particular commercial plug-in. Write down the required task and compare a small, repeatable output before moving a production workflow.</p>",
+          "zh": "<ul><li><strong>调色风格：</strong>先查看内置调整或 <a href=\"/zh/guides/luts/\">LUT 指南</a>。</li><li><strong>可复用版式：</strong>从<a href=\"/zh/templates/\">模板来源目录</a>开始，验证 PSD 可编辑性。</li><li><strong>AI 图片编辑：</strong>查看<a href=\"/zh/guides/comfyui/\">社区 ComfyUI 桥接教程</a>与依赖要求。</li><li><strong>自定义像素滤镜：</strong>参考<a href=\"/zh/plugins/\">官方 WASM API 与源码示例</a>。</li></ul><p>这些路径不保证可以无缝替代某个商业插件。先写清需要完成的任务，用可重复的小样比较效果，再考虑迁移正式工作流。</p>"
+        }
+      },
+      {
+        "id": "migration",
+        "title": {
+          "en": "Keep the original workflow recoverable",
+          "zh": "迁移时保留原工作流"
+        },
+        "body": {
+          "en": "<p>Preserve the original PSD and the Photoshop environment needed to edit plug-in-dependent content. Work on a copy, compare the visible render and inspect whether the underlying effect remains editable. A document that opens successfully may still contain an effect PhotoCraft cannot re-run.</p><p>Do not rename an extension to <code>.wasm</code> or copy a Photoshop plug-ins folder into PhotoCraft expecting conversion. A compatible implementation must be written for the host API.</p>",
+          "zh": "<p>保留原始 PSD，以及编辑依赖插件内容所需的 Photoshop 环境。在副本上比较显示结果，并检查底层效果是否仍可编辑。文件成功打开，不代表 PhotoCraft 能重新执行其中所有效果。</p><p>不要将扩展改名为 <code>.wasm</code>，也不要把 Photoshop 插件文件夹复制到 PhotoCraft 后期待自动转换。兼容插件需要针对宿主 API 实现。</p>"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://github.com/storytold/photocraft/blob/main/docs/plugins.md",
+        "label": "Official plug-in support and exclusions"
+      },
+      {
+        "url": "https://github.com/storytold/photocraft/blob/main/README.md",
+        "label": "Official formats and editing features"
+      },
+      {
+        "url": "https://github.com/the-aSak/ComfyUI-Photocraft-Bridge",
+        "label": "Community bridge architecture"
+      }
+    ],
+    "related": [
+      "plugins",
+      "compatibility/psd",
+      "templates"
+    ]
   }
 ]

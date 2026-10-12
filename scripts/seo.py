@@ -13,6 +13,7 @@ TITLES={
 'compatibility/psd':('PhotoCraft PSD Compatibility: Layers & Round-Trip Checks','PhotoCraft PSD 兼容性：图层与往返保存检查'),
 'releases':('PhotoCraft Release Notes: v0.6.0 Snapshot & Upgrade Tips','PhotoCraft 更新记录：v0.6.0 快照与升级检查'),
 'troubleshooting':('PhotoCraft Troubleshooting: Startup, Fonts & Saving','PhotoCraft 常见问题：启动、字体与保存排查')}
+TITLES.update({'plugins': ('PhotoCraft plugins & integrations', 'PhotoCraft 插件与集成'), 'guides/comfyui': ('Connect PhotoCraft to ComfyUI', '连接 PhotoCraft 与 ComfyUI'), 'templates': ('PhotoCraft templates & creative resources', 'PhotoCraft 模板与创作资源'), 'guides/luts': ('How to use LUTs in PhotoCraft', '如何在 PhotoCraft 中使用 LUT'), 'compatibility/photoshop-plugins': ('Do Photoshop plugins work in PhotoCraft?', 'Photoshop 插件能在 PhotoCraft 中使用吗？')})
 HOME_DESCS=('Find official PhotoCraft downloads, Windows, macOS and Linux installation guides, beginner tutorials, keyboard shortcuts and Photoshop comparisons.','PhotoCraft 独立中文资源站：官方软件下载指引、Windows/macOS/Linux 安装教程、入门操作、快捷键速查、PSD 兼容性与 Photoshop 功能对比。')
 IMAGE_ALTS={
 'adjustments':('PhotoCraft editor with Curves adjustment controls and layers','PhotoCraft 编辑器中的曲线调整控件与图层'),
