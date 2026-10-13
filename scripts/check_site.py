@@ -2,7 +2,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urljoin,urlsplit,unquote
-import json,xml.etree.ElementTree as ET
+import json,re,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]/'dist'
 class Page(HTMLParser):
  def __init__(self,path):
@@ -44,3 +44,34 @@ for home in ['index.html','en/index.html','zh/index.html']:
 sitemap={e.text for e in ET.parse(ROOT/'sitemap.xml').findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
 assert sitemap==canonicals,(sitemap,canonicals)
 print(f'PASS: {len(pages)} HTML pages, {len(canonicals)} canonical URLs; metadata, schema, hreflang, sitemap, images, static content and local links.')
+
+# SEO coverage is explicit for every canonical route; new pages cannot silently inherit generic copy.
+metadata=json.loads((ROOT.parent/'content/seo.json').read_text())
+content=json.loads((ROOT.parent/'content/pages.json').read_text())
+assert set(metadata)=={'','guides'}|{p['slug'] for p in content}
+seen_titles=set();seen_descriptions=set()
+for path,p in pages.items():
+ text=(ROOT/path.lstrip('/')).read_text()
+ canonical=next(a['href'] for a in p.attrs('link') if a.get('rel')=='canonical')
+ graph=p.json[0]['@graph'];page=graph[1]
+ title=re.search(r'<title>(.*?)</title>',text)[1]
+ desc=next(a['content'] for a in p.attrs('meta') if a.get('name')=='description')
+ assert len(title)>10 and len(desc)>25,path
+ assert next(a['content'] for a in p.attrs('meta') if a.get('property')=='og:description')==desc,path
+ assert next(a['content'] for a in p.attrs('meta') if a.get('name')=='twitter:description')==desc,path
+ assert page['description']==desc,path
+ if path!='/en/index.html':
+  assert title not in seen_titles and desc not in seen_descriptions,path
+  seen_titles.add(title);seen_descriptions.add(desc)
+ for node in graph:
+  if node['@type']=='BreadcrumbList':assert node['itemListElement'][-1]['item']==canonical,path
+  if node['@type']=='ItemList':
+   for entry in node['itemListElement']:
+    u=urlsplit(entry['url']);target=u.path+'index.html'
+    assert target in pages,(path,entry)
+    if u.fragment:assert any(a.get('id')==u.fragment for _,a in pages[target].tags),(path,entry)
+for entry in ET.parse(ROOT/'sitemap.xml').getroot():
+ loc=entry.find('{http://www.sitemaps.org/schemas/sitemap/0.9}loc').text
+ last=entry.find('{http://www.sitemaps.org/schemas/sitemap/0.9}lastmod')
+ if last is not None:assert pages[urlsplit(loc).path+'index.html'].json[0]['@graph'][1]['dateModified']==last.text,loc
+print('PASS: complete bilingual SEO coverage, unique titles/descriptions, social metadata, schema destinations and sitemap dates.')

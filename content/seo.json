@@ -16,10 +16,10 @@
       "PhotoCraft 插件与集成：ComfyUI、MCP 与 WASM"
     ],
     "description": [
-      "Explore PhotoCraft WASM filters, ComfyUI workflows, MCP setup and CLI automation, with official documentation, community downloads and troubleshooting tips.",
-      "探索 PhotoCraft WASM 滤镜、ComfyUI 工作流、MCP 配置、CLI 自动化与控制 API，查找官方文档、社区工作流下载、设置步骤和故障排查。"
+      "Find PhotoCraft WASM filters, five ComfyUI workflow downloads, MCP setup and CLI automation, with documentation links and integration troubleshooting.",
+      "查找 PhotoCraft WASM 滤镜、五个 ComfyUI 工作流下载、MCP 配置与 CLI 自动化示例，附官方文档、社区来源和集成排错建议。"
     ],
-    "modified": "2026-10-12"
+    "modified": "2026-10-13"
   },
   "templates": {
     "title": [
@@ -27,21 +27,21 @@
       "免费 PhotoCraft 模板：14 套 PSD 下载与实测结果"
     ],
     "description": [
-      "Download 14 free PSD template packs plus textures and LUTs. Review PhotoCraft 0.7.0 CLI test results, font requirements and licensing notes before editing.",
-      "下载 14 套免费 PSD 模板，以及纹理和 LUT 调色预设。查看 PhotoCraft 0.7.0 CLI 的打开、导出与往返保存测试结果、字体要求及授权说明。"
+      "Download 14 free PSD template packs, four PNG textures and four CUBE LUTs. Check PhotoCraft CLI test results, font requirements and resource licenses.",
+      "下载 14 套免费 PSD 模板、四款 PNG 纹理与四款 CUBE LUT，查看 PhotoCraft CLI 实测结果、字体要求、编辑步骤和每项资源的授权说明。"
     ],
-    "modified": "2026-10-12"
+    "modified": "2026-10-13"
   },
   "compare": {
     "title": [
-      "PhotoCraft vs Photoshop: Features, PSD & Plugin Support",
-      "PhotoCraft 与 Photoshop 对比：功能、PSD 与插件支持"
+      "PhotoCraft vs Photoshop: Feature Comparison & PSD Tests",
+      "PhotoCraft 与 Photoshop 对比：功能、PSD 实测与迁移"
     ],
     "description": [
-      "Compare PhotoCraft and Photoshop features, PSD workflows, plugins and platform support. Understand early-alpha limitations before choosing your editing tools.",
-      "对比 PhotoCraft 与 Photoshop 的编辑功能、PSD 工作流、插件生态与平台支持，了解 PhotoCraft 早期 Alpha 的适用范围和限制，选择适合的图像编辑工具。"
+      "Compare PhotoCraft and Photoshop features, PSD compatibility and plugins. Review our 14-template CLI tests and use a checklist to assess your own workflow.",
+      "对比 PhotoCraft 与 Photoshop 的功能、PSD 兼容性与插件，查看本站 14 套模板的 CLI 实测范围，并按检查清单评估自己的迁移工作流。"
     ],
-    "modified": "2026-10-12"
+    "modified": "2026-10-13"
   },
   "community": {
     "title": [
@@ -49,9 +49,141 @@
       "PhotoCraft 社区：官方 GitHub、文档与资源链接"
     ],
     "description": [
-      "Find the official PhotoCraft GitHub repository, releases, documentation and issue tracker, plus community integrations and guidance for reporting problems.",
-      "查找 PhotoCraft 官方 GitHub 仓库、版本发布、文档与问题反馈入口，以及社区集成和资源导航；了解如何提交清晰的问题报告。"
+      "Find PhotoCraft GitHub, documentation, releases and community chat. Choose where to ask for help, report a reproducible bug or explore community integrations.",
+      "查找 PhotoCraft 官方 GitHub、文档、版本发布与社区交流入口，了解如何选择求助渠道、提交可复现的问题及寻找社区集成。"
     ],
-    "modified": "2026-10-12"
+    "modified": "2026-10-13"
+  },
+  "guides": {
+    "title": [
+      "PhotoCraft Guides: Installation, Editing & Troubleshooting",
+      "PhotoCraft 教程中心：安装、编辑与故障排查"
+    ],
+    "description": [
+      "Browse PhotoCraft installation guides, first-project tutorials, PSD compatibility checks, ComfyUI setup and LUT workflows in English and Chinese.",
+      "浏览 PhotoCraft 安装指南、入门编辑教程、PSD 兼容性检查、ComfyUI 配置与 LUT 调色步骤，按任务查找中英文资源。"
+    ],
+    "modified": "2026-10-13"
+  },
+  "guide": {
+    "title": [
+      "PhotoCraft Beginner Tutorial: Edit, Save & Export",
+      "PhotoCraft 入门教程：编辑照片、保存项目与导出"
+    ],
+    "description": [
+      "Create your first PhotoCraft project: open a photo, adjust color, add a title, save an editable document and export an image with a final checklist.",
+      "从打开照片开始学习 PhotoCraft：调整颜色、添加标题、保存可编辑文档并导出图片，附作品完成前的检查清单。"
+    ],
+    "modified": "2026-10-13"
+  },
+  "download": {
+    "title": [
+      "PhotoCraft Download: Windows, macOS & Linux Setup",
+      "PhotoCraft 下载指南：Windows、macOS 与 Linux 安装"
+    ],
+    "description": [
+      "Find official PhotoCraft downloads for Windows, macOS and Linux. Choose the right installer and architecture, verify files and follow platform setup guides.",
+      "查找 PhotoCraft 的 Windows、macOS 与 Linux 官方下载入口，选择安装包与设备架构，核对文件并按平台教程完成安装。"
+    ],
+    "modified": "2026-10-13"
+  },
+  "download/windows": {
+    "title": [
+      "PhotoCraft for Windows: MSI & Portable ZIP Installation",
+      "PhotoCraft Windows 安装：MSI 与便携 ZIP 教程"
+    ],
+    "description": [
+      "Install PhotoCraft on Windows using MSI or portable ZIP. Check your architecture and download checksum, launch the app and troubleshoot startup problems.",
+      "使用 MSI 或便携 ZIP 在 Windows 上安装 PhotoCraft，核对设备架构与下载校验值，完成首次启动并排查安装问题。"
+    ],
+    "modified": "2026-10-13"
+  },
+  "download/mac": {
+    "title": [
+      "PhotoCraft for Mac: Universal DMG Installation Guide",
+      "PhotoCraft Mac 安装教程：Universal DMG 与首次运行"
+    ],
+    "description": [
+      "Install PhotoCraft on macOS with the Universal DMG. Verify the download, move the app to Applications and test opening and saving a small project.",
+      "通过 Universal DMG 在 macOS 上安装 PhotoCraft：校验下载文件、移入应用程序文件夹，并用小项目检查打开和保存。"
+    ],
+    "modified": "2026-10-13"
+  },
+  "download/linux": {
+    "title": [
+      "PhotoCraft for Linux: AppImage, Flatpak & Setup",
+      "PhotoCraft Linux 安装：AppImage、Flatpak 与排错"
+    ],
+    "description": [
+      "Choose a PhotoCraft Linux package, verify its checksum and follow AppImage or Flatpak setup steps, with notes on architecture and Wayland drag-and-drop.",
+      "为 Linux 选择 PhotoCraft 安装包并校验文件，按步骤运行 AppImage 或安装 Flatpak，了解设备架构和 Wayland 拖放问题。"
+    ],
+    "modified": "2026-10-13"
+  },
+  "compatibility/psd": {
+    "title": [
+      "PhotoCraft PSD Compatibility: Layers, Fonts & Saving",
+      "PhotoCraft PSD 兼容性：图层、字体与保存检查"
+    ],
+    "description": [
+      "Check PSD compatibility in PhotoCraft: compare appearance, layers, fonts and saved output. Follow a repeatable round-trip test before migrating projects.",
+      "检查 PhotoCraft 中 PSD 文件的显示效果、图层、字体与保存结果，通过可重复的往返保存测试评估项目迁移，并查看模板实测记录。"
+    ],
+    "modified": "2026-10-13"
+  },
+  "troubleshooting": {
+    "title": [
+      "PhotoCraft Troubleshooting: Startup, Fonts & Export",
+      "PhotoCraft 问题排查：启动、字体、画布与导出"
+    ],
+    "description": [
+      "Fix common PhotoCraft workflow problems with checks for startup, blank canvases, missing fonts, Linux drag-and-drop, saving and image export.",
+      "排查 PhotoCraft 启动异常、空白画布、字体缺失、Linux 拖放、保存与图片导出问题，并整理可复现的 Bug 报告。"
+    ],
+    "modified": "2026-10-13"
+  },
+  "releases": {
+    "title": [
+      "PhotoCraft Release Guide: v0.6.0 Snapshot & Upgrades",
+      "PhotoCraft 版本指南：v0.6.0 快照与升级检查"
+    ],
+    "description": [
+      "Read our dated PhotoCraft v0.6.0 release snapshot, review upgrade checks and use the official release history to find newer builds and complete notes.",
+      "阅读 PhotoCraft v0.6.0 的历史版本快照与升级检查步骤，通过官方发布记录查找更新版本及完整说明。"
+    ],
+    "modified": "2026-10-13"
+  },
+  "guides/comfyui": {
+    "title": [
+      "PhotoCraft ComfyUI Bridge: Setup & Workflow Guide",
+      "PhotoCraft ComfyUI Bridge：配置与工作流教程"
+    ],
+    "description": [
+      "Connect PhotoCraft to ComfyUI using the community bridge. Follow setup and image round-trip checks, find example workflows and troubleshoot missing results.",
+      "使用社区 PhotoCraft Bridge 连接 ComfyUI，了解配置步骤、图像与选区往返检查，查找示例工作流并排查结果未返回的问题。"
+    ],
+    "modified": "2026-10-13"
+  },
+  "guides/luts": {
+    "title": [
+      "PhotoCraft LUT Guide: Free CUBE Presets & Color Lookup",
+      "PhotoCraft LUT 教程：免费 CUBE 预设与颜色查找"
+    ],
+    "description": [
+      "Download four original CUBE LUT presets and learn a reversible PhotoCraft Color Lookup workflow, with external LUT sources and visual review tips.",
+      "下载四款原创 CUBE LUT 调色预设，学习 PhotoCraft 颜色查找的可逆操作流程，获取外部 LUT 来源及效果检查建议。"
+    ],
+    "modified": "2026-10-13"
+  },
+  "compatibility/photoshop-plugins": {
+    "title": [
+      "PhotoCraft & Photoshop Plugins: 8BF, CEP, UXP vs WASM",
+      "PhotoCraft 与 Photoshop 插件：8BF、CEP、UXP 和 WASM"
+    ],
+    "description": [
+      "Understand Photoshop plugin compatibility in PhotoCraft. Compare 8BF, CEP and UXP extensions with WASM filters, PSD templates and LUT alternatives.",
+      "了解 Photoshop 插件在 PhotoCraft 中的兼容性边界，区分 8BF、CEP、UXP 与 WASM 滤镜、PSD 模板及 LUT 替代方案。"
+    ],
+    "modified": "2026-10-13"
   }
 }

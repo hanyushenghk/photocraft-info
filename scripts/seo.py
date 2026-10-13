@@ -2,20 +2,6 @@
 from pathlib import Path
 from html import escape, unescape
 import json,re
-TITLES={
-'':('PhotoCraft Downloads, Tutorials & Shortcuts | Resource Hub','PhotoCraft 下载、安装教程与快捷键 | 独立资源站'),
-'guides':('PhotoCraft Tutorials & Installation Guides','PhotoCraft 教程中心：安装、入门与问题排查'),
-'guide':('PhotoCraft Beginner Tutorial: Your First Project','PhotoCraft 入门教程：完成第一个作品'),
-'download':('PhotoCraft Download Guide: Windows, macOS & Linux','PhotoCraft 官方下载指引：Windows、macOS 与 Linux'),
-'download/windows':('PhotoCraft Windows Installation Guide: MSI & ZIP','PhotoCraft Windows 安装教程：MSI 与便携 ZIP'),
-'download/mac':('PhotoCraft macOS Installation Guide: Universal DMG','PhotoCraft macOS 安装教程：通用 DMG'),
-'download/linux':('PhotoCraft Linux Installation: AppImage, DEB & RPM','PhotoCraft Linux 安装教程：AppImage、DEB 与 RPM'),
-'compatibility/psd':('PhotoCraft PSD Compatibility: Layers & Round-Trip Checks','PhotoCraft PSD 兼容性：图层与往返保存检查'),
-'releases':('PhotoCraft Release Notes: v0.6.0 Snapshot & Upgrade Tips','PhotoCraft 更新记录：v0.6.0 快照与升级检查'),
-'troubleshooting':('PhotoCraft Troubleshooting: Startup, Fonts & Saving','PhotoCraft 常见问题：启动、字体与保存排查')}
-TITLES.update({'plugins': ('PhotoCraft plugins & integrations', 'PhotoCraft 插件与集成'), 'guides/comfyui': ('Connect PhotoCraft to ComfyUI', '连接 PhotoCraft 与 ComfyUI'), 'templates': ('Free PhotoCraft Templates, PSD Downloads & Assets', '免费 PhotoCraft 模板、PSD 与素材下载'), 'guides/luts': ('How to use LUTs in PhotoCraft', '如何在 PhotoCraft 中使用 LUT'), 'compatibility/photoshop-plugins': ('Do Photoshop plugins work in PhotoCraft?', 'Photoshop 插件能在 PhotoCraft 中使用吗？')})
-TITLES.update({'compare':('PhotoCraft vs. Photoshop: Feature Comparison','PhotoCraft 与 Photoshop 功能对比'),'community':('PhotoCraft Community, GitHub & Official Links','PhotoCraft 社区、GitHub 与官方链接')})
-HOME_DESCS=('Find official PhotoCraft downloads, Windows, macOS and Linux installation guides, beginner tutorials, keyboard shortcuts and Photoshop comparisons.','PhotoCraft 独立中文资源站：官方软件下载指引、Windows/macOS/Linux 安装教程、入门操作、快捷键速查、PSD 兼容性与 Photoshop 功能对比。')
 IMAGE_ALTS={
 'adjustments':('PhotoCraft editor with Curves adjustment controls and layers','PhotoCraft 编辑器中的曲线调整控件与图层'),
 'masks':('PhotoCraft editor showing layer masks','PhotoCraft 编辑器中的图层蒙版示例'),
@@ -35,10 +21,9 @@ def optimize(root,origin):
   lang='zh' if relative=='zh' or relative.startswith('zh/') else 'en';idx=lang=='zh'
   slug=relative.removeprefix('zh/');slug='' if relative in ['', 'en','zh'] else slug
   url=origin+('/zh/' if idx else '/')+(slug+'/' if slug else '')
-  settings=metadata.get(slug,{})
-  title=settings.get('title',TITLES[slug])[idx];s=path.read_text()
-  desc=HOME_DESCS[idx] if not slug else unescape(re.search(r'<meta name="description" content="([^"]*)"',s)[1])
-  desc=settings.get('description',[desc,desc])[idx]
+  settings=metadata[slug]
+  title=settings['title'][idx];s=path.read_text()
+  desc=settings['description'][idx]
   if not slug:
    s=re.sub(r'<h1>.*?</h1>','<h1>PhotoCraft.<br><span>'+('让创作自由发生。' if idx else 'Create freely.')+'</span></h1>',s,count=1,flags=re.S)
    d=data[lang];shortcuts=d['shortcuts'];steps=d['installs']['windows']['steps']
