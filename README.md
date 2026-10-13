@@ -99,3 +99,7 @@ python scripts/test_photocraft_templates.py --cli /absolute/path/photocraft-cli 
 ## SEO metadata maintenance
 
 `content/seo.json` contains bilingual search titles, descriptions and known substantive modification dates for every canonical page. Update `modified` only when that page meaningfully changes; do not reset it on every build. The builder shares breadcrumb paths between visible HTML and JSON-LD, and includes known dates in `sitemap.xml`. Dates are maintained explicitly rather than generated from the build time. New routes must supply unique English and Chinese SEO metadata; the validation script rejects missing coverage, duplicate titles/descriptions and inconsistent social metadata. Run `python scripts/build_content.py` followed by `python scripts/check_site.py` after content changes.
+
+## Responsive image delivery
+
+Run `python scripts/optimize_images.py` (Pillow required) when the original editor screenshots change, then rebuild content. The site uses 640/1280-pixel WebP variants and an 800-pixel hero alternative through srcset/sizes. Original screenshot URLs and downloadable project files are retained. Below-fold images stay lazy-loaded, and the hero remains high priority.

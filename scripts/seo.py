@@ -73,13 +73,19 @@ def optimize(root,origin):
   def img(m):
    tag=m[0]
    if 'photocraft-hero.webp' in tag:
-    tag=tag[:-1]+' fetchpriority="high" decoding="async">'
+    tag=re.sub(r'src="[^"]*"','src="/photocraft-hero.webp"',tag)
+    tag=tag[:-1]+' srcset="/assets/photocraft-hero-800.webp 800w, /photocraft-hero.webp 1600w" sizes="(max-width: 760px) 92vw, 50vw" fetchpriority="high" decoding="async">'
    elif '/assets/photocraft-' in tag:
+    name=re.search(r'photocraft-([^"/]+)\.jpg',tag)
+    if name and name[1] in IMAGE_ALTS:
+     key=name[1];base='/assets/photocraft-'+key
+     tag=re.sub(r'src="[^"]*"','src="'+base+'-1280.webp"',tag)
+     tag=re.sub('alt="[^"]*"','alt="'+IMAGE_ALTS[key][idx]+'"',tag)
+     sizes='(max-width: 760px) 92vw, 800px' if slug else '(max-width: 760px) 92vw, 33vw'
+     tag=tag[:-1]+' srcset="'+base+'-640.webp 640w, '+base+'-1280.webp 1280w" sizes="'+sizes+'">'
     if 'loading=' not in tag:tag=tag[:-1]+' loading="lazy">'
     if 'decoding=' not in tag:tag=tag[:-1]+' decoding="async">'
     if 'width=' not in tag:tag=tag[:-1]+' width="2400" height="1500">'
-    name=re.search(r'photocraft-([^"/]+)\.jpg',tag)
-    if name and name[1] in IMAGE_ALTS:tag=re.sub('alt="[^"]*"','alt="'+IMAGE_ALTS[name[1]][idx]+'"',tag)
    return tag
   s=re.sub(r'<img\b[^>]*>',img,s)
   path.write_text(s)
