@@ -39,12 +39,12 @@ def optimize(root,origin):
    s=re.sub(r'<h1>.*?</h1>','<h1>'+('PhotoCraft 教程中心' if idx else 'PhotoCraft tutorials & guides')+'</h1>',s,count=1)
   # Replace only SEO tags, preserving charset, viewport, styles and application scripts.
   s=re.sub(r'<title>.*?</title>','',s,flags=re.S)
-  s=re.sub(r'<meta\s+(?:name="(?:description|robots|twitter:[^"]+)"|property="og:[^"]+")[^>]*>','',s)
+  s=re.sub(r'<meta\s+(?:name="(?:description|keywords|robots|twitter:[^"]+)"|property="og:[^"]+")[^>]*>','',s)
   s=re.sub(r'<link rel="(?:canonical|alternate)"[^>]*>','',s)
   s=re.sub(r'<script type="application/ld\+json">.*?</script>','',s,flags=re.S)
   image=origin+'/photocraft-hero.webp';imagealt='PhotoCraft 编辑器官方截图' if idx else 'Official PhotoCraft editor screenshot'
   def meta(name,value,prop=False):return '<meta '+('property' if prop else 'name')+'="'+name+'" content="'+escape(value,quote=True)+'">'
-  head='<title>'+escape(title)+'</title>'+meta('description',desc)+meta('robots','index,follow,max-image-preview:large')
+  head='<title>'+escape(title)+'</title>'+meta('description',desc)+meta('keywords',', '.join(settings['keywords'][idx]))+meta('robots','index,follow,max-image-preview:large')
   head+='<link rel="canonical" href="'+url+'">'
   for code,prefix in [('en','/'),('zh-CN','/zh/'),('x-default','/')]:head+='<link rel="alternate" hreflang="'+code+'" href="'+origin+prefix+(slug+'/' if slug else '')+'">'
   for name,value in {'og:title':title,'og:description':desc,'og:url':url,'og:type':'website' if slug in ['', 'guides', 'plugins', 'templates', 'community', 'download'] else 'article','og:site_name':'PhotoCraft Resource Hub','og:locale':'zh_CN' if idx else 'en_US','og:locale:alternate':'en_US' if idx else 'zh_CN','og:image':image,'og:image:alt':imagealt}.items():head+=meta(name,value,True)
